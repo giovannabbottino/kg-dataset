@@ -1,0 +1,913 @@
+identifier,description_identifier,question,sparql,answer
+Jaguar_01,Jaguar,What answer is reached by this graph path: Jaguar Cars --kg:be--> sports car?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'jaguar cars')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'sports car')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",sports car
+Jaguar_02,Jaguar,What answer is reached by this graph path: Jaguar Cars --kg:produceBy--> car?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'jaguar cars')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'car')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",car
+Jaguar_03,Jaguar,What answer is reached by this graph path: Jaguar Cars --kg:be--> luxury?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'jaguar cars')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'luxury')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",luxury
+Mango_01,Mango,What answer is reached by this graph path: Mango --kg:be--> Italian?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mango')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'italian')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Italian
+Mango_02,Mango,What answer is reached by this graph path: Mango --kg:be--> singer-songwriter?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mango')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'singer-songwriter')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",singer-songwriter
+Mango_03,Mango,What answer is reached by this graph path: Mango --kg:foundBy--> Andıç?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mango')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'andıç')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Andıç
+Apple_01,Apple,What answer is reached by this graph path: Apple Inc. --kg:be--> technology?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'apple inc.')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'technology')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",technology
+Apple_02,Apple,What answer is reached by this graph path: Apple Inc. --kg:headquarterIn--> Cupertino?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'apple inc.')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'cupertino')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Cupertino
+Apple_03,Apple,What answer is reached by this graph path: Apple Inc. --kg:headquarter--> California?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'apple inc.')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'california')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",California
+Orange_01,Orange,What answer is reached by this graph path: Orange --kg:beIn--> Vaucluse?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'orange')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'vaucluse')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Vaucluse
+Orange_02,Orange,What answer is reached by this graph path: Orange --kg:beIn--> Provence-Alpes-Côte d'Azur?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'orange')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'provence-alpes-côte d\'azur')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Provence-Alpes-Côte d'Azur
+Orange_03,Orange,What answer is reached by this graph path: Orange --kg:beIn--> region?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'orange')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'region')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",region
+Java_01,Java,What answer is reached by this graph path: Java --kg:be--> High Level?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'java')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'high level')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",High Level
+Java_02,Java,What answer is reached by this graph path: JSON --kg:transmit--> object?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'json')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'object')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",object
+Java_03,Java,What answer is reached by this graph path: Java --kg:be--> object-oriented programming?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'java')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'object-oriented programming')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",object-oriented programming
+Python_01,Python,What answer is reached by this graph path: Python --kg:be--> High Level?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'python')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'high level')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",High Level
+Python_02,Python,What answer is reached by this graph path: Python --kg:be--> language?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'python')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'language')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",language
+Python_03,Python,What answer is reached by this graph path: Python --kg:emphasize--> Code?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'python')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'code')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Code
+Mercury_01,Mercury,What answer is reached by this graph path: Mercury --kg:produceBy--> manufacturer?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mercury')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'manufacturer')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",manufacturer
+Mercury_02,Mercury,What answer is reached by this graph path: Mercury --kg:produceBy--> Ford Motor Company?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mercury')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'ford motor company')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Ford Motor Company
+Mercury_03,Mercury,What answer is reached by this graph path: Mercury --kg:produceBetween--> 1939?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mercury')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = '1939')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",1939
+Saturn_01,Saturn,What answer is reached by this graph path: Saturn --kg:beIn--> Roman?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'saturn')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'roman')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Roman
+Saturn_02,Saturn,What answer is reached by this graph path: Saturn --kg:beIn--> religion?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'saturn')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'religion')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",religion
+Saturn_03,Saturn,What answer is reached by this graph path: Saturn --kg:be--> character?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'saturn')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'character')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",character
+Seal_01,Seal,What answer is reached by this graph path: Seal --kg:be--> Singer?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'seal')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'singer')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Singer
+Seal_02,Seal,What answer is reached by this graph path: Seal --kg:be--> songwriter?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'seal')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'songwriter')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",songwriter
+Seal_03,Seal,What answer is reached by this graph path: Seal --kg:be--> Record?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'seal')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'record')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Record
+Crane_01,Crane,What answer is reached by this graph path: Crane --kg:be--> derivative?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'crane')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'derivative')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",derivative
+Crane_02,Crane,What answer is reached by this graph path: Crane --kg:beIn--> English?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'crane')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'english')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",English
+Crane_03,Crane,What answer is reached by this graph path: Crane --kg:beOf--> German?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'crane')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'german')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",German
+Bank_01,Bank,What answer is reached by this graph path: Bank --kg:include--> Floyd?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'bank')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'floyd')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Floyd
+Bank_02,Bank,What answer is reached by this graph path: Bank --kg:include--> basketball?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'bank')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'basketball')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",basketball
+Bank_03,Bank,What answer is reached by this graph path: Bank --kg:include--> Frank?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'bank')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'frank')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Frank
+Bat_01,Bat,What answer is reached by this graph path: Bath --kg:be--> city?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'bath')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'city')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",city
+Bat_02,Bat,What answer is reached by this graph path: Bath --kg:beIn--> Somerset?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'bath')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'somerset')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Somerset
+Bat_03,Bat,What answer is reached by this graph path: Bath --kg:be--> England?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'bath')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'england')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",England
+Date_01,Date,What answer is reached by this graph path: date of establishment --kg:call--> day?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'date of establishment')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'day')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",day
+Date_02,Date,What answer is reached by this graph path: date of establishment --kg:celebrate--> Anniversaries?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'date of establishment')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'anniversaries')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Anniversaries
+Date_03,Date,What answer is reached by this graph path: date of establishment --kg:call--> National Days?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'date of establishment')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'national days')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",National Days
+Spring_01,Spring,What answer is reached by this graph path: Spring --kg:shareBy--> Amos?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'spring')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'amos')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Amos
+Spring_02,Spring,What answer is reached by this graph path: Spring --kg:share--> English?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'spring')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'english')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",English
+Spring_03,Spring,What answer is reached by this graph path: Spring --kg:share--> cricketer?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'spring')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'cricketer')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",cricketer
+Turkey_01,Turkey,What answer is reached by this graph path: Turkey --kg:locateIn--> Anatolia?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'turkey')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'anatolia')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Anatolia
+Turkey_02,Turkey,What answer is reached by this graph path: Turkey --kg:locateIn--> West?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'turkey')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'west')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",West
+Turkey_03,Turkey,What answer is reached by this graph path: Turkey --kg:locateIn--> Asia?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'turkey')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'asia')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Asia
+Phoenix_01,Phoenix,What answer is reached by this graph path: Phoenix --kg:be--> Populous?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'phoenix')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'populous')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Populous
+Phoenix_02,Phoenix,What answer is reached by this graph path: Phoenix --kg:be--> city?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'phoenix')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'city')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",city
+Phoenix_03,Phoenix,What answer is reached by this graph path: Phoenix --kg:be--> Minor?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'phoenix')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'minor')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Minor
+Delta_01,Delta,What answer is reached by this graph path: Delta --kg:be--> genus?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'delta')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'genus')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",genus
+Delta_02,Delta,What answer is reached by this graph path: Delta --kg:beOf--> Potter?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'delta')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'potter')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Potter
+Delta_03,Delta,What answer is reached by this graph path: Delta --kg:beOf--> wasps?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'delta')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'wasps')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",wasps
+Mustang_01,Mustang,What answer is reached by this graph path: North American P-51 Mustang --kg:be--> Long Range?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'north american p-51 mustang')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'long range')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Long Range
+Mustang_02,Mustang,What answer is reached by this graph path: North American P-51 Mustang --kg:be--> single-seat fighter?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'north american p-51 mustang')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'single-seat fighter')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",single-seat fighter
+Mustang_03,Mustang,What answer is reached by this graph path: North American P-51 Mustang --kg:be--> Fighter Bomber?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'north american p-51 mustang')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'fighter bomber')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Fighter Bomber
+Shell_01,Shell,What answer is reached by this graph path: Shell --kg:headquarterIn--> London?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'shell')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'london')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",London
+Shell_02,Shell,What answer is reached by this graph path: Shell --kg:headquarter--> England?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'shell')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'england')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",England
+Shell_03,Shell,What answer is reached by this graph path: Shell --kg:be--> limited company?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'shell')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'limited company')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",limited company

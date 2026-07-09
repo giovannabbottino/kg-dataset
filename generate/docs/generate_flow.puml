@@ -1,0 +1,27 @@
+@startuml
+title Generate Wikidata Description RDF
+
+start
+:Read entity name and CLI options;
+:Search Wikidata for candidate item IDs;
+
+while (Need 2 entities with 2 clean phrases each?) is (yes)
+  :Fetch Wikidata entity details;
+  :Resolve Wikipedia sitelink title;
+  :Fetch introductory Wikipedia phrases;
+  :Clean quoted and parenthesized text;
+
+  if (Entity has 2 unique phrases?) then (yes)
+    :Extract candidate entity phrases;
+    :Resolve phrases to Wikidata item IDs;
+    :Find nearby verb predicates;
+    :Fetch labels and instance-of classes;
+    :Build readable triples;
+    :Build Turtle RDF graph;
+  endif
+endwhile (no)
+
+:Combine descriptions and RDF graphs;
+:Append identifier, description, rdf, triples row to CSV;
+stop
+@enduml

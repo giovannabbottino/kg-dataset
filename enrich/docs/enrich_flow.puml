@@ -1,0 +1,27 @@
+@startuml
+title Enrich Description RDF CSV
+
+start
+:Read input CSV;
+
+if (Header contains rdf?) then (yes)
+  while (Rows remain?) is (yes)
+    :Parse project Turtle subset;
+    :Collect labels, roots, and triples;
+    :Build direct graph paths;
+    :Build two-hop graph paths when available;
+    :Generate SELECT SPARQL with label clauses;
+    :Execute query against source RDF;
+    if (Query returns answer?) then (yes)
+    :Create one row per question;
+    :Set identifier, description_identifier, question, sparql, answer;
+    endif
+  endwhile (no)
+
+  :Write compact enrichment CSV;
+else (no)
+  :Raise validation error;
+endif
+
+stop
+@enduml
