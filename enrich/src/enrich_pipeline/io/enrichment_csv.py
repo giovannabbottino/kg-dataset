@@ -17,12 +17,16 @@ DESCRIPTION_IDENTIFIER_COLUMN = "description_identifier"
 QUESTION_COLUMN = "question"
 SPARQL_COLUMN = "sparql"
 ANSWER_COLUMN = "answer"
+ANSWER_ID_COLUMN = "answer_id"
+ID_SPARQL_COLUMN = "id_sparql"
 FIELDNAMES = [
     ENRICH_IDENTIFIER_COLUMN,
     DESCRIPTION_IDENTIFIER_COLUMN,
     QUESTION_COLUMN,
     SPARQL_COLUMN,
     ANSWER_COLUMN,
+    ANSWER_ID_COLUMN,
+    ID_SPARQL_COLUMN,
 ]
 
 
@@ -60,6 +64,13 @@ def enrich_csv(input_path: Path, output_path: Path) -> int:
                         "Generated SPARQL did not return the expected answer "
                         f"for {description_identifier}_{question_index:02d}."
                     )
+                if item["id_sparql"] and not query_returns_answer(
+                    row.get("rdf") or "", item["id_sparql"], item["answer_id"]
+                ):
+                    raise ValueError(
+                        "Generated ID SPARQL did not return the expected answer "
+                        f"for {description_identifier}_{question_index:02d}."
+                    )
                 rows.append(
                     {
                         ENRICH_IDENTIFIER_COLUMN: row_identifier(
@@ -69,9 +80,12 @@ def enrich_csv(input_path: Path, output_path: Path) -> int:
                         QUESTION_COLUMN: item["question"],
                         SPARQL_COLUMN: item["sparql"],
                         ANSWER_COLUMN: item["answer"],
+                        ANSWER_ID_COLUMN: item["answer_id"],
+                        ID_SPARQL_COLUMN: item["id_sparql"],
                     }
                 )
 
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", newline="", encoding="utf-8") as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=FIELDNAMES)
         writer.writeheader()

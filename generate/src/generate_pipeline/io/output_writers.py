@@ -12,6 +12,22 @@ RDF_PREFIXES = (
     "@prefix kg: <https://example.org/wikidata-description/> .\n\n"
 )
 
+
+def csv_has_identifier(csv_path: str, identifier: str) -> bool:
+    """Return whether an identifier already exists in the output CSV."""
+    if not os.path.exists(csv_path) or os.path.getsize(csv_path) == 0:
+        return False
+
+    expected = identifier.strip().casefold()
+    with open(csv_path, newline="", encoding="utf-8-sig") as csv_file:
+        reader = csv.DictReader(csv_file)
+        if not reader.fieldnames or "identifier" not in reader.fieldnames:
+            return False
+        return any(
+            (row.get("identifier") or "").strip().casefold() == expected
+            for row in reader
+        )
+
 def triples_json(triples: list[tuple[str, str, str]]) -> str:
     """Return text-extracted triples as a JSON list for CSV storage."""
     return json.dumps(prune_redundant_triples(dedupe_triples(triples)), ensure_ascii=False)
@@ -141,6 +157,8 @@ def append_csv(
     triples: list[tuple[str, str, str]],
 ) -> None:
     """Append a description, Turtle graph, and explicit triple list to a CSV file."""
+    parent = os.path.dirname(os.path.abspath(csv_path))
+    os.makedirs(parent, exist_ok=True)
     write_header = not os.path.exists(csv_path) or os.path.getsize(csv_path) == 0
     expected_header = ["identifier", "description", "rdf", "triples"]
     fieldnames = expected_header
@@ -189,14 +207,11 @@ def build_rdf(
     labels: dict[str, str],
     related_ids: set[str],
     relations: list[tuple[str, str, str]],
-    type_ids_by_entity: dict[str, set[str]],
-    class_labels: dict[str, str],
 ) -> str:
-    """Build Turtle RDF relationships from an entity to description-derived entities."""
+    """Build Turtle RDF using only relationships extracted from the text."""
     entity_id = entity["id"]
     label = entity.get("labels", {}).get(lang, {}).get("value", "")
-    type_ids = sorted(type_ids_by_entity.get(entity_id, set()))
-    statements = [f"a wd:{type_id}" for type_id in type_ids]
+    statements = []
     if label:
         statements.append(f'rdfs:label "{_turtle_literal(label)}"@{lang}')
     statements.extend(
@@ -209,9 +224,7 @@ def build_rdf(
     for item_id in sorted(related_ids):
         item_label = labels.get(item_id)
         if item_label:
-            item_type_ids = sorted(type_ids_by_entity.get(item_id, set()))
             entity_statements = [
-                *(f"a wd:{type_id}" for type_id in item_type_ids),
                 f'rdfs:label "{_turtle_literal(item_label)}"@{lang}',
             ]
             entity_statements.extend(
@@ -220,10 +233,6 @@ def build_rdf(
                 if subject_id == item_id
             )
             lines.append(f"wd:{item_id} " + " ;\n    ".join(entity_statements) + " .")
-    for class_id in sorted(class_labels):
-        lines.append(
-            f'wd:{class_id} rdfs:label "{_turtle_literal(class_labels[class_id])}"@{lang} .'
-        )
     return RDF_PREFIXES + "\n".join(lines) + "\n"
 
 

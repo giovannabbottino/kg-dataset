@@ -8,7 +8,9 @@ This project has two steps:
 For example, a description such as `species of plant` is read word by word.
 Resolved Wikidata entities are linked to the original entity as
 `subject, predicate, object` triples first, and those triples are then serialized
-as Turtle RDF.
+as Turtle RDF. The RDF contains only relationships extracted from the Wikipedia
+text. The generation step does not query or add Wikidata `P31` (`instance of`)
+classes.
 
 ## Requirements
 
@@ -32,6 +34,25 @@ python generate/src/main.py "Mango"
 python generate/src/main.py "Watermelon"
 ```
 
+The generator also accepts two explicit names. In this mode it uses only the
+first Wikidata search result for each name and joins the names with `-` for the
+CSV identifier:
+
+```powershell
+python generate/src/main.py car automobile
+# identifier: Car-Automobile
+```
+
+[`synonyms.txt`](synonyms.txt) contains synonym pairs as `first,second`, one
+pair per line. Process the file with:
+
+```powershell
+Get-Content synonyms.txt | Where-Object { $_.Trim() } | ForEach-Object {
+    $pair = $_ -split ',', 2
+    python generate/src/main.py $pair[0].Trim() $pair[1].Trim()
+}
+```
+
 Run the generation step for every term in a text file such as
 `ambiguous_words.txt`, with one input term per line:
 
@@ -50,12 +71,14 @@ python enrich/src/main.py
 Default outputs:
 
 ```text
-wikidata_description_rdf.csv
-wikidata_description_rdf_enriched.csv
+data/wikidata_description_rdf.csv
+data/wikidata_description_rdf_enriched.csv
 ```
 
 The generation step is append-only. Delete or rename existing output files first
-if you want a fresh dataset.
+if you want a fresh dataset. Before making any Wikipedia or Wikidata requests,
+the generator checks the output CSV. If its normalized `identifier` already
+exists, that input is skipped and the CSV is not changed.
 
 ## Step Documentation
 
@@ -92,8 +115,11 @@ prose.
 When a resolved description phrase has a nearby verb in the text, NLTK POS
 tagging and WordNet are used to identify that verb, and the verb becomes the
 predicate.
-`rdf` contains a self-contained Turtle serialization built from those extracted
-triples, including its `rdfs`, `wd`, and `kg` prefixes.
+The readable `triples` list is built before RDF serialization. `rdf` then
+contains a self-contained Turtle representation of only those extracted
+relationships, plus the labels needed to identify their subjects and objects.
+It includes the `rdfs`, `wd`, and `kg` prefixes, but no externally fetched
+class/type triples.
 
 ## Enriched CSV Output
 
@@ -101,16 +127,20 @@ The enriched CSV is a separate reference CSV. It does not duplicate the base
 `description`, `rdf`, or `triples` values. It contains:
 
 ```text
-identifier,description_identifier,question,sparql,answer
+identifier,description_identifier,question,sparql,answer,answer_id,id_sparql
 ```
 
 `identifier` uses the source entity plus a question number, such as
 `Jaguar_01`. `description_identifier` references the `identifier` from the
 generated base CSV. Each enriched row contains one `question`, one `sparql`
-query, and one `answer`. The SPARQL queries use `rdfs:label` values to identify
-entities whenever labels are available. Each query is executed against the
-source row's Turtle RDF and must return the expected `answer` before it is
-written to the enriched CSV.
+query, and one `answer`. `answer_id` stores the expected Wikidata identifier
+when available, while `id_sparql` contains an additional ID-focused query. The
+The main `sparql` query matches the expected subject and answer labels and
+requires a direct or two-hop connection. The separate `id_sparql` query
+addresses every entity in the selected path directly through
+its Wikidata ID and does not infer IDs from labels or constrain predicate names.
+Each query is executed against the source row's Turtle RDF and must return the
+expected answer before it is written to the enriched CSV.
 
 ## RDF Example
 
@@ -122,14 +152,15 @@ example:
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix kg: <https://example.org/wikidata-description/> .
 
-wd:Q1054564 a rdfs:Resource ;
-    rdfs:label "Mango"@en ;
+wd:Q1054564 rdfs:label "Mango"@en ;
     kg:was wd:Q488205 .
 
 wd:Q488205 rdfs:label "singer-songwriter"@en .
 ```
 
 The resolved IDs are Wikidata item IDs (`wd:Q...`).
+There is no `rdf:type`/`a` statement because the graph is derived only from the
+readable relationships extracted from the source text.
 
 ## Project structure
 
@@ -148,5 +179,5 @@ The resolved IDs are Wikidata item IDs (`wd:Q...`).
 | `enrich/src/enrich_pipeline/models/` | Shared dataclasses for enrichment. |
 | `enrich/tests/` | Offline unit tests for enrichment helpers. |
 | `enrich/docs/` | Enrichment process docs and PlantUML flow. |
-| `wikidata_description_rdf.csv` | Base generated CSV. |
-| `wikidata_description_rdf_enriched.csv` | Enriched CSV with SPARQL query columns. |
+| `data/wikidata_description_rdf.csv` | Base generated CSV. |
+| `data/wikidata_description_rdf_enriched.csv` | Enriched CSV with SPARQL query columns. |

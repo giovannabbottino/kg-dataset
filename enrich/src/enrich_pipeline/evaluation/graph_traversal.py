@@ -22,6 +22,11 @@ def answer_value(entity_id: str, labels: dict[str, Label]) -> str:
     return label.value if label else entity_id
 
 
+def answer_id(entity_id: str) -> str:
+    """Return the stable answer ID when the entity can be addressed in SPARQL."""
+    return entity_id if sparql_iri_from_prefixed(entity_id) else ""
+
+
 def single_quoted(value: str) -> str:
     """Return a single-quoted string with escaped control characters."""
     escaped = (
@@ -56,15 +61,19 @@ def row_identifier(description_identifier: str, index: int) -> str:
     return f"{cleaned or 'entity'}_{index:02d}"
 
 
-def sparql_literal(label: Label) -> str:
-    """Return a SPARQL string literal with a language tag."""
-    return f"{single_quoted(label.value)}@{label.lang}"
-
-
 def normalized_sparql_string(value: str) -> str:
-    """Return a normalized string literal for label comparison in SPARQL."""
+    """Normalize label whitespace and case exactly as the SPARQL filter does."""
     normalized = re.sub(r"\s+", " ", value).strip().casefold()
     return single_quoted(normalized)
+
+
+def sparql_iri_from_prefixed(term: str) -> str | None:
+    """Return a full SPARQL IRI for project-supported prefixed terms."""
+    if term.startswith("wd:"):
+        return f"<http://www.wikidata.org/entity/{term.split(':', 1)[1]}>"
+    if term.startswith("kg:"):
+        return f"<https://example.org/wikidata-description/{term.split(':', 1)[1]}>"
+    return None
 
 
 def predicate_name(predicate: str) -> str:
@@ -86,41 +95,20 @@ def normalized_text(value: str) -> str:
     return re.sub(r"[^A-Za-z0-9]+", " ", value).strip().casefold()
 
 
-def query_term(
-    entity_id: str, role: str, index: int, labels: dict[str, Label]
-) -> tuple[list[str], str]:
-    """Return label lookup clauses and a generic variable for an entity."""
-    label = labels.get(entity_id)
-    variable = f"?{role}{index}"
-    if label is None:
-        return [], entity_id
-    return [f"  {variable} rdfs:label {sparql_literal(label)} ."], variable
-
-
 def answer_query(triples: list[Triple], labels: dict[str, Label]) -> str:
-    """Build a label-based query that returns the final path answer.
-
-    The dataset RDF defines the expected subject and answer, but generated KGs
-    may use different IRIs or predicates. The query therefore matches labels and
-    checks that the answer is reachable from the subject in one or two hops.
-    """
+    """Build a label-based query for a direct or two-hop connection."""
     source_label = labels.get(triples[0].subject)
     final_label = labels.get(triples[-1].object)
-
     if source_label is None or final_label is None:
-        return exact_path_query(triples, labels)
+        return id_path_query(triples)
 
     lines = [
         "  ?subject rdfs:label ?subjectLabel .",
-        (
-            "  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\\\s+', ' ')) = "
-            f"{normalized_sparql_string(source_label.value)})"
-        ),
+        "  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\\\s+', ' ')) = "
+        f"{normalized_sparql_string(source_label.value)})",
         "  ?answerEntity rdfs:label ?answerLabel .",
-        (
-            "  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\\\s+', ' ')) = "
-            f"{normalized_sparql_string(final_label.value)})"
-        ),
+        "  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\\\s+', ' ')) = "
+        f"{normalized_sparql_string(final_label.value)})",
         "  {",
         "    ?subject ?predicate1 ?answerEntity .",
         "  }",
@@ -131,35 +119,27 @@ def answer_query(triples: list[Triple], labels: dict[str, Label]) -> str:
         "  }",
         "  BIND(STR(?answerLabel) AS ?answer)",
     ]
+    return (
+        f"{PREFIX_BLOCK}SELECT ?answer WHERE {{\n"
+        + "\n".join(lines)
+        + "\n} LIMIT 1"
+    )
 
-    body = "\n".join(lines)
-    return f"{PREFIX_BLOCK}SELECT ?answer WHERE {{\n{body}\n}} LIMIT 1"
 
-
-def exact_path_query(triples: list[Triple], labels: dict[str, Label]) -> str:
-    """Build the previous exact path query when labels are unavailable."""
-    path_lines: list[str] = []
-    answer_term = ""
+def id_path_query(triples: list[Triple]) -> str:
+    """Build an ID-only query that returns the final entity IRI."""
+    lines = []
     for index, triple in enumerate(triples, 1):
-        subject_clauses, subject_term = query_term(
-            triple.subject, "subject", index, labels
-        )
-        object_clauses, object_term = query_term(triple.object, "object", index, labels)
-        answer_term = object_term
-        predicate_term = f"?predicate{index}"
-        path_lines.extend(subject_clauses)
-        path_lines.extend(object_clauses)
-        path_lines.append(f"  {subject_term} {predicate_term} {object_term} .")
-        path_lines.append(portable_predicate_filter(predicate_term, triple.predicate))
-
-    final_label = labels.get(triples[-1].object)
-    if final_label is not None:
-        path_lines.append(f"  BIND(STR({sparql_literal(final_label)}) AS ?answer)")
-    else:
-        path_lines.append(f"  BIND({answer_term} AS ?answer)")
-
-    body = "\n".join(path_lines)
-    return f"{PREFIX_BLOCK}SELECT ?answer WHERE {{\n{body}\n}} LIMIT 1"
+        subject_iri = sparql_iri_from_prefixed(triple.subject)
+        object_iri = sparql_iri_from_prefixed(triple.object)
+        if subject_iri is None or object_iri is None:
+            return ""
+        predicate = f"?predicate{index}"
+        object_term = "?answer" if index == len(triples) else object_iri
+        lines.append(f"  {subject_iri} {predicate} {object_term} .")
+        if object_term == "?answer":
+            lines.append(f"  FILTER(?answer = {object_iri})")
+    return "SELECT ?answer WHERE {\n" + "\n".join(lines) + "\n} LIMIT 1"
 
 
 def path_rank(
@@ -241,6 +221,8 @@ def build_graph_traversal_items(
                 "question": f"What answer is reached by this graph path: {path}?",
                 "sparql": answer_query(path_triples, labels),
                 "answer": answer_value(final_entity, labels),
+                "answer_id": answer_id(final_entity),
+                "id_sparql": id_path_query(path_triples),
             }
         )
     return items

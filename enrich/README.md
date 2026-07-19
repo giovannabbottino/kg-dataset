@@ -4,7 +4,7 @@ This step reads the generated `identifier,description,rdf,triples`
 CSV and writes its own compact enrichment CSV:
 
 ```text
-identifier,description_identifier,question,sparql,answer
+identifier,description_identifier,question,sparql,answer,answer_id,id_sparql
 ```
 
 The enriched CSV references the generated row through `description_identifier`.
@@ -15,20 +15,26 @@ entity, such as `Jaguar_01`.
 Each row has:
 
 ```text
-question,sparql,answer
+question,sparql,answer,answer_id,id_sparql
 ```
+
+`answer_id` stores the expected Wikidata identifier when available, while
+`id_sparql` checks whether that identifier occurs in the evaluated graph.
 
 Each generated description row can produce up to 3 enrichment question rows.
 
 The rows contain graph traversal paths and SPARQL queries for direct and two-hop
-navigational checks. The queries use `rdfs:label` values to identify entities
-whenever labels are available. Before a query is written to the enriched CSV,
-the enrichment step executes it against the source row's Turtle RDF with
+navigational checks. The main `sparql` matches the expected subject and answer
+labels and requires a direct or two-hop connection between them. The separate
+`id_sparql` addresses every graph entity in the path directly by its
+Wikidata IRI and does not look up an ID from a label or require a particular
+predicate name. Before a query is written to the enriched CSV, the enrichment
+step executes it against the source RDF with
 `rdflib`; only queries that return the expected `answer` are kept.
 
 ## Run
 
-From the project root, after generating `wikidata_description_rdf.csv`:
+From the project root, after generating `data/wikidata_description_rdf.csv`:
 
 ```powershell
 python enrich/src/main.py
@@ -37,7 +43,7 @@ python enrich/src/main.py
 This writes:
 
 ```text
-wikidata_description_rdf_enriched.csv
+data/wikidata_description_rdf_enriched.csv
 ```
 
 ## Options
@@ -45,8 +51,10 @@ wikidata_description_rdf_enriched.csv
 Use custom input and output paths:
 
 ```powershell
-python enrich/src/main.py --input wikidata_description_rdf.csv --output enriched.csv
+python enrich/src/main.py --input data/wikidata_description_rdf.csv --output data/enriched.csv
 ```
+
+The output directory is created automatically when needed.
 
 ## Flow
 
@@ -60,12 +68,12 @@ start
 if (CSV has rdf column?) then (yes)
   while (Rows remain?) is (yes)
     :Parse project Turtle subset;
-    :Collect labels, root entities, and triples;
+    :Collect labels and extracted relationship triples;
     :Build direct and two-hop graph paths;
     :Generate portable SELECT SPARQL;
     :Execute query against source RDF;
     if (Query returns answer?) then (yes)
-    :Write identifier, description_identifier, question, sparql, answer row;
+    :Write question, answer, answer ID, and SPARQL query row;
     endif
   endwhile (no)
   :Write enriched CSV;
@@ -84,16 +92,14 @@ For a relationship such as:
 wd:Q37020055 kg:is wd:Q35409 .
 ```
 
-with labels `Grape` and `family`, the generated query returns `family`:
+the generated query addresses `wd:Q37020055` and `wd:Q35409` directly and
+returns the readable answer `family`:
 
 ```sparql
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?answer WHERE {
-  ?subject1 rdfs:label 'Grape'@en .
-  ?object1 rdfs:label 'family'@en .
-  ?subject1 ?predicate1 ?object1 .
-  FILTER(LCASE(REPLACE(STR(?predicate1), '^.*[#/]', '')) = 'is')
-  BIND('family'@en AS ?answer)
+  <http://www.wikidata.org/entity/Q37020055>
+      ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q35409>)
 } LIMIT 1
 ```
 

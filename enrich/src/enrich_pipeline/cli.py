@@ -15,13 +15,13 @@ def parse_arguments() -> argparse.Namespace:
     )
     parser.add_argument(
         "--input",
-        default="wikidata_description_rdf.csv",
-        help="Input CSV path (default: wikidata_description_rdf.csv)",
+        default="data/wikidata_description_rdf.csv",
+        help="Input CSV path (default: data/wikidata_description_rdf.csv)",
     )
     parser.add_argument(
         "--output",
-        default="wikidata_description_rdf_enriched.csv",
-        help="Output CSV path (default: wikidata_description_rdf_enriched.csv)",
+        default="data/wikidata_description_rdf_enriched.csv",
+        help="Output CSV path (default: data/wikidata_description_rdf_enriched.csv)",
     )
     return parser.parse_args()
 
