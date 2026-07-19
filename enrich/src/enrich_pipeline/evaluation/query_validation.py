@@ -16,15 +16,15 @@ def _readable_value(value) -> str:
 
 def _normalized_value(value: str) -> str:
     """Return a punctuation-insensitive comparable value."""
-    return re.sub(r"[^A-Za-z0-9]+", " ", str(value or "")).strip().casefold()
+    return re.sub(r"[\W_]+", " ", str(value or ""), flags=re.UNICODE).strip().casefold()
 
 
 def _values_match(actual: str, expected: str) -> bool:
     """Return whether actual and expected match exactly or by token containment."""
     actual_normalized = _normalized_value(actual)
     expected_normalized = _normalized_value(expected)
-    actual_compact = re.sub(r"[^A-Za-z0-9]+", "", str(actual or "")).casefold()
-    expected_compact = re.sub(r"[^A-Za-z0-9]+", "", str(expected or "")).casefold()
+    actual_compact = re.sub(r"[\W_]+", "", str(actual or ""), flags=re.UNICODE).casefold()
+    expected_compact = re.sub(r"[\W_]+", "", str(expected or ""), flags=re.UNICODE).casefold()
     if not actual_normalized or not expected_normalized:
         return False
     if actual_normalized == expected_normalized:
