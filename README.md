@@ -88,8 +88,6 @@ Each step has its own docs folder with a README and PlantUML flow diagram:
 - [Generate PlantUML flow](generate/docs/generate_flow.puml)
 - [Enrich docs](enrich/README.md)
 - [Enrich PlantUML flow](enrich/docs/enrich_flow.puml)
-- [NLP documentation](docs/README.md)
-- [NLP functions and behavior](docs/nlp_pipeline.md)
 
 Run the offline unit tests with:
 
