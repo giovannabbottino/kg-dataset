@@ -1,0 +1,2281 @@
+identifier,description_identifier,question,sparql,answer,answer_id,id_sparql
+Jaguar_01,Jaguar,What answer is reached by this graph path: Jaguar Cars --kg:be--> sports car?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'jaguar cars')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'sports car')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",sports car,wd:Q274586,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q30055> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q274586>)
+} LIMIT 1"
+Jaguar_02,Jaguar,What answer is reached by this graph path: Jaguar Cars --kg:produceBy--> car?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'jaguar cars')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'car')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",car,wd:Q1420,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q30055> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q1420>)
+} LIMIT 1"
+Jaguar_03,Jaguar,What answer is reached by this graph path: Jaguar Cars --kg:be--> luxury?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'jaguar cars')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'luxury')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",luxury,wd:Q10953913,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q30055> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q10953913>)
+} LIMIT 1"
+Mango_01,Mango,What answer is reached by this graph path: Mango --kg:be--> Italian?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mango')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'italian')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Italian,wd:Q652,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q1054564> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q652>)
+} LIMIT 1"
+Mango_02,Mango,What answer is reached by this graph path: Mango --kg:be--> singer-songwriter?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mango')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'singer-songwriter')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",singer-songwriter,wd:Q488205,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q1054564> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q488205>)
+} LIMIT 1"
+Mango_03,Mango,What answer is reached by this graph path: Mango --kg:foundBy--> Andıç?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mango')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'andıç')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Andıç,wd:Q30669152,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q136503> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q30669152>)
+} LIMIT 1"
+Apple_01,Apple,What answer is reached by this graph path: Apple Inc. --kg:be--> technology?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'apple inc.')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'technology')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",technology,wd:Q11016,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q312> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q11016>)
+} LIMIT 1"
+Apple_02,Apple,What answer is reached by this graph path: Apple Inc. --kg:headquarterIn--> Cupertino?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'apple inc.')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'cupertino')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Cupertino,wd:Q189471,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q312> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q189471>)
+} LIMIT 1"
+Apple_03,Apple,What answer is reached by this graph path: Apple Inc. --kg:headquarter--> California?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'apple inc.')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'california')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",California,wd:Q99,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q312> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q99>)
+} LIMIT 1"
+Orange_01,Orange,What answer is reached by this graph path: Orange --kg:beIn--> Vaucluse?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'orange')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'vaucluse')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Vaucluse,wd:Q12792,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q187796> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q12792>)
+} LIMIT 1"
+Orange_02,Orange,What answer is reached by this graph path: Orange --kg:beIn--> Provence-Alpes-Côte d'Azur?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'orange')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'provence-alpes-côte d\'azur')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Provence-Alpes-Côte d'Azur,wd:Q15104,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q187796> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q15104>)
+} LIMIT 1"
+Orange_03,Orange,What answer is reached by this graph path: Orange --kg:beIn--> region?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'orange')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'region')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",region,wd:Q82794,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q187796> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q82794>)
+} LIMIT 1"
+Java_01,Java,What answer is reached by this graph path: Java --kg:be--> High Level?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'java')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'high level')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",High Level,wd:Q430949,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q251> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q430949>)
+} LIMIT 1"
+Java_02,Java,What answer is reached by this graph path: JSON --kg:transmit--> object?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'json')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'object')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",object,wd:Q488383,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q2063> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q488383>)
+} LIMIT 1"
+Java_03,Java,What answer is reached by this graph path: Java --kg:be--> object-oriented programming?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'java')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'object-oriented programming')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",object-oriented programming,wd:Q79872,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q251> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q79872>)
+} LIMIT 1"
+Python_01,Python,What answer is reached by this graph path: Python --kg:be--> High Level?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'python')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'high level')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",High Level,wd:Q430949,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q28865> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q430949>)
+} LIMIT 1"
+Python_02,Python,What answer is reached by this graph path: Python --kg:be--> language?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'python')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'language')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",language,wd:Q34770,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q28865> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q34770>)
+} LIMIT 1"
+Python_03,Python,What answer is reached by this graph path: Python --kg:emphasize--> Code?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'python')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'code')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Code,wd:Q37141227,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q28865> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q37141227>)
+} LIMIT 1"
+Mercury_01,Mercury,What answer is reached by this graph path: Mercury --kg:produceBy--> manufacturer?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mercury')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'manufacturer')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",manufacturer,wd:Q13235160,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q613883> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q13235160>)
+} LIMIT 1"
+Mercury_02,Mercury,What answer is reached by this graph path: Mercury --kg:produceBy--> Ford Motor Company?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mercury')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'ford motor company')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Ford Motor Company,wd:Q44294,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q613883> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q44294>)
+} LIMIT 1"
+Mercury_03,Mercury,What answer is reached by this graph path: Mercury --kg:produceBetween--> 1939?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mercury')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = '1939')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",1939,wd:Q18639,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q613883> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q18639>)
+} LIMIT 1"
+Saturn_01,Saturn,What answer is reached by this graph path: Saturn --kg:beIn--> Roman?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'saturn')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'roman')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Roman,wd:Q933726,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q134388> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q933726>)
+} LIMIT 1"
+Saturn_02,Saturn,What answer is reached by this graph path: Saturn --kg:beIn--> religion?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'saturn')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'religion')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",religion,wd:Q9174,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q134388> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q9174>)
+} LIMIT 1"
+Saturn_03,Saturn,What answer is reached by this graph path: Saturn --kg:be--> character?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'saturn')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'character')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",character,wd:Q95074,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q134388> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q95074>)
+} LIMIT 1"
+Amazon_01,Amazon,What answer is reached by this graph path: Amazon --kg:be--> technology?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'amazon')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'technology')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",technology,wd:Q11016,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3884> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q11016>)
+} LIMIT 1"
+Amazon_02,Amazon,What answer is reached by this graph path: Amazon --kg:engageIn--> e-commerce?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'amazon')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'e-commerce')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",e-commerce,wd:Q484847,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3884> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q484847>)
+} LIMIT 1"
+Amazon_03,Amazon,What answer is reached by this graph path: Amazon --kg:engage--> cloud?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'amazon')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'cloud')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",cloud,wd:Q8074,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3884> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q8074>)
+} LIMIT 1"
+Seal_01,Seal,What answer is reached by this graph path: Seal --kg:be--> Singer?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'seal')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'singer')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Singer,wd:Q1260201,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q218091> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q1260201>)
+} LIMIT 1"
+Seal_02,Seal,What answer is reached by this graph path: Seal --kg:be--> songwriter?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'seal')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'songwriter')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",songwriter,wd:Q753110,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q218091> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q753110>)
+} LIMIT 1"
+Seal_03,Seal,What answer is reached by this graph path: Seal --kg:be--> Record?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'seal')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'record')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Record,wd:Q1458581,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q218091> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q1458581>)
+} LIMIT 1"
+Crane_01,Crane,What answer is reached by this graph path: Crane --kg:be--> derivative?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'crane')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'derivative')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",derivative,wd:Q29175,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q16865841> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q29175>)
+} LIMIT 1"
+Crane_02,Crane,What answer is reached by this graph path: Crane --kg:beIn--> English?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'crane')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'english')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",English,wd:Q1860,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q16865841> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q1860>)
+} LIMIT 1"
+Crane_03,Crane,What answer is reached by this graph path: Crane --kg:beOf--> German?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'crane')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'german')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",German,wd:Q188,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q16865841> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q188>)
+} LIMIT 1"
+Bank_01,Bank,What answer is reached by this graph path: bank --kg:create--> Demand?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'bank')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'demand')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Demand,wd:Q37500962,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q22687> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q37500962>)
+} LIMIT 1"
+Bank_02,Bank,What answer is reached by this graph path: bank --kg:create--> deposit?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'bank')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'deposit')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",deposit,wd:Q5260774,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q22687> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q5260774>)
+} LIMIT 1"
+Bank_03,Bank,What answer is reached by this graph path: bank --kg:make--> Loans?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'bank')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'loans')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Loans,wd:Q6663494,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q22687> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q6663494>)
+} LIMIT 1"
+Bat_01,Bat,What answer is reached by this graph path: Bath --kg:be--> city?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'bath')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'city')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",city,wd:Q515,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q22889> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q515>)
+} LIMIT 1"
+Bat_02,Bat,What answer is reached by this graph path: Baton Rouge --kg:be--> city?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'baton rouge')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'city')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",city,wd:Q515,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q28218> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q515>)
+} LIMIT 1"
+Bat_03,Bat,What answer is reached by this graph path: Bath --kg:beIn--> Somerset?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'bath')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'somerset')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Somerset,wd:Q67461071,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q22889> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q67461071>)
+} LIMIT 1"
+Date_01,Date,What answer is reached by this graph path: calendar date --kg:be--> reference?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'calendar date')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'reference')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",reference,wd:Q121769,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q205892> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q121769>)
+} LIMIT 1"
+Date_02,Date,What answer is reached by this graph path: calendar date --kg:beTo--> Day?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'calendar date')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'day')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Day,wd:Q5242796,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q205892> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q5242796>)
+} LIMIT 1"
+Date_03,Date,What answer is reached by this graph path: calendar date --kg:perform--> day?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'calendar date')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'day')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",day,wd:Q573,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q205892> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q573>)
+} LIMIT 1"
+Spring_01,Spring,What answer is reached by this graph path: spring --kg:beAt--> groundwater?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'spring')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'groundwater')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",groundwater,wd:Q161598,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q124714> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q161598>)
+} LIMIT 1"
+Spring_02,Spring,What answer is reached by this graph path: spring --kg:emergeFrom--> aquifer?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'spring')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'aquifer')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",aquifer,wd:Q208791,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q124714> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q208791>)
+} LIMIT 1"
+Spring_03,Spring,What answer is reached by this graph path: spring --kg:flowAcross--> Surface?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'spring')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'surface')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Surface,wd:Q37497814,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q124714> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q37497814>)
+} LIMIT 1"
+Turkey_01,Turkey,What answer is reached by this graph path: Turkey --kg:locateIn--> Anatolia?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'turkey')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'anatolia')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Anatolia,wd:Q20678374,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q43> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q20678374>)
+} LIMIT 1"
+Turkey_02,Turkey,What answer is reached by this graph path: Turkey --kg:locateIn--> West?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'turkey')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'west')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",West,wd:Q2564123,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q43> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q2564123>)
+} LIMIT 1"
+Turkey_03,Turkey,What answer is reached by this graph path: Turkey --kg:locateIn--> Asia?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'turkey')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'asia')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Asia,wd:Q48,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q43> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q48>)
+} LIMIT 1"
+Phoenix_01,Phoenix,What answer is reached by this graph path: Phoenix --kg:be--> Populous?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'phoenix')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'populous')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Populous,wd:Q1082849,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q16556> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q1082849>)
+} LIMIT 1"
+Phoenix_02,Phoenix,What answer is reached by this graph path: Phoenix --kg:be--> city?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'phoenix')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'city')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",city,wd:Q515,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q16556> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q515>)
+} LIMIT 1"
+Phoenix_03,Phoenix,What answer is reached by this graph path: Phoenix --kg:be--> Minor?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'phoenix')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'minor')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Minor,wd:Q16877187,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q10441> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q16877187>)
+} LIMIT 1"
+Mustang_01,Mustang,What answer is reached by this graph path: North American P-51 Mustang --kg:be--> Long Range?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'north american p-51 mustang')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'long range')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Long Range,wd:Q80183430,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q192075> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q80183430>)
+} LIMIT 1"
+Mustang_02,Mustang,What answer is reached by this graph path: North American P-51 Mustang --kg:be--> single-seat fighter?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'north american p-51 mustang')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'single-seat fighter')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",single-seat fighter,wd:Q135214932,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q192075> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q135214932>)
+} LIMIT 1"
+Mustang_03,Mustang,What answer is reached by this graph path: North American P-51 Mustang --kg:be--> Fighter Bomber?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'north american p-51 mustang')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'fighter bomber')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Fighter Bomber,wd:Q5447839,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q192075> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q5447839>)
+} LIMIT 1"
+Shell_01,Shell,What answer is reached by this graph path: Shell --kg:headquarterIn--> London?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'shell')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'london')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",London,wd:Q84,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q154950> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q84>)
+} LIMIT 1"
+Shell_02,Shell,What answer is reached by this graph path: Shell --kg:headquarter--> England?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'shell')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'england')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",England,wd:Q21,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q154950> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q21>)
+} LIMIT 1"
+Shell_03,Shell,What answer is reached by this graph path: Shell --kg:be--> limited company?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'shell')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'limited company')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",limited company,wd:Q33685,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q154950> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q33685>)
+} LIMIT 1"
+Delta_01,Delta,What answer is reached by this graph path: Delta State --kg:beIn--> South South?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'delta state')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'south south')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",South South,wd:Q30599787,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q503910> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q30599787>)
+} LIMIT 1"
+Delta_02,Delta,What answer is reached by this graph path: Delta State --kg:beIn--> Zone?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'delta state')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'zone')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Zone,wd:Q37440729,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q503910> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q37440729>)
+} LIMIT 1"
+Delta_03,Delta,What answer is reached by this graph path: Delta State --kg:beOf--> Nigeria?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'delta state')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'nigeria')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Nigeria,wd:Q1033,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q503910> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q1033>)
+} LIMIT 1"
+Car_Automobile_01,Car-Automobile,What answer is reached by this graph path: Carina --kg:be--> ConStellation?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'carina')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'constellation')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",ConStellation,wd:Q4637694,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q10470> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q4637694>)
+} LIMIT 1"
+Car_Automobile_02,Car-Automobile,What answer is reached by this graph path: Carina --kg:beIn--> sky?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'carina')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'sky')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",sky,wd:Q527,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q10470> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q527>)
+} LIMIT 1"
+Car_Automobile_03,Car-Automobile,What answer is reached by this graph path: Carina --kg:be--> Latin?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'carina')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'latin')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Latin,wd:Q397,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q10470> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q397>)
+} LIMIT 1"
+Boat_Vessel_01,Boat-Vessel,What answer is reached by this graph path: ship --kg:distinguishFrom--> boat?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'ship')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'boat')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",boat,wd:Q35872,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q11446> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q35872>)
+} LIMIT 1"
+Boat_Vessel_02,Boat-Vessel,What answer is reached by this graph path: boat --kg:be--> watercraft?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'boat')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'watercraft')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",watercraft,wd:Q1229765,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q35872> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q1229765>)
+} LIMIT 1"
+Boat_Vessel_03,Boat-Vessel,What answer is reached by this graph path: ship --kg:be--> watercraft?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'ship')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'watercraft')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",watercraft,wd:Q1229765,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q11446> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q1229765>)
+} LIMIT 1"
+Singer_Vocalist_01,Singer-Vocalist,What answer is reached by this graph path: singer --kg:be--> Art?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'singer')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'art')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Art,wd:Q8227356,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q177220> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q8227356>)
+} LIMIT 1"
+Singer_Vocalist_02,Singer-Vocalist,What answer is reached by this graph path: singer --kg:create--> music?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'singer')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'music')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",music,wd:Q638,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q177220> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q638>)
+} LIMIT 1"
+Singer_Vocalist_03,Singer-Vocalist,What answer is reached by this graph path: singer --kg:createWith--> voice?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'singer')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'voice')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",voice,wd:Q17172850,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q177220> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q17172850>)
+} LIMIT 1"
+Musician_Instrumentalist_01,Musician-Instrumentalist,What answer is reached by this graph path: musician --kg:compose--> music?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'musician')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'music')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",music,wd:Q638,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q639669> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q638>)
+} LIMIT 1"
+Musician_Instrumentalist_02,Musician-Instrumentalist,What answer is reached by this graph path: musician --kg:accordTo--> United States?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'musician')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'united states')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",United States,wd:Q30,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q639669> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q30>)
+} LIMIT 1"
+Musician_Instrumentalist_03,Musician-Instrumentalist,What answer is reached by this graph path: musician --kg:accordTo--> Employment?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'musician')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'employment')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Employment,wd:Q1339409,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q639669> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q1339409>)
+} LIMIT 1"
+Fruit_Produce_01,Fruit-Produce,What answer is reached by this graph path: fruit --kg:disseminate--> seed?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'fruit')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'seed')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",seed,wd:Q40763,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3314483> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q40763>)
+} LIMIT 1"
+Fruit_Produce_02,Fruit-Produce,What answer is reached by this graph path: fruit --kg:formFrom--> ovary?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'fruit')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'ovary')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",ovary,wd:Q9631,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3314483> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q9631>)
+} LIMIT 1"
+Fruit_Produce_03,Fruit-Produce,What answer is reached by this graph path: fruit --kg:beBy--> Angiosperms?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'fruit')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'angiosperms')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Angiosperms,wd:Q25314,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3314483> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q25314>)
+} LIMIT 1"
+House_Building_01,House-Building,What answer is reached by this graph path: building --kg:stand--> house?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'building')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'house')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",house,wd:Q3947,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q41176> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q3947>)
+} LIMIT 1"
+House_Building_02,House-Building,What answer is reached by this graph path: house --kg:be--> building?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'house')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'building')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",building,wd:Q41176,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3947> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q41176>)
+} LIMIT 1"
+House_Building_03,House-Building,What answer is reached by this graph path: house --kg:rangeIn--> Complexity?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'house')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'complexity')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Complexity,wd:Q5156624,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3947> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q5156624>)
+} LIMIT 1"
+River_Stream_01,River-Stream,What answer is reached by this graph path: river --kg:be--> stream?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'river')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'stream')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",stream,wd:Q47521,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q4022> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q47521>)
+} LIMIT 1"
+River_Stream_02,River-Stream,What answer is reached by this graph path: river --kg:beOf--> water?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'river')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'water')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",water,wd:Q283,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q4022> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q283>)
+} LIMIT 1"
+River_Stream_03,River-Stream,What answer is reached by this graph path: stream --kg:beOf--> water?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'stream')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'water')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",water,wd:Q283,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q47521> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q283>)
+} LIMIT 1"
+Mountain_Hill_01,Mountain-Hill,What answer is reached by this graph path: mountain --kg:be--> ELEVATED?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mountain')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'elevated')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",ELEVATED,wd:Q122825156,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q8502> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q122825156>)
+} LIMIT 1"
+Mountain_Hill_02,Mountain-Hill,What answer is reached by this graph path: mountain --kg:be--> portion?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mountain')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'portion')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",portion,wd:Q2105114,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q8502> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q2105114>)
+} LIMIT 1"
+Mountain_Hill_03,Mountain-Hill,What answer is reached by this graph path: mountain --kg:beOf--> Surface?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'mountain')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'surface')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Surface,wd:Q37497814,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q8502> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q37497814>)
+} LIMIT 1"
+Forest_Woodland_01,Forest-Woodland,What answer is reached by this graph path: Forest --kg:beOf--> 19?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'forest')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = '19')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",19,wd:Q39850,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q72946> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q39850>)
+} LIMIT 1"
+Forest_Woodland_02,Forest-Woodland,What answer is reached by this graph path: Forest --kg:beOf--> region?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'forest')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'region')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",region,wd:Q82794,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q72946> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q82794>)
+} LIMIT 1"
+Forest_Woodland_03,Forest-Woodland,What answer is reached by this graph path: Forest --kg:be--> Belgium?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'forest')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'belgium')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Belgium,wd:Q31,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q72946> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q31>)
+} LIMIT 1"
+Computer_Machine_01,Computer-Machine,What answer is reached by this graph path: computer --kg:be--> Machine?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'computer')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'machine')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Machine,wd:Q1760034,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q68> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q1760034>)
+} LIMIT 1"
+Computer_Machine_02,Computer-Machine,What answer is reached by this graph path: computer --kg:carryOf--> Logical?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'computer')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'logical')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Logical,wd:Q16592405,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q68> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q16592405>)
+} LIMIT 1"
+Computer_Machine_03,Computer-Machine,What answer is reached by this graph path: computer --kg:perform--> Wide?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'computer')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'wide')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Wide,wd:Q50374761,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q68> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q50374761>)
+} LIMIT 1"
+Picture_Image_01,Picture-Image,What answer is reached by this graph path: image --kg:draw--> photograph?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'image')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'photograph')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",photograph,wd:Q125191,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q478798> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q125191>)
+} LIMIT 1"
+Picture_Image_02,Picture-Image,What answer is reached by this graph path: photograph --kg:be--> image?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'photograph')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'image')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",image,wd:Q478798,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q125191> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q478798>)
+} LIMIT 1"
+Picture_Image_03,Picture-Image,What answer is reached by this graph path: photograph --kg:create--> image?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'photograph')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'image')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",image,wd:Q478798,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q125191> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q478798>)
+} LIMIT 1"
+Book_Publication_01,Book-Publication,What answer is reached by this graph path: book --kg:writeOf--> Substantial?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'book')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'substantial')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Substantial,wd:Q16218846,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q571> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q16218846>)
+} LIMIT 1"
+Book_Publication_02,Book-Publication,What answer is reached by this graph path: book --kg:distributeIn--> Forms?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'book')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'forms')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Forms,wd:Q140208944,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q571> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q140208944>)
+} LIMIT 1"
+Book_Publication_03,Book-Publication,What answer is reached by this graph path: book --kg:distributeAs--> Printed Books?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'book')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'printed books')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Printed Books,wd:Q106476310,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q571> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q106476310>)
+} LIMIT 1"
+Cat_Feline_01,Cat-Feline,What answer is reached by this graph path: Catalan --kg:be--> Romance?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'catalan')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'romance')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Romance,wd:Q19814,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q7026> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q19814>)
+} LIMIT 1"
+Cat_Feline_02,Cat-Feline,What answer is reached by this graph path: Catalan --kg:be--> language?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'catalan')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'language')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",language,wd:Q34770,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q7026> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q34770>)
+} LIMIT 1"
+Cat_Feline_03,Cat-Feline,What answer is reached by this graph path: Catalan --kg:be--> official?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'catalan')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'official')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",official,wd:Q599151,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q7026> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q599151>)
+} LIMIT 1"
+City_Municipality_01,City-Municipality,What answer is reached by this graph path: city --kg:be--> human?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'city')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'human')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",human,wd:Q5,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q515> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q5>)
+} LIMIT 1"
+City_Municipality_02,City-Municipality,What answer is reached by this graph path: city --kg:beOf--> Substantial?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'city')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'substantial')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Substantial,wd:Q16218846,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q515> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q16218846>)
+} LIMIT 1"
+City_Municipality_03,City-Municipality,What answer is reached by this graph path: city --kg:beOf--> size?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'city')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'size')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",size,wd:Q322481,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q515> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q322481>)
+} LIMIT 1"
+Country_Nation_01,Country-Nation,What answer is reached by this graph path: country music --kg:knowAs--> Simply?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'country music')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'simply')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Simply,wd:Q6296982,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q83440> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q6296982>)
+} LIMIT 1"
+Country_Nation_02,Country-Nation,What answer is reached by this graph path: country music --kg:be--> music genre?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'country music')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'music genre')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",music genre,wd:Q188451,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q83440> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q188451>)
+} LIMIT 1"
+Country_Nation_03,Country-Nation,What answer is reached by this graph path: country music --kg:originateFrom--> United States?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'country music')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'united states')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",United States,wd:Q30,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q83440> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q30>)
+} LIMIT 1"
+Lake_Pond_01,Lake-Pond,What answer is reached by this graph path: artificial pond --kg:beThan--> lake?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'artificial pond')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'lake')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",lake,wd:Q23397,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3253281> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q23397>)
+} LIMIT 1"
+Lake_Pond_02,Lake-Pond,What answer is reached by this graph path: artificial pond --kg:distinguishOf--> lake?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'artificial pond')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'lake')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",lake,wd:Q23397,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3253281> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q23397>)
+} LIMIT 1"
+Lake_Pond_03,Lake-Pond,What answer is reached by this graph path: lake --kg:be--> Naturally?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'lake')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'naturally')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Naturally,wd:Q12581627,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q23397> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q12581627>)
+} LIMIT 1"
+Author_Novelist_01,Author-Novelist,What answer is reached by this graph path: novelist --kg:be--> writer?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'novelist')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'writer')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",writer,wd:Q36180,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q6625963> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q36180>)
+} LIMIT 1"
+Author_Novelist_02,Author-Novelist,What answer is reached by this graph path: writer --kg:writeIn--> writing?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'writer')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'writing')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",writing,wd:Q37260,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q36180> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q37260>)
+} LIMIT 1"
+Author_Novelist_03,Author-Novelist,What answer is reached by this graph path: writer --kg:writeIn--> Styles?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'writer')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'styles')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Styles,wd:Q111072692,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q36180> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q111072692>)
+} LIMIT 1"
+Actor_Performer_01,Actor-Performer,What answer is reached by this graph path: actor --kg:portray--> character?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'actor')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'character')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",character,wd:Q95074,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q33999> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q95074>)
+} LIMIT 1"
+Actor_Performer_02,Actor-Performer,What answer is reached by this graph path: performing artist --kg:beAs--> music?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'performing artist')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'music')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",music,wd:Q638,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q713200> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q638>)
+} LIMIT 1"
+Actor_Performer_03,Actor-Performer,What answer is reached by this graph path: performing artist --kg:be--> dance?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'performing artist')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'dance')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",dance,wd:Q11639,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q713200> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q11639>)
+} LIMIT 1"
+University_College_01,University-College,What answer is reached by this graph path: college --kg:beOf--> university?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'college')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'university')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",university,wd:Q3918,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q189004> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q3918>)
+} LIMIT 1"
+University_College_02,University-College,What answer is reached by this graph path: university --kg:beOf--> Tertiary?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'university')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'tertiary')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Tertiary,wd:Q188645,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3918> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q188645>)
+} LIMIT 1"
+University_College_03,University-College,What answer is reached by this graph path: university --kg:beOf--> education?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'university')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'education')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",education,wd:Q8434,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3918> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q8434>)
+} LIMIT 1"
+Painting_Artwork_01,Painting-Artwork,What answer is reached by this graph path: work of art --kg:tangible--> painting?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'work of art')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'painting')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",painting,wd:Q3305213,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q838948> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q3305213>)
+} LIMIT 1"
+Painting_Artwork_02,Painting-Artwork,What answer is reached by this graph path: painting --kg:be--> Art?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'painting')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'art')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",Art,wd:Q8227356,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3305213> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q8227356>)
+} LIMIT 1"
+Painting_Artwork_03,Painting-Artwork,What answer is reached by this graph path: painting --kg:apply--> paint?,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?answer WHERE {
+  ?subject rdfs:label ?subjectLabel .
+  FILTER(LCASE(REPLACE(STR(?subjectLabel), '\\s+', ' ')) = 'painting')
+  ?answerEntity rdfs:label ?answerLabel .
+  FILTER(LCASE(REPLACE(STR(?answerLabel), '\\s+', ' ')) = 'paint')
+  {
+    ?subject ?predicate1 ?answerEntity .
+  }
+  UNION
+  {
+    ?subject ?predicate1 ?intermediate .
+    ?intermediate ?predicate2 ?answerEntity .
+  }
+  BIND(STR(?answerLabel) AS ?answer)
+} LIMIT 1",paint,wd:Q174219,"SELECT ?answer WHERE {
+  <http://www.wikidata.org/entity/Q3305213> ?predicate1 ?answer .
+  FILTER(?answer = <http://www.wikidata.org/entity/Q174219>)
+} LIMIT 1"

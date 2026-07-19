@@ -3,7 +3,8 @@
 
 Usage:
     python generate/src/main.py Mango
-    python generate/src/main.py Mango --lang pt --csv descriptions.csv
+    python generate/src/main.py car automobile
+    python generate/src/main.py Mango --csv descriptions.csv
 """
 
 import argparse
@@ -18,17 +19,19 @@ from generate_pipeline.io.output_writers import (
     build_rdf,
     build_text_triples,
     combine_rdf_graphs,
+    csv_has_identifier,
     dedupe_relations,
     prune_redundant_relations,
 )
 from generate_pipeline.clients.wikidata_client import (
     fetch_entity,
-    fetch_instance_of,
     fetch_labels,
     find_entity_ids_by_name,
-    instance_of_ids,
 )
 from generate_pipeline.clients.wikipedia_client import fetch_wikipedia_phrases
+
+
+LANGUAGE = "en"
 
 
 def clean_wikipedia_text(text: str) -> str:
@@ -73,10 +76,31 @@ def wikipedia_title(entity: dict, lang: str) -> str:
     return sitelink.get("title", "")
 
 
-def entity_identifier(name: str) -> str:
-    """Return a display identifier based on the requested entity name."""
-    stripped = name.strip()
-    return stripped[:1].upper() + stripped[1:] if stripped else stripped
+def entity_identifier(names: list[str]) -> str:
+    """Return a display identifier, joining two requested names with ``-``."""
+    normalized = []
+    for name in names:
+        stripped = name.strip()
+        normalized.append(
+            stripped[:1].upper() + stripped[1:] if stripped else stripped
+        )
+    return "-".join(normalized)
+
+
+def find_candidate_ids(names: list[str], lang: str) -> list[str]:
+    """Resolve candidates for one ambiguous name or the first match of two names."""
+    if len(names) == 1:
+        return find_entity_ids_by_name(names[0], lang, limit=10)
+
+    entity_ids = []
+    for name in names:
+        matches = find_entity_ids_by_name(name, lang, limit=1)
+        if not matches:
+            raise RuntimeError(f"no entity found for '{name}'")
+        entity_ids.append(matches[0])
+    if entity_ids[0] == entity_ids[1]:
+        raise RuntimeError("the two names resolved to the same Wikidata entity")
+    return entity_ids
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -84,27 +108,44 @@ def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Fetch a Wikidata entity and append its description and RDF graph."
     )
-    parser.add_argument("name", help="Wikidata entity name, e.g. Mango")
-    parser.add_argument("--lang", default="en", help="Language code (default: en)")
+    parser.add_argument(
+        "names",
+        nargs="+",
+        help="One ambiguous entity name, or two names whose first matches are used",
+    )
     parser.add_argument(
         "--csv",
-        default="wikidata_description_rdf.csv",
-        help="CSV file to append to (default: wikidata_description_rdf.csv)",
+        default="data/wikidata_description_rdf.csv",
+        help="CSV file to append to (default: data/wikidata_description_rdf.csv)",
     )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_arguments()
-    name = args.name.strip()
-    if not name:
-        print("Error: name cannot be empty", file=sys.stderr)
+    if len(args.names) not in {1, 2}:
+        print("Error: provide one or two entity names", file=sys.stderr)
+        return 2
+    names = [name.strip() for name in args.names]
+    if any(not name for name in names):
+        print("Error: entity names cannot be empty", file=sys.stderr)
         return 2
 
+    identifier = entity_identifier(names)
     try:
-        entity_ids = find_entity_ids_by_name(name, args.lang, limit=10)
+        if csv_has_identifier(args.csv, identifier):
+            print(
+                f"Skipped {identifier}: identifier already exists in {args.csv}."
+            )
+            return 0
+    except OSError as exc:
+        print(f"Error reading output CSV: {exc}", file=sys.stderr)
+        return 1
+
+    try:
+        entity_ids = find_candidate_ids(names, LANGUAGE)
         if not entity_ids:
-            print(f"Error: no entity found for '{name}'.", file=sys.stderr)
+            print(f"Error: no entity found for '{names[0]}'.", file=sys.stderr)
             return 1
 
         entity_phrases = []
@@ -114,9 +155,9 @@ def main() -> int:
         text_triples = []
         extracted_entity_count = 0
         for entity_id in entity_ids:
-            entity = fetch_entity(entity_id, args.lang)
+            entity = fetch_entity(entity_id, LANGUAGE)
             phrases = fetch_wikipedia_phrases(
-                wikipedia_title(entity, args.lang), args.lang, limit=2
+                wikipedia_title(entity, LANGUAGE), LANGUAGE, limit=2
             )
             phrases = clean_wikipedia_phrases(phrases)
             selected_phrases = []
@@ -136,34 +177,27 @@ def main() -> int:
             entity_phrases.extend(selected_phrases)
             relation_text = " ".join(selected_phrases)
             related_ids, relations = extract_entities_and_relations(
-                relation_text, args.lang, entity_id
+                relation_text, LANGUAGE, entity_id
             )
             relations = dedupe_relations(relations)
-            labels = fetch_labels(related_ids, args.lang)
-            entity_label = entity.get("labels", {}).get(args.lang, {}).get("value", "")
+            labels = fetch_labels(related_ids, LANGUAGE)
+            entity_label = entity.get("labels", {}).get(LANGUAGE, {}).get("value", "")
             label_by_id = {**labels}
             if entity_label:
                 label_by_id[entity_id] = entity_label
             relations = prune_redundant_relations(label_by_id, relations)
             related_ids = {object_id for _subject_id, _predicate, object_id in relations}
-            type_ids_by_entity = fetch_instance_of(related_ids)
-            type_ids_by_entity[entity_id] = instance_of_ids(entity)
-            class_ids = {
-                type_id
-                for type_ids in type_ids_by_entity.values()
-                for type_id in type_ids
-            }
-            class_labels = fetch_labels(class_ids, args.lang)
+            # Materialize the readable triples before RDF serialization.  The
+            # RDF is intentionally limited to relationships extracted from the
+            # Wikipedia text; Wikidata P31/type triples are not added.
             text_triples.extend(build_text_triples(label_by_id, relations))
             rdf_graphs.append(
                 build_rdf(
                     entity,
-                    args.lang,
+                    LANGUAGE,
                     labels,
                     related_ids,
                     relations,
-                    type_ids_by_entity,
-                    class_labels,
                 )
             )
             extracted_entity_count += len(related_ids)
@@ -173,7 +207,7 @@ def main() -> int:
 
         if selected_entity_count != 2:
             print(
-                f"Error: '{name}' must resolve to two different entities with 2 Wikipedia phrases each.",
+                f"Error: '{identifier}' must resolve to two different entities with 2 Wikipedia phrases each.",
                 file=sys.stderr,
             )
             return 1
@@ -182,7 +216,7 @@ def main() -> int:
         rdf_graph = combine_rdf_graphs(rdf_graphs)
         append_csv(
             args.csv,
-            entity_identifier(name),
+            identifier,
             sentence_description,
             rdf_graph,
             text_triples,
@@ -195,7 +229,7 @@ def main() -> int:
         return 1
 
     print(
-        f"Appended 2 matches for {name} ({args.lang}) to {args.csv} "
+        f"Appended 2 matches for {identifier} ({LANGUAGE}) to {args.csv} "
         f"with 4 Wikipedia phrases and {extracted_entity_count} extracted entities."
     )
     return 0

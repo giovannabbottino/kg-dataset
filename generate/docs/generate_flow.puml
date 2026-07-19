@@ -15,9 +15,9 @@ while (Need 2 entities with 2 clean phrases each?) is (yes)
     :Extract candidate entity phrases;
     :Resolve phrases to Wikidata item IDs;
     :Find nearby verb predicates;
-    :Fetch labels and instance-of classes;
-    :Build readable triples;
-    :Build Turtle RDF graph;
+    :Fetch labels;
+    :Build readable triples from extracted relations;
+    :Build Turtle RDF only from those triples;
   endif
 endwhile (no)
 

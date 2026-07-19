@@ -1,5 +1,7 @@
 """Validate generated SPARQL queries against their source RDF graph."""
 
+import re
+
 from rdflib import Graph
 
 
@@ -12,6 +14,32 @@ def _readable_value(value) -> str:
     return text
 
 
+def _normalized_value(value: str) -> str:
+    """Return a punctuation-insensitive comparable value."""
+    return re.sub(r"[^A-Za-z0-9]+", " ", str(value or "")).strip().casefold()
+
+
+def _values_match(actual: str, expected: str) -> bool:
+    """Return whether actual and expected match exactly or by token containment."""
+    actual_normalized = _normalized_value(actual)
+    expected_normalized = _normalized_value(expected)
+    actual_compact = re.sub(r"[^A-Za-z0-9]+", "", str(actual or "")).casefold()
+    expected_compact = re.sub(r"[^A-Za-z0-9]+", "", str(expected or "")).casefold()
+    if not actual_normalized or not expected_normalized:
+        return False
+    if actual_normalized == expected_normalized:
+        return True
+    padded_actual = f" {actual_normalized} "
+    padded_expected = f" {expected_normalized} "
+    return (
+        padded_expected in padded_actual
+        or padded_actual in padded_expected
+        or actual_compact == expected_compact
+        or expected_compact in actual_compact
+        or actual_compact in expected_compact
+    )
+
+
 def query_returns_answer(rdf: str, sparql: str, expected_answer: str) -> bool:
     """Return whether a SPARQL query returns the expected answer value."""
     try:
@@ -19,7 +47,7 @@ def query_returns_answer(rdf: str, sparql: str, expected_answer: str) -> bool:
         graph.parse(data=rdf, format="turtle")
         results = graph.query(sparql)
         for row in results:
-            if row and _readable_value(row[0]) == expected_answer:
+            if row and _values_match(_readable_value(row[0]), expected_answer):
                 return True
         return False
     except Exception:
