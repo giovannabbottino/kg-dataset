@@ -10,7 +10,6 @@ from enrich_pipeline.models import (
 )
 
 
-ITEMS_PER_ROW = 2
 PREFIX_BLOCK = """PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -103,7 +102,7 @@ def select_candidates(
     labels: dict[str, Label],
     description: str,
     preferred_sources: set[str],
-    limit: int = ITEMS_PER_ROW,
+    limit: int,
 ) -> list[TraversalCandidate]:
     """Select ranked candidates with distinct source entities."""
     ranked = sorted(
@@ -229,9 +228,7 @@ def predicate_answer_query(source: str, labels: dict[str, Label]) -> str:
     )
 
 
-def graph_scoped_id_query(
-    candidate: TraversalCandidate, labels: dict[str, Label]
-) -> str:
+def graph_scoped_id_query(candidate: TraversalCandidate) -> str:
     """Return an exact target ID directly linked to the resolved subject."""
     target_iri = sparql_iri_from_prefixed(candidate.target)
     if target_iri is None:
@@ -264,7 +261,7 @@ def build_graph_question(
     source_name = entity_name(candidate.source, labels)
     target_name = entity_name(candidate.target, labels)
     id_sparql = (
-        graph_scoped_id_query(candidate, labels)
+        graph_scoped_id_query(candidate)
         if candidate.supports_id_query
         else ""
     )
@@ -301,7 +298,7 @@ def build_graph_traversal_items(
     triples: list[Triple],
     description: str = "",
 ) -> list[GraphQuestion]:
-    """Create up to ``ITEMS_PER_ROW`` direct-link questions."""
+    """Create an entity question and a predicate question for one direct link."""
     if not triples:
         return []
     preferred_sources = root_entities or infer_root_entities(triples)

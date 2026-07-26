@@ -8,8 +8,9 @@ if (Header contains rdf?) then (yes)
   while (Rows remain?) is (yes)
     :Parse project Turtle subset;
     :Collect labels, roots, and triples;
-    :Select up to 2 different source entities;
-    :Generate label-based question and SELECT SPARQL;
+    :Select one source entity;
+    :Resolve it by canonical ID or structural centrality;
+    :Generate entity and predicate questions with SELECT SPARQL;
     :Generate directed ID question and SPARQL when available;
     :Execute and validate label SPARQL with RDFLib;
     :Execute and validate ID SPARQL with RDFLib when available;
