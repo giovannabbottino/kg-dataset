@@ -21,7 +21,8 @@ while (Need 2 entities with 2 clean phrases each?) is (yes)
   endif
 endwhile (no)
 
-:Combine descriptions and RDF graphs;
-:Append identifier, description, rdf, triples row to CSV;
+:Combine each text's phrases into one description;
+:Append one identifier, description, rdf, triples row per text;
+:Merge _01 and _02 into one base-identifier graph row;
 stop
 @enduml

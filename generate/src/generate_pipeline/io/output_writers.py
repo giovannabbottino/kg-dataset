@@ -2,8 +2,8 @@
 
 import csv
 import json
-import os
 import re
+from pathlib import Path
 
 
 RDF_PREFIXES = (
@@ -11,15 +11,19 @@ RDF_PREFIXES = (
     "@prefix wd: <http://www.wikidata.org/entity/> .\n"
     "@prefix kg: <https://example.org/wikidata-description/> .\n\n"
 )
+CSV_FIELDNAMES = ["identifier", "description", "rdf", "triples"]
+REQUIRED_CSV_COLUMNS = ["description", "rdf"]
+UPGRADABLE_CSV_COLUMNS = ["identifier", "triples"]
 
 
-def csv_has_identifier(csv_path: str, identifier: str) -> bool:
+def csv_has_identifier(csv_path: str | Path, identifier: str) -> bool:
     """Return whether an identifier already exists in the output CSV."""
-    if not os.path.exists(csv_path) or os.path.getsize(csv_path) == 0:
+    path = Path(csv_path)
+    if not path.exists() or path.stat().st_size == 0:
         return False
 
     expected = identifier.strip().casefold()
-    with open(csv_path, newline="", encoding="utf-8-sig") as csv_file:
+    with path.open(newline="", encoding="utf-8-sig") as csv_file:
         reader = csv.DictReader(csv_file)
         if not reader.fieldnames or "identifier" not in reader.fieldnames:
             return False
@@ -27,6 +31,7 @@ def csv_has_identifier(csv_path: str, identifier: str) -> bool:
             (row.get("identifier") or "").strip().casefold() == expected
             for row in reader
         )
+
 
 def triples_json(triples: list[tuple[str, str, str]]) -> str:
     """Return text-extracted triples as a JSON list for CSV storage."""
@@ -61,9 +66,7 @@ def dedupe_triples(triples: list[tuple[str, str, str]]) -> list[tuple[str, str, 
     return sorted(unique.values(), key=lambda triple: tuple(value.casefold() for value in triple))
 
 
-def _object_is_redundant(
-    object_value: str, object_values: list[str]
-) -> bool:
+def _object_is_redundant(object_value: str, object_values: list[str]) -> bool:
     """Return whether an object is less useful than another object in the group."""
     normalized = _normalize_object_value(object_value)
     if not normalized:
@@ -116,31 +119,46 @@ def prune_redundant_relations(
     grouped: dict[tuple[str, str], list[tuple[str, str, str]]] = {}
     for subject_id, predicate, object_id in dedupe_relations(relations):
         subject = label_by_id.get(subject_id, subject_id)
-        grouped.setdefault((subject, predicate), []).append((subject_id, predicate, object_id))
+        grouped.setdefault((subject, predicate), []).append(
+            (subject_id, predicate, object_id)
+        )
 
     pruned = []
     for group_relations in grouped.values():
-        objects = [label_by_id.get(object_id, object_id) for _subject_id, _predicate, object_id in group_relations]
+        objects = [
+            label_by_id.get(object_id, object_id)
+            for _subject_id, _predicate, object_id in group_relations
+        ]
         pruned.extend(
             relation
             for relation in group_relations
-            if not _object_is_redundant(label_by_id.get(relation[2], relation[2]), objects)
+            if not _object_is_redundant(
+                label_by_id.get(relation[2], relation[2]), objects
+            )
         )
     return sorted(pruned)
 
 
+def _read_csv_header(csv_path: Path) -> list[str]:
+    """Read and normalize an existing CSV header."""
+    with csv_path.open(newline="", encoding="utf-8-sig") as csv_file:
+        return [
+            column.strip().lstrip("\ufeff") for column in next(csv.reader(csv_file), [])
+        ]
 
 
-def _upgrade_csv_header(csv_path: str, header: list[str], column: str) -> list[str]:
+def _upgrade_csv_header(
+    csv_path: Path, header: list[str], column: str
+) -> list[str]:
     """Add a column to an existing CSV while preserving current rows."""
     if column in header:
         return header
 
     fieldnames = header + [column]
-    with open(csv_path, newline="", encoding="utf-8-sig") as csv_file:
+    with csv_path.open(newline="", encoding="utf-8-sig") as csv_file:
         rows = list(csv.DictReader(csv_file))
 
-    with open(csv_path, "w", newline="", encoding="utf-8") as csv_file:
+    with csv_path.open("w", newline="", encoding="utf-8") as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
         writer.writeheader()
         for row in rows:
@@ -149,47 +167,63 @@ def _upgrade_csv_header(csv_path: str, header: list[str], column: str) -> list[s
     return fieldnames
 
 
+def _existing_csv_fieldnames(csv_path: Path) -> list[str]:
+    """Validate and upgrade an existing output CSV schema."""
+    fieldnames = _read_csv_header(csv_path)
+    missing = [
+        column for column in REQUIRED_CSV_COLUMNS if column not in fieldnames
+    ]
+    if missing:
+        raise ValueError(
+            f"CSV '{csv_path}' must have the columns: {', '.join(missing)}"
+        )
+    for column in UPGRADABLE_CSV_COLUMNS:
+        fieldnames = _upgrade_csv_header(csv_path, fieldnames, column)
+    return fieldnames
+
+
+def _csv_output_row(
+    fieldnames: list[str],
+    identifier: str,
+    description: str,
+    rdf_graph: str,
+    triples: list[tuple[str, str, str]],
+) -> dict[str, str]:
+    """Build a row while preserving any existing custom columns."""
+    row = {fieldname: "" for fieldname in fieldnames}
+    row.update(
+        {
+            "identifier": identifier,
+            "description": description,
+            "rdf": rdf_graph,
+            "triples": triples_json(triples),
+        }
+    )
+    return row
+
+
 def append_csv(
-    csv_path: str,
+    csv_path: str | Path,
     identifier: str,
     description: str,
     rdf_graph: str,
     triples: list[tuple[str, str, str]],
 ) -> None:
     """Append a description, Turtle graph, and explicit triple list to a CSV file."""
-    parent = os.path.dirname(os.path.abspath(csv_path))
-    os.makedirs(parent, exist_ok=True)
-    write_header = not os.path.exists(csv_path) or os.path.getsize(csv_path) == 0
-    expected_header = ["identifier", "description", "rdf", "triples"]
-    fieldnames = expected_header
-    if not write_header:
-        with open(csv_path, newline="", encoding="utf-8-sig") as csv_file:
-            header = next(csv.reader(csv_file), [])
-        header = [column.strip().lstrip("\ufeff") for column in header]
-        required_columns = ["description", "rdf"]
-        missing_columns = [column for column in required_columns if column not in header]
-        if missing_columns:
-            raise ValueError(
-                f"CSV '{csv_path}' must have the columns: {', '.join(required_columns)}"
-            )
-        fieldnames = header
-        for column in ("identifier", "triples"):
-            fieldnames = _upgrade_csv_header(csv_path, fieldnames, column)
+    path = Path(csv_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    write_header = not path.exists() or path.stat().st_size == 0
+    fieldnames = CSV_FIELDNAMES if write_header else _existing_csv_fieldnames(path)
 
-    with open(csv_path, "a", newline="", encoding="utf-8") as csv_file:
+    with path.open("a", newline="", encoding="utf-8") as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
         if write_header:
             writer.writeheader()
-        row = {fieldname: "" for fieldname in fieldnames}
-        row.update(
-            {
-                "identifier": identifier,
-                "description": description,
-                "rdf": rdf_graph,
-                "triples": triples_json(triples),
-            }
+        writer.writerow(
+            _csv_output_row(
+                fieldnames, identifier, description, rdf_graph, triples
+            )
         )
-        writer.writerow(row)
 
 
 def _turtle_literal(value: str) -> str:

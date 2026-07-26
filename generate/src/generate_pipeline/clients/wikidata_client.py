@@ -9,7 +9,6 @@ import urllib.parse
 import urllib.request
 import zlib
 from collections import deque
-from typing import Optional
 
 
 API_URL = "https://www.wikidata.org/w/api.php"
@@ -151,21 +150,21 @@ def find_entity_ids_by_name(name: str, lang: str, limit: int = 2) -> list[str]:
     return [result["id"] for result in results if result.get("id")]
 
 
-def find_entity_id_by_name(name: str, lang: str) -> Optional[str]:
+def find_entity_id_by_name(name: str, lang: str) -> str | None:
     """Return the best match, for callers that resolve one description token."""
     entity_ids = find_entity_ids_by_name(name, lang, limit=1)
     return entity_ids[0] if entity_ids else None
 
 
 def fetch_entity(entity_id: str, lang: str) -> dict:
-    """Fetch an entity's label, description, claims, and Wikipedia sitelink."""
+    """Fetch the label and Wikipedia sitelink needed by the generator."""
     data = _fetch_json(
         {
             "action": "wbgetentities",
             "format": "json",
             "ids": entity_id,
             "languages": lang,
-            "props": "labels|descriptions|claims|sitelinks",
+            "props": "labels|sitelinks",
             "sitefilter": f"{lang}wiki",
         }
     )
@@ -173,42 +172,6 @@ def fetch_entity(entity_id: str, lang: str) -> dict:
     if not entity or "missing" in entity:
         raise RuntimeError(f"entity '{entity_id}' was not found")
     return entity
-
-
-def instance_of_ids(entity: dict) -> set[str]:
-    """Return Wikidata class IDs from an entity's P31 instance-of claims."""
-    class_ids = set()
-    for claim in entity.get("claims", {}).get("P31", []):
-        datavalue = (
-            claim.get("mainsnak", {})
-            .get("datavalue", {})
-            .get("value", {})
-        )
-        entity_id = datavalue.get("id")
-        if entity_id:
-            class_ids.add(entity_id)
-    return class_ids
-
-
-def fetch_instance_of(entity_ids: set[str]) -> dict[str, set[str]]:
-    """Fetch P31 instance-of class IDs for a set of Wikidata entities."""
-    if not entity_ids:
-        return {}
-
-    data = _fetch_json(
-        {
-            "action": "wbgetentities",
-            "format": "json",
-            "ids": "|".join(sorted(entity_ids)),
-            "props": "claims",
-        }
-    )
-    return {
-        entity_id: instance_of_ids(entity)
-        for entity_id, entity in data.get("entities", {}).items()
-        if "missing" not in entity
-    }
-
 
 def fetch_labels(entity_ids: set[str], lang: str) -> dict[str, str]:
     """Fetch labels for a set of Wikidata item IDs."""
