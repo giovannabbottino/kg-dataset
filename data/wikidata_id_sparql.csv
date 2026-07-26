@@ -1,0 +1,3240 @@
+identifier,description_identifier,question,answer_id,id_sparql
+Jaguar_01_01,Jaguar_01,is the entity Jaguar Cars directly linked to sports car?,wd:Q274586,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q30055>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q274586> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Jaguar_02_01,Jaguar_02,is the entity Jaguar directly linked to 24?,wd:Q79988,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q2732887>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q79988> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Mango_01_01,Mango_01,is the entity Mango directly linked to Italian?,wd:Q652,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q1054564>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q652> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Mango_02_01,Mango_02,is the entity Mango directly linked to trade?,wd:Q601401,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q136503>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q601401> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Apple_01_01,Apple_01,is the entity Apple Inc. directly linked to technology?,wd:Q11016,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q312>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q11016> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Apple_02_01,Apple_02,is the entity Apple Records directly linked to Record?,wd:Q1458581,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q213710>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q1458581> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Orange_01_01,Orange_01,is the entity Orange directly linked to Vaucluse?,wd:Q12792,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q187796>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q12792> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Orange_02_01,Orange_02,is the entity Orange directly linked to city?,wd:Q515,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q982388>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q515> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Java_01_01,Java_01,is the entity Java directly linked to High Level?,wd:Q430949,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q251>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q430949> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Java_02_01,Java_02,is the entity JSON directly linked to file format?,wd:Q235557,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q2063>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q235557> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Python_01_01,Python_01,is the entity Python directly linked to High Level?,wd:Q430949,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q28865>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q430949> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Python_02_01,Python_02,is the entity Python directly linked to genus?,wd:Q34740,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q271218>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q34740> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Mercury_01_01,Mercury_01,is the entity Mercury directly linked to manufacturer?,wd:Q13235160,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q613883>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q13235160> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Mercury_02_01,Mercury_02,is the entity Mercury directly linked to Albertville?,wd:Q159469,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q1231263>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q159469> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Saturn_01_01,Saturn_01,is the entity Saturn directly linked to Roman?,wd:Q933726,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q134388>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q933726> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Saturn_02_01,Saturn_02,is the entity Saturn directly linked to Sixth planet?,wd:Q7533215,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q193>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q7533215> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Amazon_01_01,Amazon_01,is the entity Amazon directly linked to technology?,wd:Q11016,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q3884>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q11016> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Amazon_02_01,Amazon_02,is the entity Amazonas directly linked to Brazil?,wd:Q155,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q40040>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q155> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Seal_01_01,Seal_01,is the entity Seal directly linked to Singer?,wd:Q1260201,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q218091>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q1260201> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Seal_02_01,Seal_02,is the entity SeaLifeBase directly linked to Global Online?,wd:Q17023689,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q7439813>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q17023689> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Crane_01_01,Crane_01,is the entity Crane directly linked to derivative?,wd:Q29175,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q16865841>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q29175> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Crane_02_01,Crane_02,is the entity crane directly linked to Machine?,wd:Q1760034,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q178692>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q1760034> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Bank_01_01,Bank_01,is the entity bank directly linked to Demand?,wd:Q37500962,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q22687>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q37500962> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Bank_02_01,Bank_02,is the entity Bank directly linked to Floyd?,wd:Q16275854,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q16479798>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q16275854> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Bat_01_01,Bat_01,is the entity Bath directly linked to city?,wd:Q515,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q22889>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q515> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Bat_02_01,Bat_02,is the entity Baton Rouge directly linked to city?,wd:Q515,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q28218>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q515> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Date_01_01,Date_01,is the entity calendar date directly linked to reference?,wd:Q121769,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q205892>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q121769> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Date_02_01,Date_02,is the entity date of establishment directly linked to Anniversaries?,wd:Q19057770,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q3406134>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q19057770> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Spring_01_01,Spring_01,is the entity spring directly linked to groundwater?,wd:Q161598,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q124714>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q161598> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Spring_02_01,Spring_02,is the entity Spring directly linked to Amos?,wd:Q18216060,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q37562822>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q18216060> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Turkey_01_01,Turkey_01,is the entity Turkey directly linked to Anatolia?,wd:Q20678374,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q43>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q20678374> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Turkey_02_01,Turkey_02,is the entity UTC+03:00 directly linked to UTC?,wd:Q1536,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q6760>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q1536> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Phoenix_01_01,Phoenix_01,is the entity Phoenix directly linked to Populous?,wd:Q1082849,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q16556>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q1082849> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Phoenix_02_01,Phoenix_02,is the entity Phoenix directly linked to Minor?,wd:Q16877187,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q10441>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q16877187> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Delta_01_01,Delta_01,is the entity Delta State directly linked to South South?,wd:Q30599787,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q503910>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q30599787> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Delta_02_01,Delta_02,is the entity Delta directly linked to genus?,wd:Q34740,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q2082751>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q34740> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Mustang_01_01,Mustang_01,is the entity North American P-51 Mustang directly linked to Long Range?,wd:Q80183430,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q192075>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q80183430> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Shell_01_01,Shell_01,is the entity Shell directly linked to London?,wd:Q84,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q154950>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q84> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Shell_02_01,Shell_02,is the entity seashell directly linked to Simply?,wd:Q6296982,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q213096>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q6296982> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Car_Automobile_01_01,Car-Automobile_01,is the entity Carina directly linked to ConStellation?,wd:Q4637694,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q10470>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q4637694> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Car_Automobile_02_01,Car-Automobile_02,is the entity car directly linked to vehicle?,wd:Q42889,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q1420>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q42889> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Boat_Vessel_01_01,Boat-Vessel_01,is the entity boat directly linked to watercraft?,wd:Q1229765,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q35872>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q1229765> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Boat_Vessel_02_01,Boat-Vessel_02,is the entity ship directly linked to watercraft?,wd:Q1229765,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q11446>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q1229765> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Singer_Vocalist_01_01,Singer-Vocalist_01,is the entity Singer directly linked to family name?,wd:Q101352,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q1260201>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q101352> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Singer_Vocalist_02_01,Singer-Vocalist_02,is the entity singer directly linked to Art?,wd:Q8227356,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q177220>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q8227356> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Musician_Instrumentalist_01_01,Musician-Instrumentalist_01,is the entity musician directly linked to music?,wd:Q638,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q639669>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q638> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Musician_Instrumentalist_02_01,Musician-Instrumentalist_02,is the entity instrumentalist directly linked to Sound?,wd:Q2339793,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q1278335>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q2339793> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Fruit_Produce_01_01,Fruit-Produce_01,is the entity fruit directly linked to seed?,wd:Q40763,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q3314483>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q40763> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Fruit_Produce_02_01,Fruit-Produce_02,is the entity economic production directly linked to process?,wd:Q3249551,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q739302>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q3249551> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+House_Building_01_01,House-Building_01,is the entity house directly linked to building?,wd:Q41176,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q3947>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q41176> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+House_Building_02_01,House-Building_02,is the entity building directly linked to roof?,wd:Q83180,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q41176>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q83180> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+River_Stream_01_01,River-Stream_01,is the entity river directly linked to stream?,wd:Q47521,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q4022>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q47521> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+River_Stream_02_01,River-Stream_02,is the entity stream directly linked to Surface?,wd:Q37497814,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q47521>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q37497814> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Mountain_Hill_01_01,Mountain-Hill_01,is the entity mountain directly linked to ELEVATED?,wd:Q122825156,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q8502>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q122825156> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Mountain_Hill_02_01,Mountain-Hill_02,is the entity Hill directly linked to English?,wd:Q1860,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q973239>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q1860> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Lake_Pond_01_01,Lake-Pond_01,is the entity lake directly linked to Naturally?,wd:Q12581627,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q23397>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q12581627> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Lake_Pond_02_01,Lake-Pond_02,is the entity artificial pond directly linked to water?,wd:Q283,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q3253281>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q283> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Forest_Woodland_01_01,Forest-Woodland_01,is the entity Forest directly linked to 19?,wd:Q39850,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q72946>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q39850> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Forest_Woodland_02_01,Forest-Woodland_02,is the entity Woodland directly linked to hamlet?,wd:Q5084,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q2615722>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q5084> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Author_Novelist_01_01,Author-Novelist_01,is the entity writer directly linked to writing?,wd:Q37260,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q36180>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q37260> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Author_Novelist_02_01,Author-Novelist_02,is the entity novelist directly linked to writer?,wd:Q36180,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q6625963>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q36180> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Computer_Machine_01_01,Computer-Machine_01,is the entity computer directly linked to Machine?,wd:Q1760034,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q68>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q1760034> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Computer_Machine_02_01,Computer-Machine_02,is the entity Machine directly linked to studio?,wd:Q746628,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q1760034>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q746628> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Picture_Image_01_01,Picture-Image_01,is the entity photograph directly linked to image?,wd:Q478798,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q125191>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q478798> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Picture_Image_02_01,Picture-Image_02,is the entity image directly linked to painting?,wd:Q3305213,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q478798>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q3305213> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Book_Publication_01_01,Book-Publication_01,is the entity book directly linked to Substantial?,wd:Q16218846,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q571>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q16218846> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Book_Publication_02_01,Book-Publication_02,is the entity publication directly linked to Content?,wd:Q37454002,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q732577>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q37454002> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Actor_Performer_01_01,Actor-Performer_01,is the entity actor directly linked to character?,wd:Q95074,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q33999>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q95074> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Actor_Performer_02_01,Actor-Performer_02,is the entity performing artist directly linked to music?,wd:Q638,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q713200>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q638> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Cat_Feline_01_01,Cat-Feline_01,is the entity Catalan directly linked to Romance?,wd:Q19814,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q7026>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q19814> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Cat_Feline_02_01,Cat-Feline_02,is the entity Feline directly linked to Seventh?,wd:Q135080472,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q3068114>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q135080472> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+City_Municipality_01_01,City-Municipality_01,is the entity city directly linked to human?,wd:Q5,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q515>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q5> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+City_Municipality_02_01,City-Municipality_02,is the entity municipality directly linked to single?,wd:Q134556,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q15284>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q134556> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Country_Nation_01_01,Country-Nation_01,is the entity country music directly linked to Simply?,wd:Q6296982,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q83440>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q6296982> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Country_Nation_02_01,Country-Nation_02,is the entity National Archives and Records Administration directly linked to Agency?,wd:Q430704,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q518155>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q430704> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+University_College_01_01,University-College_01,is the entity university directly linked to Tertiary?,wd:Q188645,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q3918>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q188645> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+University_College_02_01,University-College_02,is the entity college directly linked to educational institution?,wd:Q2385804,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q189004>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q2385804> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Painting_Artwork_01_01,Painting-Artwork_01,is the entity painting directly linked to Art?,wd:Q8227356,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q3305213>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q8227356> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"
+Painting_Artwork_02_01,Painting-Artwork_02,is the entity work of art directly linked to work?,wd:Q386724,"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?answer ?subject ?predicate1 WHERE {
+  {
+    SELECT ?subject
+           (MAX(?canonicalMatch) AS ?canonicalRank)
+           (SUM(?edgeWeight) AS ?subjectScore)
+    WHERE {
+      {
+        ?subject ?candidatePredicate ?candidateNeighbor .
+        BIND(2 AS ?edgeWeight)
+      }
+      UNION
+      {
+        ?candidateNeighbor ?candidatePredicate ?subject .
+        BIND(1 AS ?edgeWeight)
+      }
+      FILTER(isIRI(?subject) || isBlank(?subject))
+      FILTER(?candidateNeighbor != ?subject)
+      FILTER(?candidatePredicate NOT IN (
+        rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+      ))
+      BIND(IF(?subject = <http://www.wikidata.org/entity/Q838948>, 1, 0) AS ?canonicalMatch)
+    }
+    GROUP BY ?subject
+    ORDER BY DESC(?canonicalRank) DESC(?subjectScore) STR(?subject)
+    LIMIT 1
+  }
+  VALUES ?answer { <http://www.wikidata.org/entity/Q386724> }
+  {
+    ?subject ?predicate1 ?answer .
+  }
+  UNION
+  {
+    ?answer ?predicate1 ?subject .
+  }
+  FILTER(?predicate1 NOT IN (
+    rdfs:label, skos:prefLabel, skos:altLabel, schema:name
+  ))
+} LIMIT 1"

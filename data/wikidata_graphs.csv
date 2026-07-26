@@ -1,0 +1,2425 @@
+identifier,description,rdf,triples
+Jaguar,"Jaguar is a British sports car and luxury vehicle brand of Jaguar Land Rover. Until 1 January 2013, the brand was produced by the British company Jaguar Cars Limited, whose operations were merged with those of Land Rover to form Jaguar Land Rover. Jaguar was the sixth and last Type 24 torpedo boat built for the German Navy during the 1920s. The boat made multiple non-intervention patrols during the Spanish Civil War in the late 1930s.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q30055 rdfs:label ""Jaguar Cars""@en ;
+    kg:be wd:Q10470 ;
+    kg:be wd:Q10953913 ;
+    kg:be wd:Q15975618 ;
+    kg:be wd:Q274586 ;
+    kg:be wd:Q349 ;
+    kg:be wd:Q42889 ;
+    kg:be wd:Q9309 ;
+    kg:beOf wd:Q11081619 ;
+    kg:beOf wd:Q116980516 ;
+    kg:limit wd:Q3884033 ;
+    kg:produceBy wd:Q1420 ;
+    kg:produceBy wd:Q6881511 ;
+    kg:produceBy wd:Q7168181 .
+
+wd:Q10470 rdfs:label ""Carina""@en .
+wd:Q10953913 rdfs:label ""luxury""@en .
+wd:Q11081619 rdfs:label ""land""@en .
+wd:Q116980516 rdfs:label ""Rover""@en .
+wd:Q1420 rdfs:label ""car""@en .
+wd:Q15975618 rdfs:label ""August Brand""@en .
+wd:Q274586 rdfs:label ""sports car""@en .
+wd:Q349 rdfs:label ""sport""@en .
+wd:Q3884033 rdfs:label ""mathematical operation""@en .
+wd:Q42889 rdfs:label ""vehicle""@en .
+wd:Q6881511 rdfs:label ""enterprise""@en .
+wd:Q7168181 rdfs:label ""DAZN Group""@en .
+wd:Q9309 rdfs:label ""Welsh""@en .
+wd:Q2732887 rdfs:label ""Jaguar""@en ;
+    kg:be wd:Q206675 ;
+    kg:be wd:Q21503252 ;
+    kg:be wd:Q35872 ;
+    kg:be wd:Q715310 ;
+    kg:be wd:Q7533119 ;
+    kg:be wd:Q79988 ;
+    kg:buildDuring wd:Q35736 ;
+    kg:buildFor wd:Q188 ;
+    kg:buildFor wd:Q559549 ;
+    kg:make wd:Q1203128 ;
+    kg:make wd:Q12503777 ;
+    kg:make wd:Q8277 ;
+    kg:makeDuring wd:Q1321 ;
+    kg:makeDuring wd:Q270 ;
+    kg:makeDuring wd:Q37552616 ;
+    kg:makeIn wd:Q35702 ;
+    kg:makeIn wd:Q40719766 .
+
+wd:Q1203128 rdfs:label ""non-interventionism""@en .
+wd:Q12503777 rdfs:label ""Patrolsari""@en .
+wd:Q1321 rdfs:label ""Spanish""@en .
+wd:Q188 rdfs:label ""German""@en .
+wd:Q206675 rdfs:label ""Torpedo""@en .
+wd:Q21503252 rdfs:label ""instance of""@en .
+wd:Q270 rdfs:label ""Warsaw""@en .
+wd:Q35702 rdfs:label ""1930s""@en .
+wd:Q35736 rdfs:label ""1920s""@en .
+wd:Q35872 rdfs:label ""boat""@en .
+wd:Q37552616 rdfs:label ""Civil""@en .
+wd:Q40719766 rdfs:label ""end of""@en .
+wd:Q559549 rdfs:label ""United States Naval Academy""@en .
+wd:Q715310 rdfs:label ""Chiang Kai-shek rifle""@en .
+wd:Q7533119 rdfs:label ""Sixth Cambridge Survey of radio sources""@en .
+wd:Q79988 rdfs:label ""24""@en .
+wd:Q8277 rdfs:label ""multiple sclerosis""@en .
+","[[""Jaguar"", ""be"", ""24""], [""Jaguar"", ""be"", ""boat""], [""Jaguar"", ""be"", ""Chiang Kai-shek rifle""], [""Jaguar"", ""be"", ""instance of""], [""Jaguar"", ""be"", ""Sixth Cambridge Survey of radio sources""], [""Jaguar"", ""be"", ""Torpedo""], [""Jaguar"", ""buildDuring"", ""1920s""], [""Jaguar"", ""buildFor"", ""German""], [""Jaguar"", ""buildFor"", ""United States Naval Academy""], [""Jaguar"", ""make"", ""multiple sclerosis""], [""Jaguar"", ""make"", ""non-interventionism""], [""Jaguar"", ""make"", ""Patrolsari""], [""Jaguar"", ""makeDuring"", ""Civil""], [""Jaguar"", ""makeDuring"", ""Spanish""], [""Jaguar"", ""makeDuring"", ""Warsaw""], [""Jaguar"", ""makeIn"", ""1930s""], [""Jaguar"", ""makeIn"", ""end of""], [""Jaguar Cars"", ""be"", ""August Brand""], [""Jaguar Cars"", ""be"", ""Carina""], [""Jaguar Cars"", ""be"", ""luxury""], [""Jaguar Cars"", ""be"", ""sport""], [""Jaguar Cars"", ""be"", ""sports car""], [""Jaguar Cars"", ""be"", ""vehicle""], [""Jaguar Cars"", ""be"", ""Welsh""], [""Jaguar Cars"", ""beOf"", ""land""], [""Jaguar Cars"", ""beOf"", ""Rover""], [""Jaguar Cars"", ""limit"", ""mathematical operation""], [""Jaguar Cars"", ""produceBy"", ""car""], [""Jaguar Cars"", ""produceBy"", ""DAZN Group""], [""Jaguar Cars"", ""produceBy"", ""enterprise""]]"
+Mango,"Giuseppe Mango, better known mononymously as Mango, was an Italian singer-songwriter and musician. He was known for his style, which fuses pop, rock, folk, world music and for his extensive vocal range. MANGO MNG S.A., better known by its trade name MANGO, is a Spanish multinational company engaged in the design, manufacture and marketing of garments and accessories for women, men children, teen and home. Although MANGO began by focusing on women’s fashion, over more than 40 years it has expanded into other business lines such as MANGO Man, MANGO Kids, MANGO Teen and MANGO Home.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q1054564 rdfs:label ""Mango""@en ;
+    kg:be wd:Q488205 ;
+    kg:be wd:Q639669 ;
+    kg:be wd:Q652 ;
+    kg:fuse wd:Q1478321 ;
+    kg:fuse wd:Q2472587 ;
+    kg:fuse wd:Q46831 ;
+    kg:fuse wd:Q5395595 ;
+    kg:fuse wd:Q638 ;
+    kg:fuse wd:Q7366 ;
+    kg:knowFor wd:Q37552559 .
+
+wd:Q1478321 rdfs:label ""spinal stenosis""@en .
+wd:Q2472587 rdfs:label ""people""@en .
+wd:Q37552559 rdfs:label ""Style""@en .
+wd:Q46831 rdfs:label ""mountain range""@en .
+wd:Q488205 rdfs:label ""singer-songwriter""@en .
+wd:Q5395595 rdfs:label ""vocal range""@en .
+wd:Q638 rdfs:label ""music""@en .
+wd:Q639669 rdfs:label ""musician""@en .
+wd:Q652 rdfs:label ""Italian""@en .
+wd:Q7366 rdfs:label ""song""@en .
+wd:Q136503 rdfs:label ""Mango""@en ;
+    kg:be wd:Q1321 ;
+    kg:be wd:Q161726 ;
+    kg:be wd:Q6881511 ;
+    kg:engage wd:Q1065579 ;
+    kg:engage wd:Q11460 ;
+    kg:engage wd:Q1492760 ;
+    kg:engage wd:Q187939 ;
+    kg:engage wd:Q39809 ;
+    kg:engage wd:Q6581072 ;
+    kg:engage wd:Q7569 ;
+    kg:engageIn wd:Q82604 ;
+    kg:expand wd:Q96192982 ;
+    kg:expandAs wd:Q4280229 ;
+    kg:expandInto wd:Q27638184 ;
+    kg:expandInto wd:Q4830453 ;
+    kg:focus wd:Q42317 ;
+    kg:focusOn wd:Q12684 ;
+    kg:knowBy wd:Q601401 .
+
+wd:Q1065579 rdfs:label ""fashion accessory""@en .
+wd:Q11460 rdfs:label ""clothing""@en .
+wd:Q12684 rdfs:label ""fashion""@en .
+wd:Q1321 rdfs:label ""Spanish""@en .
+wd:Q1492760 rdfs:label ""teenager""@en .
+wd:Q161726 rdfs:label ""multinational corporation""@en .
+wd:Q187939 rdfs:label ""industrial manufacturing""@en .
+wd:Q27638184 rdfs:label ""Lines""@en .
+wd:Q39809 rdfs:label ""marketing""@en .
+wd:Q42317 rdfs:label ""40""@en .
+wd:Q4280229 rdfs:label ""Mango-Mango""@en .
+wd:Q4830453 rdfs:label ""business""@en .
+wd:Q601401 rdfs:label ""trade""@en .
+wd:Q6581072 rdfs:label ""female""@en .
+wd:Q6881511 rdfs:label ""enterprise""@en .
+wd:Q7569 rdfs:label ""child""@en .
+wd:Q82604 rdfs:label ""design""@en .
+wd:Q96192982 rdfs:label ""Kids""@en .
+","[[""Mango"", ""be"", ""enterprise""], [""Mango"", ""be"", ""Italian""], [""Mango"", ""be"", ""multinational corporation""], [""Mango"", ""be"", ""musician""], [""Mango"", ""be"", ""singer-songwriter""], [""Mango"", ""be"", ""Spanish""], [""Mango"", ""engage"", ""child""], [""Mango"", ""engage"", ""clothing""], [""Mango"", ""engage"", ""fashion accessory""], [""Mango"", ""engage"", ""female""], [""Mango"", ""engage"", ""industrial manufacturing""], [""Mango"", ""engage"", ""marketing""], [""Mango"", ""engage"", ""teenager""], [""Mango"", ""engageIn"", ""design""], [""Mango"", ""expand"", ""Kids""], [""Mango"", ""expandAs"", ""Mango-Mango""], [""Mango"", ""expandInto"", ""business""], [""Mango"", ""expandInto"", ""Lines""], [""Mango"", ""focus"", ""40""], [""Mango"", ""focusOn"", ""fashion""], [""Mango"", ""fuse"", ""mountain range""], [""Mango"", ""fuse"", ""music""], [""Mango"", ""fuse"", ""people""], [""Mango"", ""fuse"", ""song""], [""Mango"", ""fuse"", ""spinal stenosis""], [""Mango"", ""fuse"", ""vocal range""], [""Mango"", ""knowBy"", ""trade""], [""Mango"", ""knowFor"", ""Style""]]"
+Apple,"Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services. Apple Records is a British record label founded by the Beatles in 1968 as a division of Apple Corps Ltd. It was initially intended as a creative outlet for the Beatles, both as a group and individually, plus a selection of other artists including Mary Hopkin, James Taylor, Badfinger, and Billy Preston.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q312 rdfs:label ""Apple Inc.""@en ;
+    kg:be wd:Q11016 ;
+    kg:be wd:Q161726 ;
+    kg:be wd:Q54642234 ;
+    kg:be wd:Q6881511 ;
+    kg:be wd:Q7976 ;
+    kg:headquarter wd:Q3483874 ;
+    kg:headquarter wd:Q39816 ;
+    kg:headquarter wd:Q99 ;
+    kg:headquarterIn wd:Q189471 ;
+    kg:know wd:Q172331 ;
+    kg:know wd:Q60315954 ;
+    kg:know wd:Q65131901 ;
+    kg:know wd:Q7397 ;
+    kg:knowFor wd:Q11650 ;
+    kg:knowFor wd:Q22855 .
+
+wd:Q11016 rdfs:label ""technology""@en .
+wd:Q11650 rdfs:label ""electronics""@en .
+wd:Q161726 rdfs:label ""multinational corporation""@en .
+wd:Q172331 rdfs:label ""liturgy""@en .
+wd:Q189471 rdfs:label ""Cupertino""@en .
+wd:Q22855 rdfs:label ""consumer""@en .
+wd:Q3483874 rdfs:label ""Silicon""@en .
+wd:Q39816 rdfs:label ""valley""@en .
+wd:Q54642234 rdfs:label ""American Multinationals and Japan: The Political Economy of Japanese Capital Controls, 1899-1980""@en .
+wd:Q60315954 rdfs:label ""Online Games-Datenbank""@en .
+wd:Q65131901 rdfs:label ""Robojab Technologies LLC""@en .
+wd:Q6881511 rdfs:label ""enterprise""@en .
+wd:Q7397 rdfs:label ""software""@en .
+wd:Q7976 rdfs:label ""American English""@en .
+wd:Q99 rdfs:label ""California""@en .
+wd:Q213710 rdfs:label ""Apple Records""@en ;
+    kg:be wd:Q1458581 ;
+    kg:be wd:Q53737447 ;
+    kg:be wd:Q751895 ;
+    kg:be wd:Q82799 ;
+    kg:be wd:Q9309 ;
+    kg:foundAs wd:Q169534 ;
+    kg:foundBy wd:Q1299 ;
+    kg:foundIn wd:Q2644 ;
+    kg:foundOf wd:Q14515311 ;
+    kg:foundOf wd:Q621231 ;
+    kg:include wd:Q15080511 ;
+    kg:include wd:Q1627663 ;
+    kg:include wd:Q184090 ;
+    kg:include wd:Q19816507 ;
+    kg:include wd:Q677191 ;
+    kg:include wd:Q734578 ;
+    kg:include wd:Q798993 ;
+    kg:intend wd:Q18088717 ;
+    kg:intend wd:Q41640909 ;
+    kg:intend wd:Q56290973 ;
+    kg:intendAs wd:Q57334497 ;
+    kg:intendAs wd:Q6905323 .
+
+wd:Q1299 rdfs:label ""The Beatles""@en .
+wd:Q14515311 rdfs:label ""German Student Corps""@en .
+wd:Q1458581 rdfs:label ""Record""@en .
+wd:Q15080511 rdfs:label ""Taylor""@en .
+wd:Q1627663 rdfs:label ""Hopkins""@en .
+wd:Q169534 rdfs:label ""military division""@en .
+wd:Q18088717 rdfs:label ""Selection""@en .
+wd:Q184090 rdfs:label ""Preston""@en .
+wd:Q19816507 rdfs:label ""Billy""@en .
+wd:Q2644 rdfs:label ""1968""@en .
+wd:Q41640909 rdfs:label ""Artists of the World Online""@en .
+wd:Q53737447 rdfs:label ""originally""@en .
+wd:Q56290973 rdfs:label ""Individually & Collectively""@en .
+wd:Q57334497 rdfs:label ""retail outlet""@en .
+wd:Q621231 rdfs:label ""Apple Corps""@en .
+wd:Q677191 rdfs:label ""James""@en .
+wd:Q6905323 rdfs:label ""Creative Commons Attribution""@en .
+wd:Q734578 rdfs:label ""Mary""@en .
+wd:Q751895 rdfs:label ""British Phonographic Industry""@en .
+wd:Q798993 rdfs:label ""Badfinger""@en .
+wd:Q82799 rdfs:label ""name""@en .
+wd:Q9309 rdfs:label ""Welsh""@en .
+","[[""Apple Inc."", ""be"", ""American English""], [""Apple Inc."", ""be"", ""American Multinationals and Japan: The Political Economy of Japanese Capital Controls, 1899-1980""], [""Apple Inc."", ""be"", ""enterprise""], [""Apple Inc."", ""be"", ""multinational corporation""], [""Apple Inc."", ""be"", ""technology""], [""Apple Inc."", ""headquarter"", ""California""], [""Apple Inc."", ""headquarter"", ""Silicon""], [""Apple Inc."", ""headquarter"", ""valley""], [""Apple Inc."", ""headquarterIn"", ""Cupertino""], [""Apple Inc."", ""know"", ""liturgy""], [""Apple Inc."", ""know"", ""Online Games-Datenbank""], [""Apple Inc."", ""know"", ""Robojab Technologies LLC""], [""Apple Inc."", ""know"", ""software""], [""Apple Inc."", ""knowFor"", ""consumer""], [""Apple Inc."", ""knowFor"", ""electronics""], [""Apple Records"", ""be"", ""British Phonographic Industry""], [""Apple Records"", ""be"", ""name""], [""Apple Records"", ""be"", ""originally""], [""Apple Records"", ""be"", ""Record""], [""Apple Records"", ""be"", ""Welsh""], [""Apple Records"", ""foundAs"", ""military division""], [""Apple Records"", ""foundBy"", ""The Beatles""], [""Apple Records"", ""foundIn"", ""1968""], [""Apple Records"", ""foundOf"", ""Apple Corps""], [""Apple Records"", ""foundOf"", ""German Student Corps""], [""Apple Records"", ""include"", ""Badfinger""], [""Apple Records"", ""include"", ""Billy""], [""Apple Records"", ""include"", ""Hopkins""], [""Apple Records"", ""include"", ""James""], [""Apple Records"", ""include"", ""Mary""], [""Apple Records"", ""include"", ""Preston""], [""Apple Records"", ""include"", ""Taylor""], [""Apple Records"", ""intend"", ""Artists of the World Online""], [""Apple Records"", ""intend"", ""Individually & Collectively""], [""Apple Records"", ""intend"", ""Selection""], [""Apple Records"", ""intendAs"", ""Creative Commons Attribution""], [""Apple Records"", ""intendAs"", ""retail outlet""]]"
+Orange,"Orange is a commune in the Vaucluse department in the Provence-Alpes-Côte d'Azur region in Southeastern France. It is about 21 km north of Avignon, on the departmental border with Gard, which follows the Rhône and also constitutes the regional border with Occitania. Orange is a city in and the county seat of Orange County, Texas, United States. The population was 19,324 at the 2020 census.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q187796 rdfs:label ""Orange""@en ;
+    kg:be wd:Q11605103 ;
+    kg:be wd:Q12717105 ;
+    kg:be wd:Q133346 ;
+    kg:be wd:Q484170 ;
+    kg:beAbout wd:Q11790733 ;
+    kg:beAbout wd:Q712477 ;
+    kg:beIn wd:Q12792 ;
+    kg:beIn wd:Q142 ;
+    kg:beIn wd:Q15104 ;
+    kg:beIn wd:Q1785501 ;
+    kg:beIn wd:Q615998 ;
+    kg:beIn wd:Q82794 ;
+    kg:beOf wd:Q6397 ;
+    kg:constitute wd:Q1472 ;
+    kg:constituteWith wd:Q18678265 ;
+    kg:follow wd:Q46130 .
+
+wd:Q11605103 rdfs:label ""kiyō""@en .
+wd:Q11790733 rdfs:label ""North""@en .
+wd:Q12717105 rdfs:label ""Gard""@en .
+wd:Q12792 rdfs:label ""Vaucluse""@en .
+wd:Q133346 rdfs:label ""border""@en .
+wd:Q142 rdfs:label ""France""@en .
+wd:Q1472 rdfs:label ""Crohn's disease""@en .
+wd:Q15104 rdfs:label ""Provence-Alpes-Côte d'Azur""@en .
+wd:Q1785501 rdfs:label ""azure""@en .
+wd:Q18678265 rdfs:label ""Occitania""@en .
+wd:Q46130 rdfs:label ""Rhône""@en .
+wd:Q484170 rdfs:label ""commune of France""@en .
+wd:Q615998 rdfs:label ""Southeastern Louisiana University""@en .
+wd:Q6397 rdfs:label ""Avignon""@en .
+wd:Q712477 rdfs:label ""21""@en .
+wd:Q82794 rdfs:label ""region""@en .
+wd:Q982388 rdfs:label ""Orange""@en ;
+    kg:be wd:Q1066100 ;
+    kg:be wd:Q1439 ;
+    kg:be wd:Q25337 ;
+    kg:be wd:Q30 ;
+    kg:be wd:Q39825 ;
+    kg:be wd:Q39850 ;
+    kg:be wd:Q515 ;
+    kg:beIn wd:Q169923 ;
+    kg:beIn wd:Q5083 ;
+    kg:beIn wd:Q62049 ;
+    kg:beOf wd:Q5925 .
+
+wd:Q1066100 rdfs:label ""324""@en .
+wd:Q1439 rdfs:label ""Texas""@en .
+wd:Q169923 rdfs:label ""County Galway""@en .
+wd:Q25337 rdfs:label ""2020""@en .
+wd:Q30 rdfs:label ""United States""@en .
+wd:Q39825 rdfs:label ""census""@en .
+wd:Q39850 rdfs:label ""19""@en .
+wd:Q5083 rdfs:label ""Seattle""@en .
+wd:Q515 rdfs:label ""city""@en .
+wd:Q5925 rdfs:label ""Orange County""@en .
+wd:Q62049 rdfs:label ""county seat""@en .
+","[[""Orange"", ""be"", ""19""], [""Orange"", ""be"", ""2020""], [""Orange"", ""be"", ""324""], [""Orange"", ""be"", ""border""], [""Orange"", ""be"", ""census""], [""Orange"", ""be"", ""city""], [""Orange"", ""be"", ""commune of France""], [""Orange"", ""be"", ""Gard""], [""Orange"", ""be"", ""kiyō""], [""Orange"", ""be"", ""Texas""], [""Orange"", ""be"", ""United States""], [""Orange"", ""beAbout"", ""21""], [""Orange"", ""beAbout"", ""North""], [""Orange"", ""beIn"", ""azure""], [""Orange"", ""beIn"", ""County Galway""], [""Orange"", ""beIn"", ""county seat""], [""Orange"", ""beIn"", ""France""], [""Orange"", ""beIn"", ""Provence-Alpes-Côte d'Azur""], [""Orange"", ""beIn"", ""region""], [""Orange"", ""beIn"", ""Seattle""], [""Orange"", ""beIn"", ""Southeastern Louisiana University""], [""Orange"", ""beIn"", ""Vaucluse""], [""Orange"", ""beOf"", ""Avignon""], [""Orange"", ""beOf"", ""Orange County""], [""Orange"", ""constitute"", ""Crohn's disease""], [""Orange"", ""constituteWith"", ""Occitania""], [""Orange"", ""follow"", ""Rhône""]]"
+Java,"Java is a high-level, general-purpose, memory-safe, object-oriented programming language. It is intended to let programmers write once, run anywhere, meaning that compiled Java code can run on all platforms that support Java without the need to recompile. JSON is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of name–value pairs and arrays. It is a commonly used data format with diverse uses in electronic data interchange, including that of web applications with servers.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q251 rdfs:label ""Java""@en ;
+    kg:be wd:Q34770 ;
+    kg:be wd:Q4080983 ;
+    kg:be wd:Q430949 ;
+    kg:be wd:Q68 ;
+    kg:be wd:Q79872 ;
+    kg:compile wd:Q37141227 ;
+    kg:let wd:Q109795339 ;
+    kg:runOn wd:Q582151 .
+
+wd:Q109795339 rdfs:label ""Programmers""@en .
+wd:Q34770 rdfs:label ""language""@en .
+wd:Q37141227 rdfs:label ""Code""@en .
+wd:Q4080983 rdfs:label ""memory safety""@en .
+wd:Q430949 rdfs:label ""High Level""@en .
+wd:Q582151 rdfs:label ""platform shoe""@en .
+wd:Q68 rdfs:label ""computer""@en .
+wd:Q79872 rdfs:label ""object-oriented programming""@en .
+wd:Q2063 rdfs:label ""JSON""@en ;
+    kg:be wd:Q21502404 ;
+    kg:be wd:Q235557 ;
+    kg:be wd:Q2376564 ;
+    kg:be wd:Q28962312 ;
+    kg:be wd:Q317623 ;
+    kg:be wd:Q47412631 ;
+    kg:be wd:Q5227137 ;
+    kg:be wd:Q59221146 ;
+    kg:consistOf wd:Q1682809 ;
+    kg:consistOf wd:Q186152 ;
+    kg:includeOf wd:Q64184577 ;
+    kg:includeWith wd:Q44127 ;
+    kg:transmit wd:Q488383 ;
+    kg:transmit wd:Q59243101 ;
+    kg:use wd:Q16716513 ;
+    kg:use wd:Q494823 ;
+    kg:useIn wd:Q624661 ;
+    kg:useIn wd:Q96696332 ;
+    kg:useWith wd:Q130643927 .
+
+wd:Q130643927 rdfs:label ""Diverse""@en .
+wd:Q16716513 rdfs:label ""human-readable""@en .
+wd:Q1682809 rdfs:label ""pair skating""@en .
+wd:Q186152 rdfs:label ""array data structure""@en .
+wd:Q21502404 rdfs:label ""format constraint""@en .
+wd:Q235557 rdfs:label ""file format""@en .
+wd:Q2376564 rdfs:label ""interchange""@en .
+wd:Q28962312 rdfs:label ""often""@en .
+wd:Q317623 rdfs:label ""technical standard""@en .
+wd:Q44127 rdfs:label ""server""@en .
+wd:Q47412631 rdfs:label ""RFC 678: Standard file formats""@en .
+wd:Q488383 rdfs:label ""object""@en .
+wd:Q494823 rdfs:label ""data format""@en .
+wd:Q5227137 rdfs:label ""Data""@en .
+wd:Q59221146 rdfs:label ""file unit""@en .
+wd:Q59243101 rdfs:label ""Data-Objects""@en .
+wd:Q624661 rdfs:label ""Electronic""@en .
+wd:Q64184577 rdfs:label ""Applications for Headstones (NAID 596118)""@en .
+wd:Q96696332 rdfs:label ""EDIS""@en .
+","[[""Java"", ""be"", ""computer""], [""Java"", ""be"", ""High Level""], [""Java"", ""be"", ""language""], [""Java"", ""be"", ""memory safety""], [""Java"", ""be"", ""object-oriented programming""], [""Java"", ""compile"", ""Code""], [""Java"", ""let"", ""Programmers""], [""Java"", ""runOn"", ""platform shoe""], [""JSON"", ""be"", ""Data""], [""JSON"", ""be"", ""file format""], [""JSON"", ""be"", ""file unit""], [""JSON"", ""be"", ""format constraint""], [""JSON"", ""be"", ""interchange""], [""JSON"", ""be"", ""often""], [""JSON"", ""be"", ""RFC 678: Standard file formats""], [""JSON"", ""be"", ""technical standard""], [""JSON"", ""consistOf"", ""array data structure""], [""JSON"", ""consistOf"", ""pair skating""], [""JSON"", ""includeOf"", ""Applications for Headstones (NAID 596118)""], [""JSON"", ""includeWith"", ""server""], [""JSON"", ""transmit"", ""Data-Objects""], [""JSON"", ""transmit"", ""object""], [""JSON"", ""use"", ""data format""], [""JSON"", ""use"", ""human-readable""], [""JSON"", ""useIn"", ""EDIS""], [""JSON"", ""useIn"", ""Electronic""], [""JSON"", ""useWith"", ""Diverse""]]"
+Python,"Python is a high-level, general-purpose programming language that emphasizes code readability, simplicity, and ease-of-writing with the use of significant indentation, an extensive standard library, and garbage collection. Python supports multiple programming paradigms but with an emphasis on object-oriented programming and dynamic typing. Python is a genus of constricting snakes in the Pythonidae family native to the tropics and subtropics of the Eastern Hemisphere. The name python was proposed by François Marie Daudin in 1803 for non-venomous flecked snakes.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q28865 rdfs:label ""Python""@en ;
+    kg:be wd:Q34770 ;
+    kg:be wd:Q430949 ;
+    kg:be wd:Q68 ;
+    kg:emphasize wd:Q1199356 ;
+    kg:emphasize wd:Q1478321 ;
+    kg:emphasize wd:Q15752338 ;
+    kg:emphasize wd:Q17034531 ;
+    kg:emphasize wd:Q1820650 ;
+    kg:emphasize wd:Q2668072 ;
+    kg:emphasize wd:Q28367692 ;
+    kg:emphasize wd:Q317623 ;
+    kg:emphasize wd:Q37141227 ;
+    kg:emphasize wd:Q485673 ;
+    kg:programOn wd:Q3215756 ;
+    kg:programOn wd:Q79872 ;
+    kg:programWith wd:Q181767 ;
+    kg:support wd:Q130861450 ;
+    kg:support wd:Q50806774 ;
+    kg:support wd:Q8277 .
+
+wd:Q1199356 rdfs:label ""standard library""@en .
+wd:Q130861450 rdfs:label ""Multiple Programming Languages for Improving Computational Thinking in CS1""@en .
+wd:Q1478321 rdfs:label ""spinal stenosis""@en .
+wd:Q15752338 rdfs:label ""The Library""@en .
+wd:Q17034531 rdfs:label ""Simplicity""@en .
+wd:Q181767 rdfs:label ""stress""@en .
+wd:Q1820650 rdfs:label ""readability""@en .
+wd:Q2668072 rdfs:label ""collection""@en .
+wd:Q28367692 rdfs:label ""cavity""@en .
+wd:Q317623 rdfs:label ""technical standard""@en .
+wd:Q3215756 rdfs:label ""typing""@en .
+wd:Q34770 rdfs:label ""language""@en .
+wd:Q37141227 rdfs:label ""Code""@en .
+wd:Q430949 rdfs:label ""High Level""@en .
+wd:Q485673 rdfs:label ""Garbage""@en .
+wd:Q50806774 rdfs:label ""Paradigms""@en .
+wd:Q68 rdfs:label ""computer""@en .
+wd:Q79872 rdfs:label ""object-oriented programming""@en .
+wd:Q8277 rdfs:label ""multiple sclerosis""@en .
+wd:Q271218 rdfs:label ""Python""@en ;
+    kg:be wd:Q34740 ;
+    kg:constrict wd:Q2102 ;
+    kg:constrictIn wd:Q1322263 ;
+    kg:constrictIn wd:Q184018 ;
+    kg:constrictIn wd:Q35409 ;
+    kg:constrictOf wd:Q186198 ;
+    kg:constrictOf wd:Q399984 ;
+    kg:constrictOf wd:Q6723 ;
+    kg:constrictTo wd:Q16305538 ;
+    kg:constrictTo wd:Q42530 ;
+    kg:proposeBy wd:Q1166840 ;
+    kg:proposeBy wd:Q12787351 ;
+    kg:proposeBy wd:Q632104 ;
+    kg:proposeFor wd:Q18251706 ;
+    kg:proposeFor wd:Q3437312 ;
+    kg:proposeIn wd:Q19241405 .
+
+wd:Q1166840 rdfs:label ""François""@en .
+wd:Q12787351 rdfs:label ""Daudin""@en .
+wd:Q1322263 rdfs:label ""place of birth""@en .
+wd:Q16305538 rdfs:label ""subtropics""@en .
+wd:Q18251706 rdfs:label ""Is(In7;X)1Ct""@en .
+wd:Q184018 rdfs:label ""pythons""@en .
+wd:Q186198 rdfs:label ""Eastern Hemisphere""@en .
+wd:Q19241405 rdfs:label ""1803""@en .
+wd:Q2102 rdfs:label ""snake""@en .
+wd:Q3437312 rdfs:label ""aglyph""@en .
+wd:Q34740 rdfs:label ""genus""@en .
+wd:Q35409 rdfs:label ""family""@en .
+wd:Q399984 rdfs:label ""hemisphere of the Earth""@en .
+wd:Q42530 rdfs:label ""tropics""@en .
+wd:Q632104 rdfs:label ""Marie""@en .
+wd:Q6723 rdfs:label ""UTC+02:00""@en .
+","[[""Python"", ""be"", ""computer""], [""Python"", ""be"", ""genus""], [""Python"", ""be"", ""High Level""], [""Python"", ""be"", ""language""], [""Python"", ""constrict"", ""snake""], [""Python"", ""constrictIn"", ""family""], [""Python"", ""constrictIn"", ""place of birth""], [""Python"", ""constrictIn"", ""pythons""], [""Python"", ""constrictOf"", ""Eastern Hemisphere""], [""Python"", ""constrictOf"", ""hemisphere of the Earth""], [""Python"", ""constrictOf"", ""UTC+02:00""], [""Python"", ""constrictTo"", ""subtropics""], [""Python"", ""constrictTo"", ""tropics""], [""Python"", ""emphasize"", ""cavity""], [""Python"", ""emphasize"", ""Code""], [""Python"", ""emphasize"", ""collection""], [""Python"", ""emphasize"", ""Garbage""], [""Python"", ""emphasize"", ""readability""], [""Python"", ""emphasize"", ""Simplicity""], [""Python"", ""emphasize"", ""spinal stenosis""], [""Python"", ""emphasize"", ""standard library""], [""Python"", ""emphasize"", ""technical standard""], [""Python"", ""emphasize"", ""The Library""], [""Python"", ""programOn"", ""object-oriented programming""], [""Python"", ""programOn"", ""typing""], [""Python"", ""programWith"", ""stress""], [""Python"", ""proposeBy"", ""Daudin""], [""Python"", ""proposeBy"", ""François""], [""Python"", ""proposeBy"", ""Marie""], [""Python"", ""proposeFor"", ""aglyph""], [""Python"", ""proposeFor"", ""Is(In7;X)1Ct""], [""Python"", ""proposeIn"", ""1803""], [""Python"", ""support"", ""Multiple Programming Languages for Improving Computational Thinking in CS1""], [""Python"", ""support"", ""multiple sclerosis""], [""Python"", ""support"", ""Paradigms""]]"
+Mercury,"Mercury was a brand of medium-priced automobiles that was produced by American manufacturer Ford Motor Company between the 1939 and 2011 motor years. Created by Edsel Ford in 1938, Mercury was established to bridge the gap between the Ford and Lincoln model lines within Ford Motor Company. Mercury is a commune close to Albertville in the Savoie département in the Auvergne-Rhône-Alpes region in south-eastern France. It is part of the urban area of Albertville.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q613883 rdfs:label ""Mercury""@en ;
+    kg:be wd:Q15975618 ;
+    kg:beOf wd:Q1420 ;
+    kg:bridge wd:Q175081 ;
+    kg:bridgeBetween wd:Q27638184 ;
+    kg:bridgeBetween wd:Q28260 ;
+    kg:bridgeBetween wd:Q4610556 ;
+    kg:createBy wd:Q61838285 ;
+    kg:createIn wd:Q18645 ;
+    kg:produceBetween wd:Q18639 ;
+    kg:produceBetween wd:Q1994 ;
+    kg:produceBy wd:Q13235160 ;
+    kg:produceBy wd:Q1420 ;
+    kg:produceBy wd:Q2412929 ;
+    kg:produceBy wd:Q44294 ;
+    kg:produceBy wd:Q66332018 ;
+    kg:produceBy wd:Q6881511 ;
+    kg:produceBy wd:Q7976 .
+
+wd:Q13235160 rdfs:label ""manufacturer""@en .
+wd:Q1420 rdfs:label ""car""@en .
+wd:Q15975618 rdfs:label ""August Brand""@en .
+wd:Q175081 rdfs:label ""Gap""@en .
+wd:Q18639 rdfs:label ""1939""@en .
+wd:Q18645 rdfs:label ""1938""@en .
+wd:Q1994 rdfs:label ""2011""@en .
+wd:Q2412929 rdfs:label ""Motor Company of Botswana""@en .
+wd:Q27638184 rdfs:label ""Lines""@en .
+wd:Q28260 rdfs:label ""Lincoln""@en .
+wd:Q44294 rdfs:label ""Ford Motor Company""@en .
+wd:Q4610556 rdfs:label ""model""@en .
+wd:Q61838285 rdfs:label ""Edsel""@en .
+wd:Q66332018 rdfs:label ""American Manufacturers Mutual Insurance Company, et al., petitioners v. Delores Scott Sullivan, et al. [Case 97-2000] / South Central Bell Telephone Company, et al., Petitioners v. Alabama, et al. [Case 97-2045] (NAID 138282731)""@en .
+wd:Q6881511 rdfs:label ""enterprise""@en .
+wd:Q7976 rdfs:label ""American English""@en .
+wd:Q1231263 rdfs:label ""Mercury""@en ;
+    kg:be wd:Q12731 ;
+    kg:be wd:Q484170 ;
+    kg:beIn wd:Q12745 ;
+    kg:beIn wd:Q142 ;
+    kg:beIn wd:Q1529921 ;
+    kg:beIn wd:Q18338206 ;
+    kg:beIn wd:Q82794 ;
+    kg:beOf wd:Q11878943 ;
+    kg:beTo wd:Q159469 .
+
+wd:Q11878943 rdfs:label ""Urban""@en .
+wd:Q12731 rdfs:label ""dead end street""@en .
+wd:Q12745 rdfs:label ""Savoie""@en .
+wd:Q142 rdfs:label ""France""@en .
+wd:Q1529921 rdfs:label ""South Eastern Railway""@en .
+wd:Q159469 rdfs:label ""Albertville""@en .
+wd:Q18338206 rdfs:label ""Auvergne-Rhône-Alpes""@en .
+wd:Q484170 rdfs:label ""commune of France""@en .
+wd:Q82794 rdfs:label ""region""@en .
+","[[""Mercury"", ""be"", ""August Brand""], [""Mercury"", ""be"", ""commune of France""], [""Mercury"", ""be"", ""dead end street""], [""Mercury"", ""beIn"", ""Auvergne-Rhône-Alpes""], [""Mercury"", ""beIn"", ""France""], [""Mercury"", ""beIn"", ""region""], [""Mercury"", ""beIn"", ""Savoie""], [""Mercury"", ""beIn"", ""South Eastern Railway""], [""Mercury"", ""beOf"", ""car""], [""Mercury"", ""beOf"", ""Urban""], [""Mercury"", ""beTo"", ""Albertville""], [""Mercury"", ""bridge"", ""Gap""], [""Mercury"", ""bridgeBetween"", ""Lincoln""], [""Mercury"", ""bridgeBetween"", ""Lines""], [""Mercury"", ""bridgeBetween"", ""model""], [""Mercury"", ""createBy"", ""Edsel""], [""Mercury"", ""createIn"", ""1938""], [""Mercury"", ""produceBetween"", ""1939""], [""Mercury"", ""produceBetween"", ""2011""], [""Mercury"", ""produceBy"", ""American English""], [""Mercury"", ""produceBy"", ""American Manufacturers Mutual Insurance Company, et al., petitioners v. Delores Scott Sullivan, et al. [Case 97-2000] / South Central Bell Telephone Company, et al., Petitioners v. Alabama, et al. [Case 97-2045] (NAID 138282731)""], [""Mercury"", ""produceBy"", ""car""], [""Mercury"", ""produceBy"", ""enterprise""], [""Mercury"", ""produceBy"", ""Ford Motor Company""], [""Mercury"", ""produceBy"", ""manufacturer""], [""Mercury"", ""produceBy"", ""Motor Company of Botswana""]]"
+Saturn,"Saturn was a god in ancient Roman religion, and a character in Roman mythology. He was described as a god of time, generation, dissolution, abundance, wealth, agriculture, periodic renewal and liberation. Saturn is the sixth planet from the Sun and the second largest in the Solar System, after Jupiter. It is a gas giant, with an average radius of about 9 times that of Earth.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q134388 rdfs:label ""Saturn""@en ;
+    kg:be wd:Q178885 ;
+    kg:be wd:Q9134 ;
+    kg:be wd:Q95074 ;
+    kg:beIn wd:Q1747689 ;
+    kg:beIn wd:Q839954 ;
+    kg:beIn wd:Q9174 ;
+    kg:beIn wd:Q933726 ;
+    kg:describe wd:Q1002697 ;
+    kg:describe wd:Q11398090 ;
+    kg:describe wd:Q11451 ;
+    kg:describe wd:Q13717 ;
+    kg:describe wd:Q200535 ;
+    kg:describe wd:Q2144402 ;
+    kg:describe wd:Q336019 ;
+    kg:describe wd:Q741182 ;
+    kg:describeOf wd:Q43297 .
+
+wd:Q1002697 rdfs:label ""periodical""@en .
+wd:Q11398090 rdfs:label ""creation""@en .
+wd:Q11451 rdfs:label ""agriculture""@en .
+wd:Q13717 rdfs:label ""Libération""@en .
+wd:Q1747689 rdfs:label ""Ancient Rome""@en .
+wd:Q178885 rdfs:label ""deity""@en .
+wd:Q200535 rdfs:label ""wealth""@en .
+wd:Q2144402 rdfs:label ""renovation""@en .
+wd:Q336019 rdfs:label ""abundance""@en .
+wd:Q43297 rdfs:label ""Time""@en .
+wd:Q741182 rdfs:label ""dissolution of parliament""@en .
+wd:Q839954 rdfs:label ""archaeological site""@en .
+wd:Q9134 rdfs:label ""mythology""@en .
+wd:Q9174 rdfs:label ""religion""@en .
+wd:Q933726 rdfs:label ""Roman""@en .
+wd:Q95074 rdfs:label ""character""@en .
+wd:Q193 rdfs:label ""Saturn""@en ;
+    kg:be wd:Q121750 ;
+    kg:be wd:Q19108 ;
+    kg:be wd:Q2 ;
+    kg:be wd:Q202785 ;
+    kg:be wd:Q24017749 ;
+    kg:be wd:Q3863 ;
+    kg:be wd:Q4039279 ;
+    kg:be wd:Q703557 ;
+    kg:be wd:Q7533119 ;
+    kg:be wd:Q7533215 ;
+    kg:be wd:Q860057 ;
+    kg:be wd:Q9684 ;
+    kg:beFrom wd:Q100368217 ;
+    kg:beFrom wd:Q10578722 ;
+    kg:beFrom wd:Q14647 ;
+    kg:beIn wd:Q29441547 .
+
+wd:Q100368217 rdfs:label ""SUN AND THE ROCKS""@en .
+wd:Q10578722 rdfs:label ""maximum""@en .
+wd:Q121750 rdfs:label ""gas giant""@en .
+wd:Q14647 rdfs:label ""Sun Microsystems""@en .
+wd:Q2 rdfs:label ""Earth""@en .
+wd:Q202785 rdfs:label ""average""@en .
+wd:Q24017749 rdfs:label ""Radius""@en .
+wd:Q29441547 rdfs:label ""Solar""@en .
+wd:Q3863 rdfs:label ""asteroid""@en .
+wd:Q4039279 rdfs:label ""Gastroenterology""@en .
+wd:Q703557 rdfs:label ""Giant Bicycles""@en .
+wd:Q7533119 rdfs:label ""Sixth Cambridge Survey of radio sources""@en .
+wd:Q7533215 rdfs:label ""Sixth planet""@en .
+wd:Q860057 rdfs:label ""USS Langley""@en .
+wd:Q9684 rdfs:label ""The New York Times""@en .
+","[[""Saturn"", ""be"", ""asteroid""], [""Saturn"", ""be"", ""average""], [""Saturn"", ""be"", ""character""], [""Saturn"", ""be"", ""deity""], [""Saturn"", ""be"", ""Earth""], [""Saturn"", ""be"", ""gas giant""], [""Saturn"", ""be"", ""Gastroenterology""], [""Saturn"", ""be"", ""Giant Bicycles""], [""Saturn"", ""be"", ""mythology""], [""Saturn"", ""be"", ""Q19108""], [""Saturn"", ""be"", ""Radius""], [""Saturn"", ""be"", ""Sixth Cambridge Survey of radio sources""], [""Saturn"", ""be"", ""Sixth planet""], [""Saturn"", ""be"", ""The New York Times""], [""Saturn"", ""be"", ""USS Langley""], [""Saturn"", ""beFrom"", ""maximum""], [""Saturn"", ""beFrom"", ""SUN AND THE ROCKS""], [""Saturn"", ""beFrom"", ""Sun Microsystems""], [""Saturn"", ""beIn"", ""Ancient Rome""], [""Saturn"", ""beIn"", ""archaeological site""], [""Saturn"", ""beIn"", ""religion""], [""Saturn"", ""beIn"", ""Roman""], [""Saturn"", ""beIn"", ""Solar""], [""Saturn"", ""describe"", ""abundance""], [""Saturn"", ""describe"", ""agriculture""], [""Saturn"", ""describe"", ""creation""], [""Saturn"", ""describe"", ""dissolution of parliament""], [""Saturn"", ""describe"", ""Libération""], [""Saturn"", ""describe"", ""periodical""], [""Saturn"", ""describe"", ""renovation""], [""Saturn"", ""describe"", ""wealth""], [""Saturn"", ""describeOf"", ""Time""]]"
+Amazon,"Amazon.com, Inc. is an American multinational technology company engaged in e-commerce, cloud computing, online advertising, digital streaming, entertainment, and artificial intelligence. Amazonas is a state of Brazil, located in the North Region in the north-western corner of the country. It is the largest Brazilian state by area and the ninth-largest country subdivision in the world with an area of 1,570,745.7 square kilometers.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q3884 rdfs:label ""Amazon""@en ;
+    kg:be wd:Q11016 ;
+    kg:be wd:Q161726 ;
+    kg:be wd:Q54642234 ;
+    kg:be wd:Q6881511 ;
+    kg:be wd:Q7976 ;
+    kg:compute wd:Q15751140 ;
+    kg:compute wd:Q15982450 ;
+    kg:compute wd:Q1665657 ;
+    kg:compute wd:Q173799 ;
+    kg:compute wd:Q37038 ;
+    kg:compute wd:Q60315954 ;
+    kg:compute wd:Q690079 ;
+    kg:engage wd:Q8074 ;
+    kg:engageIn wd:Q484847 .
+
+wd:Q11016 rdfs:label ""technology""@en .
+wd:Q15751140 rdfs:label ""Artificial Organs""@en .
+wd:Q15982450 rdfs:label ""music streaming""@en .
+wd:Q161726 rdfs:label ""multinational corporation""@en .
+wd:Q1665657 rdfs:label ""Intelligence""@en .
+wd:Q173799 rdfs:label ""entertainment""@en .
+wd:Q37038 rdfs:label ""advertising""@en .
+wd:Q484847 rdfs:label ""e-commerce""@en .
+wd:Q54642234 rdfs:label ""American Multinationals and Japan: The Political Economy of Japanese Capital Controls, 1899-1980""@en .
+wd:Q60315954 rdfs:label ""Online Games-Datenbank""@en .
+wd:Q6881511 rdfs:label ""enterprise""@en .
+wd:Q690079 rdfs:label ""Digital Equipment Corporation""@en .
+wd:Q7976 rdfs:label ""American English""@en .
+wd:Q8074 rdfs:label ""cloud""@en .
+wd:Q40040 rdfs:label ""Amazonas""@en ;
+    kg:be wd:Q10578722 ;
+    kg:be wd:Q580020 ;
+    kg:be wd:Q750553 ;
+    kg:be wd:Q927568 ;
+    kg:beBy wd:Q192287 ;
+    kg:beBy wd:Q3268571 ;
+    kg:beOf wd:Q155 ;
+    kg:beOf wd:Q199 ;
+    kg:locateIn wd:Q11790733 ;
+    kg:locateIn wd:Q16865769 ;
+    kg:locateIn wd:Q309350 ;
+    kg:locateIn wd:Q502341 ;
+    kg:locateIn wd:Q82794 ;
+    kg:locateOf wd:Q83440 .
+
+wd:Q10578722 rdfs:label ""maximum""@en .
+wd:Q11790733 rdfs:label ""North""@en .
+wd:Q155 rdfs:label ""Brazil""@en .
+wd:Q16865769 rdfs:label ""Corner""@en .
+wd:Q192287 rdfs:label ""administrative divisions of Russia""@en .
+wd:Q199 rdfs:label ""1""@en .
+wd:Q309350 rdfs:label ""Northwestern University""@en .
+wd:Q3268571 rdfs:label ""administrative territorial entity of a single country""@en .
+wd:Q502341 rdfs:label ""North""@en .
+wd:Q580020 rdfs:label ""570""@en .
+wd:Q750553 rdfs:label ""Brazilian Portuguese""@en .
+wd:Q82794 rdfs:label ""region""@en .
+wd:Q83440 rdfs:label ""country music""@en .
+wd:Q927568 rdfs:label ""745""@en .
+","[[""Amazon"", ""be"", ""American English""], [""Amazon"", ""be"", ""American Multinationals and Japan: The Political Economy of Japanese Capital Controls, 1899-1980""], [""Amazon"", ""be"", ""enterprise""], [""Amazon"", ""be"", ""multinational corporation""], [""Amazon"", ""be"", ""technology""], [""Amazon"", ""compute"", ""advertising""], [""Amazon"", ""compute"", ""Artificial Organs""], [""Amazon"", ""compute"", ""Digital Equipment Corporation""], [""Amazon"", ""compute"", ""entertainment""], [""Amazon"", ""compute"", ""Intelligence""], [""Amazon"", ""compute"", ""music streaming""], [""Amazon"", ""compute"", ""Online Games-Datenbank""], [""Amazon"", ""engage"", ""cloud""], [""Amazon"", ""engageIn"", ""e-commerce""], [""Amazonas"", ""be"", ""570""], [""Amazonas"", ""be"", ""745""], [""Amazonas"", ""be"", ""Brazilian Portuguese""], [""Amazonas"", ""be"", ""maximum""], [""Amazonas"", ""beBy"", ""administrative divisions of Russia""], [""Amazonas"", ""beBy"", ""administrative territorial entity of a single country""], [""Amazonas"", ""beOf"", ""1""], [""Amazonas"", ""beOf"", ""Brazil""], [""Amazonas"", ""locateIn"", ""Corner""], [""Amazonas"", ""locateIn"", ""North""], [""Amazonas"", ""locateIn"", ""Northwestern University""], [""Amazonas"", ""locateIn"", ""region""], [""Amazonas"", ""locateOf"", ""country music""]]"
+Seal,"Seal Henry Olusegun Olumide Adeola Samuel, known mononymously as Seal, is a British singer, songwriter, and record producer. He is the recipient of three Brit Awards, four Grammy Awards and an MTV Video Music Award, with more than 20 million albums or singles sold. SeaLifeBase is a global online database of information about marine life. It aims to provide key information on the taxonomy, distribution and ecology of all marine species in the world apart from finfish.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q218091 rdfs:label ""Seal""@en ;
+    kg:be wd:Q1260201 ;
+    kg:be wd:Q1458581 ;
+    kg:be wd:Q2596417 ;
+    kg:be wd:Q273899 ;
+    kg:be wd:Q3062264 ;
+    kg:be wd:Q3282637 ;
+    kg:be wd:Q34508 ;
+    kg:be wd:Q40292 ;
+    kg:be wd:Q41254 ;
+    kg:be wd:Q618779 ;
+    kg:be wd:Q62032401 ;
+    kg:be wd:Q638 ;
+    kg:be wd:Q753110 ;
+    kg:be wd:Q9309 ;
+    kg:beOf wd:Q1973 ;
+    kg:beOf wd:Q223313 ;
+    kg:beOf wd:Q618779 .
+
+wd:Q1260201 rdfs:label ""Singer""@en .
+wd:Q1458581 rdfs:label ""Record""@en .
+wd:Q1973 rdfs:label ""British Columbia""@en .
+wd:Q223313 rdfs:label ""BRIT Awards""@en .
+wd:Q2596417 rdfs:label ""beneficiary""@en .
+wd:Q273899 rdfs:label ""Singles""@en .
+wd:Q3062264 rdfs:label ""MTV Brasil""@en .
+wd:Q3282637 rdfs:label ""film producer""@en .
+wd:Q34508 rdfs:label ""video recording""@en .
+wd:Q40292 rdfs:label ""20""@en .
+wd:Q41254 rdfs:label ""Grammy Awards""@en .
+wd:Q618779 rdfs:label ""award""@en .
+wd:Q62032401 rdfs:label ""album chart""@en .
+wd:Q638 rdfs:label ""music""@en .
+wd:Q753110 rdfs:label ""songwriter""@en .
+wd:Q9309 rdfs:label ""Welsh""@en .
+wd:Q7439813 rdfs:label ""SeaLifeBase""@en ;
+    kg:be wd:Q1531570 ;
+    kg:be wd:Q17023689 ;
+    kg:be wd:Q60315954 ;
+    kg:be wd:Q8513 ;
+    kg:beAbout wd:Q4568822 ;
+    kg:beAbout wd:Q463198 ;
+    kg:provide wd:Q123187803 ;
+    kg:provide wd:Q16871354 ;
+    kg:provide wd:Q200726 ;
+    kg:provide wd:Q7150 ;
+    kg:provide wd:Q7432 ;
+    kg:provideOn wd:Q8269924 .
+
+wd:Q123187803 rdfs:label ""Finfish""@en .
+wd:Q1531570 rdfs:label ""Global Biodiversity Information Facility""@en .
+wd:Q16871354 rdfs:label ""Key""@en .
+wd:Q17023689 rdfs:label ""Global Online""@en .
+wd:Q200726 rdfs:label ""probability distribution""@en .
+wd:Q4568822 rdfs:label ""Marine""@en .
+wd:Q463198 rdfs:label ""Life""@en .
+wd:Q60315954 rdfs:label ""Online Games-Datenbank""@en .
+wd:Q7150 rdfs:label ""ecology""@en .
+wd:Q7432 rdfs:label ""species""@en .
+wd:Q8269924 rdfs:label ""taxonomy""@en .
+wd:Q8513 rdfs:label ""database""@en .
+","[[""Seal"", ""be"", ""20""], [""Seal"", ""be"", ""album chart""], [""Seal"", ""be"", ""award""], [""Seal"", ""be"", ""beneficiary""], [""Seal"", ""be"", ""film producer""], [""Seal"", ""be"", ""Grammy Awards""], [""Seal"", ""be"", ""MTV Brasil""], [""Seal"", ""be"", ""music""], [""Seal"", ""be"", ""Record""], [""Seal"", ""be"", ""Singer""], [""Seal"", ""be"", ""Singles""], [""Seal"", ""be"", ""songwriter""], [""Seal"", ""be"", ""video recording""], [""Seal"", ""be"", ""Welsh""], [""Seal"", ""beOf"", ""award""], [""Seal"", ""beOf"", ""BRIT Awards""], [""Seal"", ""beOf"", ""British Columbia""], [""SeaLifeBase"", ""be"", ""database""], [""SeaLifeBase"", ""be"", ""Global Biodiversity Information Facility""], [""SeaLifeBase"", ""be"", ""Global Online""], [""SeaLifeBase"", ""be"", ""Online Games-Datenbank""], [""SeaLifeBase"", ""beAbout"", ""Life""], [""SeaLifeBase"", ""beAbout"", ""Marine""], [""SeaLifeBase"", ""provide"", ""ecology""], [""SeaLifeBase"", ""provide"", ""Finfish""], [""SeaLifeBase"", ""provide"", ""Key""], [""SeaLifeBase"", ""provide"", ""probability distribution""], [""SeaLifeBase"", ""provide"", ""species""], [""SeaLifeBase"", ""provideOn"", ""taxonomy""]]"
+Crane,"Crane is a surname. The name is a derivative of in Old English or is the English translation of the German or According to The Oxford Dictionary of Family Names in Britain & Ireland, and all mean in both Old English and German respectively. A crane is a machine used to move materials both vertically and horizontally, utilizing a system of a boom, hoist, wire ropes or chains, and sheaves for lifting and relocating heavy objects within the swing of its boom. The device uses one or more simple machines, such as the lever and pulley, to create mechanical advantage to do its work.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q16865841 rdfs:label ""Crane""@en ;
+    kg:accordIn wd:Q145 ;
+    kg:accordIn wd:Q27 ;
+    kg:accordOf wd:Q15767091 ;
+    kg:accordOf wd:Q35409 ;
+    kg:accordTo wd:Q23622 ;
+    kg:accordTo wd:Q34433 ;
+    kg:be wd:Q101352 ;
+    kg:be wd:Q113784867 ;
+    kg:be wd:Q29175 ;
+    kg:be wd:Q3331189 ;
+    kg:beIn wd:Q1860 ;
+    kg:beOf wd:Q188 .
+
+wd:Q101352 rdfs:label ""family name""@en .
+wd:Q113784867 rdfs:label ""translation into English""@en .
+wd:Q145 rdfs:label ""United Kingdom""@en .
+wd:Q15767091 rdfs:label ""Names: A Journal of Onomastics""@en .
+wd:Q1860 rdfs:label ""English""@en .
+wd:Q188 rdfs:label ""German""@en .
+wd:Q23622 rdfs:label ""dictionary""@en .
+wd:Q27 rdfs:label ""Ireland""@en .
+wd:Q29175 rdfs:label ""derivative""@en .
+wd:Q3331189 rdfs:label ""version, edition or translation""@en .
+wd:Q34433 rdfs:label ""University of Oxford""@en .
+wd:Q35409 rdfs:label ""family""@en .
+wd:Q178692 rdfs:label ""crane""@en ;
+    kg:be wd:Q1760034 ;
+    kg:create wd:Q24050179 ;
+    kg:create wd:Q813243 ;
+    kg:move wd:Q1223895 ;
+    kg:move wd:Q4113827 ;
+    kg:move wd:Q6786584 ;
+    kg:relocate wd:Q36327105 ;
+    kg:relocate wd:Q38848 ;
+    kg:relocate wd:Q488383 ;
+    kg:relocateWithin wd:Q859221 ;
+    kg:rope wd:Q37530215 ;
+    kg:rope wd:Q60411604 ;
+    kg:use wd:Q11660 ;
+    kg:use wd:Q16872087 ;
+    kg:use wd:Q200183 ;
+    kg:use wd:Q48378 ;
+    kg:use wd:Q7520704 ;
+    kg:utilize wd:Q1411613 ;
+    kg:utilize wd:Q26934461 ;
+    kg:utilizeOf wd:Q723972 .
+
+wd:Q11660 rdfs:label ""artificial intelligence""@en .
+wd:Q1223895 rdfs:label ""side-scrolling video game""@en .
+wd:Q1411613 rdfs:label ""hoist""@en .
+wd:Q16872087 rdfs:label ""Lever""@en .
+wd:Q1760034 rdfs:label ""Machine""@en .
+wd:Q200183 rdfs:label ""Simple English Wikipedia""@en .
+wd:Q24050179 rdfs:label ""advantage""@en .
+wd:Q26934461 rdfs:label ""Wire""@en .
+wd:Q36327105 rdfs:label ""Heavy objects and small children: Developmental data extend the passive frame theory""@en .
+wd:Q37530215 rdfs:label ""Sheaves""@en .
+wd:Q38848 rdfs:label ""heavy metal music""@en .
+wd:Q4113827 rdfs:label ""vertically transmitted infection""@en .
+wd:Q48378 rdfs:label ""pulley""@en .
+wd:Q488383 rdfs:label ""object""@en .
+wd:Q60411604 rdfs:label ""Chains""@en .
+wd:Q6786584 rdfs:label ""Materials""@en .
+wd:Q723972 rdfs:label ""Boom""@en .
+wd:Q7520704 rdfs:label ""Simple Machines""@en .
+wd:Q813243 rdfs:label ""ventilator""@en .
+wd:Q859221 rdfs:label ""Swing""@en .
+","[[""Crane"", ""accordIn"", ""Ireland""], [""Crane"", ""accordIn"", ""United Kingdom""], [""Crane"", ""accordOf"", ""family""], [""Crane"", ""accordOf"", ""Names: A Journal of Onomastics""], [""Crane"", ""accordTo"", ""dictionary""], [""Crane"", ""accordTo"", ""University of Oxford""], [""Crane"", ""be"", ""derivative""], [""Crane"", ""be"", ""family name""], [""crane"", ""be"", ""Machine""], [""Crane"", ""be"", ""translation into English""], [""Crane"", ""be"", ""version, edition or translation""], [""Crane"", ""beIn"", ""English""], [""Crane"", ""beOf"", ""German""], [""crane"", ""create"", ""advantage""], [""crane"", ""create"", ""ventilator""], [""crane"", ""move"", ""Materials""], [""crane"", ""move"", ""side-scrolling video game""], [""crane"", ""move"", ""vertically transmitted infection""], [""crane"", ""relocate"", ""heavy metal music""], [""crane"", ""relocate"", ""Heavy objects and small children: Developmental data extend the passive frame theory""], [""crane"", ""relocate"", ""object""], [""crane"", ""relocateWithin"", ""Swing""], [""crane"", ""rope"", ""Chains""], [""crane"", ""rope"", ""Sheaves""], [""crane"", ""use"", ""artificial intelligence""], [""crane"", ""use"", ""Lever""], [""crane"", ""use"", ""pulley""], [""crane"", ""use"", ""Simple English Wikipedia""], [""crane"", ""use"", ""Simple Machines""], [""crane"", ""utilize"", ""hoist""], [""crane"", ""utilize"", ""Wire""], [""crane"", ""utilizeOf"", ""Boom""]]"
+Bank,"A bank is a financial institution that accepts deposits from the public and creates a demand deposit while making loans. Lending activities can be directly performed by the bank or indirectly through capital markets. Bank is a surname. Notable people with the surname include: Floyd Bank, American former basketball coach Frank Bank, American actor István Bank, Hungarian footballer Jan Bank, Dutch historian Jesper Bank, Danish sailor Joshua Bank, Russian writer and rabbi Lawrence C.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q22687 rdfs:label ""bank""@en ;
+    kg:accept wd:Q18554103 ;
+    kg:acceptFrom wd:Q180686 ;
+    kg:be wd:Q43229 ;
+    kg:create wd:Q37500962 ;
+    kg:create wd:Q5260774 ;
+    kg:make wd:Q6663494 ;
+    kg:performBy wd:Q115455199 ;
+    kg:performThrough wd:Q125689837 ;
+    kg:performThrough wd:Q43388878 ;
+    kg:performThrough wd:Q5119 .
+
+wd:Q115455199 rdfs:label ""indirect""@en .
+wd:Q125689837 rdfs:label ""CAPITAL MARKETS""@en .
+wd:Q18554103 rdfs:label ""corneal deposit""@en .
+wd:Q37500962 rdfs:label ""Demand""@en .
+wd:Q43229 rdfs:label ""organization""@en .
+wd:Q43388878 rdfs:label ""Markétská""@en .
+wd:Q5119 rdfs:label ""capital city""@en .
+wd:Q5260774 rdfs:label ""deposit""@en .
+wd:Q6663494 rdfs:label ""Loans""@en .
+wd:Q16479798 rdfs:label ""Bank""@en ;
+    kg:be wd:Q101352 ;
+    kg:include wd:Q1158511 ;
+    kg:include wd:Q12173670 ;
+    kg:include wd:Q133485 ;
+    kg:include wd:Q15635788 ;
+    kg:include wd:Q15728196 ;
+    kg:include wd:Q16275854 ;
+    kg:include wd:Q201788 ;
+    kg:include wd:Q220546 ;
+    kg:include wd:Q28229089 ;
+    kg:include wd:Q3284319 ;
+    kg:include wd:Q33999 ;
+    kg:include wd:Q36180 ;
+    kg:include wd:Q39990 ;
+    kg:include wd:Q45199 ;
+    kg:include wd:Q4960 ;
+    kg:include wd:Q5372 ;
+    kg:include wd:Q628099 ;
+    kg:include wd:Q7411 ;
+    kg:include wd:Q7737 ;
+    kg:include wd:Q7976 ;
+    kg:include wd:Q9035 ;
+    kg:include wd:Q9067 ;
+    kg:include wd:Q937857 .
+
+wd:Q101352 rdfs:label ""family name""@en .
+wd:Q1158511 rdfs:label ""Jesper""@en .
+wd:Q12173670 rdfs:label ""Jan""@en .
+wd:Q133485 rdfs:label ""rabbi""@en .
+wd:Q15635788 rdfs:label ""Lawrence""@en .
+wd:Q15728196 rdfs:label ""István""@en .
+wd:Q16275854 rdfs:label ""Floyd""@en .
+wd:Q201788 rdfs:label ""historian""@en .
+wd:Q220546 rdfs:label ""Frank""@en .
+wd:Q3284319 rdfs:label ""Joshua""@en .
+wd:Q33999 rdfs:label ""actor""@en .
+wd:Q36180 rdfs:label ""writer""@en .
+wd:Q39990 rdfs:label ""Michael McMillian""@en .
+wd:Q45199 rdfs:label ""sailor""@en .
+wd:Q4960 rdfs:label ""Jason Lee""@en .
+wd:Q5372 rdfs:label ""basketball""@en .
+wd:Q628099 rdfs:label ""association football coach""@en .
+wd:Q7411 rdfs:label ""Dutch""@en .
+wd:Q7737 rdfs:label ""Russian""@en .
+wd:Q7976 rdfs:label ""American English""@en .
+wd:Q9035 rdfs:label ""Danish""@en .
+wd:Q9067 rdfs:label ""Hungarian""@en .
+wd:Q937857 rdfs:label ""association football player""@en .
+","[[""bank"", ""accept"", ""corneal deposit""], [""bank"", ""acceptFrom"", ""Q180686""], [""Bank"", ""be"", ""family name""], [""bank"", ""be"", ""organization""], [""bank"", ""create"", ""Demand""], [""bank"", ""create"", ""deposit""], [""Bank"", ""include"", ""actor""], [""Bank"", ""include"", ""American English""], [""Bank"", ""include"", ""association football coach""], [""Bank"", ""include"", ""association football player""], [""Bank"", ""include"", ""basketball""], [""Bank"", ""include"", ""Danish""], [""Bank"", ""include"", ""Dutch""], [""Bank"", ""include"", ""Floyd""], [""Bank"", ""include"", ""Frank""], [""Bank"", ""include"", ""historian""], [""Bank"", ""include"", ""Hungarian""], [""Bank"", ""include"", ""István""], [""Bank"", ""include"", ""Jan""], [""Bank"", ""include"", ""Jason Lee""], [""Bank"", ""include"", ""Jesper""], [""Bank"", ""include"", ""Joshua""], [""Bank"", ""include"", ""Lawrence""], [""Bank"", ""include"", ""Michael McMillian""], [""Bank"", ""include"", ""Q28229089""], [""Bank"", ""include"", ""rabbi""], [""Bank"", ""include"", ""Russian""], [""Bank"", ""include"", ""sailor""], [""Bank"", ""include"", ""writer""], [""bank"", ""make"", ""Loans""], [""bank"", ""performBy"", ""indirect""], [""bank"", ""performThrough"", ""capital city""], [""bank"", ""performThrough"", ""CAPITAL MARKETS""], [""bank"", ""performThrough"", ""Markétská""]]"
+Bat,"Bath is a city in Somerset, England, known for and named after its Roman-built baths. At the 2021 census, the population was 94,080. Baton Rouge is the capital city of the U.S. state of Louisiana.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q22889 rdfs:label ""Bath""@en ;
+    kg:be wd:Q21 ;
+    kg:be wd:Q3596655 ;
+    kg:be wd:Q515 ;
+    kg:be wd:Q683782 ;
+    kg:beIn wd:Q67461071 ;
+    kg:nameAfter wd:Q327651 .
+
+wd:Q21 rdfs:label ""England""@en .
+wd:Q327651 rdfs:label ""bathing""@en .
+wd:Q515 rdfs:label ""city""@en .
+wd:Q67461071 rdfs:label ""Somerset""@en .
+wd:Q683782 rdfs:label ""94""@en .
+wd:Q28218 rdfs:label ""Baton Rouge""@en ;
+    kg:be wd:Q515 .
+
+wd:Q515 rdfs:label ""city""@en .
+","[[""Bath"", ""be"", ""94""], [""Bath"", ""be"", ""city""], [""Bath"", ""be"", ""England""], [""Bath"", ""be"", ""Q3596655""], [""Bath"", ""beIn"", ""Somerset""], [""Bath"", ""nameAfter"", ""bathing""], [""Baton Rouge"", ""be"", ""city""]]"
+Date,"A calendar date is a reference to a particular day, represented within a calendar system, enabling a specific day to be unambiguously identified. Simple math can be performed between dates; commonly, the number of days between two dates may be calculated, e.g., is ten days after. An anniversary is the date on which an event took place or an institution was founded. Most countries celebrate national anniversaries, typically called national days.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q205892 rdfs:label ""calendar date""@en ;
+    kg:be wd:Q121769 ;
+    kg:be wd:Q51968852 ;
+    kg:beTo wd:Q5242796 ;
+    kg:enable wd:Q71536040 ;
+    kg:perform wd:Q28962312 ;
+    kg:perform wd:Q573 ;
+    kg:performBetween wd:Q13427026 .
+
+wd:Q121769 rdfs:label ""reference""@en .
+wd:Q13427026 rdfs:label ""Dates""@en .
+wd:Q28962312 rdfs:label ""often""@en .
+wd:Q51968852 rdfs:label ""Unambiguously distinguishing Si[3Si,1Al] and Si[3Si,1OH] stuctural units in zeolite by 1H/29Si/27Al triple resonance solid state NMR spectroscopy""@en .
+wd:Q5242796 rdfs:label ""Day""@en .
+wd:Q573 rdfs:label ""day""@en .
+wd:Q71536040 rdfs:label ""most precise value""@en .
+wd:Q3406134 rdfs:label ""date of establishment""@en ;
+    kg:beOn wd:Q1190554 ;
+    kg:call wd:Q139724261 ;
+    kg:call wd:Q573 ;
+    kg:celebrate wd:Q19057770 ;
+    kg:celebrate wd:Q28962312 ;
+    kg:celebrate wd:Q518155 ;
+    kg:take wd:Q43229 .
+
+wd:Q1190554 rdfs:label ""occurrence""@en .
+wd:Q139724261 rdfs:label ""National Days""@en .
+wd:Q19057770 rdfs:label ""Anniversaries""@en .
+wd:Q28962312 rdfs:label ""often""@en .
+wd:Q43229 rdfs:label ""organization""@en .
+wd:Q518155 rdfs:label ""National Archives and Records Administration""@en .
+wd:Q573 rdfs:label ""day""@en .
+","[[""calendar date"", ""be"", ""reference""], [""calendar date"", ""be"", ""Unambiguously distinguishing Si[3Si,1Al] and Si[3Si,1OH] stuctural units in zeolite by 1H/29Si/27Al triple resonance solid state NMR spectroscopy""], [""calendar date"", ""beTo"", ""Day""], [""calendar date"", ""enable"", ""most precise value""], [""calendar date"", ""perform"", ""day""], [""calendar date"", ""perform"", ""often""], [""calendar date"", ""performBetween"", ""Dates""], [""date of establishment"", ""beOn"", ""occurrence""], [""date of establishment"", ""call"", ""day""], [""date of establishment"", ""call"", ""National Days""], [""date of establishment"", ""celebrate"", ""Anniversaries""], [""date of establishment"", ""celebrate"", ""National Archives and Records Administration""], [""date of establishment"", ""celebrate"", ""often""], [""date of establishment"", ""take"", ""organization""]]"
+Spring,"A spring is a natural exit point at which groundwater emerges from an aquifer and flows across the ground surface as surface water. It is a component of the hydrosphere, as well as a part of the water cycle. The surname Spring is shared by: Amos Spring, English cricketer Antoine Frédéric Spring, Belgian physician and botanist Arthur Spring, Irish Labour Party politician Bryan Spring, British jazz drummer Charles A. Spring, American merchant and religious leader Christopher Spring, Canadian bobsledder Cecil Spring Rice, British diplomat Dick Spring, Irish businessman and politician Diel Spring, Saint Vincent and the Grenadines footballer Dryden Spring, New Zealand businessman George E.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q124714 rdfs:label ""spring""@en ;
+    kg:be wd:Q11442 ;
+    kg:be wd:Q11653 ;
+    kg:be wd:Q21199 ;
+    kg:be wd:Q4 ;
+    kg:be wd:Q81041 ;
+    kg:beAt wd:Q161598 ;
+    kg:beOf wd:Q83169 ;
+    kg:emergeFrom wd:Q208791 ;
+    kg:flowAcross wd:Q36133 ;
+    kg:flowAcross wd:Q37497814 ;
+    kg:flowAs wd:Q283 .
+
+wd:Q11442 rdfs:label ""bicycle""@en .
+wd:Q11653 rdfs:label ""electronic component""@en .
+wd:Q161598 rdfs:label ""groundwater""@en .
+wd:Q208791 rdfs:label ""aquifer""@en .
+wd:Q21199 rdfs:label ""natural number""@en .
+wd:Q283 rdfs:label ""water""@en .
+wd:Q36133 rdfs:label ""soil""@en .
+wd:Q37497814 rdfs:label ""Surface""@en .
+wd:Q4 rdfs:label ""death""@en .
+wd:Q81041 rdfs:label ""water cycle""@en .
+wd:Q83169 rdfs:label ""hydrosphere""@en .
+wd:Q37562822 rdfs:label ""Spring""@en ;
+    kg:share wd:Q12299841 ;
+    kg:share wd:Q15235674 ;
+    kg:share wd:Q17100343 ;
+    kg:share wd:Q17539276 ;
+    kg:share wd:Q1778168 ;
+    kg:share wd:Q1860 ;
+    kg:share wd:Q1931347 ;
+    kg:share wd:Q2374149 ;
+    kg:share wd:Q2958359 ;
+    kg:share wd:Q386854 ;
+    kg:share wd:Q39631 ;
+    kg:share wd:Q64007131 ;
+    kg:share wd:Q695556 ;
+    kg:share wd:Q82955 ;
+    kg:share wd:Q8341 ;
+    kg:share wd:Q9309 ;
+    kg:shareBy wd:Q18216060 ;
+    kg:spring wd:Q100968560 ;
+    kg:spring wd:Q1084472 ;
+    kg:spring wd:Q13383011 ;
+    kg:spring wd:Q15731759 ;
+    kg:spring wd:Q15752348 ;
+    kg:spring wd:Q214946 ;
+    kg:spring wd:Q215536 ;
+    kg:spring wd:Q2566598 ;
+    kg:spring wd:Q356460 ;
+    kg:spring wd:Q5309675 ;
+    kg:spring wd:Q66087675 ;
+    kg:spring wd:Q664 ;
+    kg:spring wd:Q757 ;
+    kg:spring wd:Q871232 .
+
+wd:Q100968560 rdfs:label ""Spring-Rice, Hon. Mary Ellen""@en .
+wd:Q1084472 rdfs:label ""Christopher""@en .
+wd:Q12299841 rdfs:label ""cricketer""@en .
+wd:Q13383011 rdfs:label ""bobsledder""@en .
+wd:Q15235674 rdfs:label ""Antoine""@en .
+wd:Q15731759 rdfs:label ""Cecil""@en .
+wd:Q15752348 rdfs:label ""Canadian Journal of Public Health""@en .
+wd:Q17100343 rdfs:label ""Irish Statute Book""@en .
+wd:Q17539276 rdfs:label ""Frédéric""@en .
+wd:Q1778168 rdfs:label ""Arthur""@en .
+wd:Q18216060 rdfs:label ""Amos""@en .
+wd:Q1860 rdfs:label ""English""@en .
+wd:Q1931347 rdfs:label ""Party""@en .
+wd:Q214946 rdfs:label ""George Engelmann""@en .
+wd:Q215536 rdfs:label ""merchant""@en .
+wd:Q2374149 rdfs:label ""botanist""@en .
+wd:Q2566598 rdfs:label ""religious""@en .
+wd:Q2958359 rdfs:label ""Charles""@en .
+wd:Q356460 rdfs:label ""Dick Spring""@en .
+wd:Q386854 rdfs:label ""drummer""@en .
+wd:Q39631 rdfs:label ""physician""@en .
+wd:Q5309675 rdfs:label ""Dryden Spring""@en .
+wd:Q64007131 rdfs:label ""Belgian Species List""@en .
+wd:Q66087675 rdfs:label ""Diel Spring""@en .
+wd:Q664 rdfs:label ""New Zealand""@en .
+wd:Q695556 rdfs:label ""Bryan""@en .
+wd:Q757 rdfs:label ""Saint Vincent and the Grenadines""@en .
+wd:Q82955 rdfs:label ""politician""@en .
+wd:Q8341 rdfs:label ""jazz""@en .
+wd:Q871232 rdfs:label ""editorial""@en .
+wd:Q9309 rdfs:label ""Welsh""@en .
+","[[""spring"", ""be"", ""bicycle""], [""spring"", ""be"", ""death""], [""spring"", ""be"", ""electronic component""], [""spring"", ""be"", ""natural number""], [""spring"", ""be"", ""water cycle""], [""spring"", ""beAt"", ""groundwater""], [""spring"", ""beOf"", ""hydrosphere""], [""spring"", ""emergeFrom"", ""aquifer""], [""spring"", ""flowAcross"", ""soil""], [""spring"", ""flowAcross"", ""Surface""], [""spring"", ""flowAs"", ""water""], [""Spring"", ""share"", ""Antoine""], [""Spring"", ""share"", ""Arthur""], [""Spring"", ""share"", ""Belgian Species List""], [""Spring"", ""share"", ""botanist""], [""Spring"", ""share"", ""Bryan""], [""Spring"", ""share"", ""Charles""], [""Spring"", ""share"", ""cricketer""], [""Spring"", ""share"", ""drummer""], [""Spring"", ""share"", ""English""], [""Spring"", ""share"", ""Frédéric""], [""Spring"", ""share"", ""Irish Statute Book""], [""Spring"", ""share"", ""jazz""], [""Spring"", ""share"", ""Party""], [""Spring"", ""share"", ""physician""], [""Spring"", ""share"", ""politician""], [""Spring"", ""share"", ""Welsh""], [""Spring"", ""shareBy"", ""Amos""], [""Spring"", ""spring"", ""bobsledder""], [""Spring"", ""spring"", ""Canadian Journal of Public Health""], [""Spring"", ""spring"", ""Cecil""], [""Spring"", ""spring"", ""Christopher""], [""Spring"", ""spring"", ""Dick Spring""], [""Spring"", ""spring"", ""Diel Spring""], [""Spring"", ""spring"", ""Dryden Spring""], [""Spring"", ""spring"", ""editorial""], [""Spring"", ""spring"", ""George Engelmann""], [""Spring"", ""spring"", ""merchant""], [""Spring"", ""spring"", ""New Zealand""], [""Spring"", ""spring"", ""religious""], [""Spring"", ""spring"", ""Saint Vincent and the Grenadines""], [""Spring"", ""spring"", ""Spring-Rice, Hon. Mary Ellen""]]"
+Turkey,"Turkey, officially the Republic of Türkiye, is a country mainly located in Anatolia in West Asia, with a smaller part called East Thrace in Southeast Europe. It borders the Black Sea to the north; Georgia, Armenia, Azerbaijan, and Iran to the east; Iraq, Syria, and the Mediterranean Sea to the south; and the Aegean Sea, Greece, and Bulgaria to the west. UTC+03:00 is an identifier for a time offset from UTC of +03:00. In areas using this time offset, the time is three hours ahead of the Coordinated Universal Time.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q43 rdfs:label ""Turkey""@en ;
+    kg:be wd:Q83440 ;
+    kg:border wd:Q11708 ;
+    kg:border wd:Q1428 ;
+    kg:border wd:Q219 ;
+    kg:border wd:Q227 ;
+    kg:border wd:Q2662465 ;
+    kg:border wd:Q34575 ;
+    kg:border wd:Q380580 ;
+    kg:border wd:Q399 ;
+    kg:border wd:Q41 ;
+    kg:border wd:Q4918 ;
+    kg:border wd:Q667 ;
+    kg:border wd:Q794 ;
+    kg:border wd:Q796 ;
+    kg:border wd:Q858 ;
+    kg:borderTo wd:Q11790733 ;
+    kg:call wd:Q41741 ;
+    kg:call wd:Q684 ;
+    kg:callIn wd:Q263686 ;
+    kg:callIn wd:Q5412157 ;
+    kg:callIn wd:Q6452640 ;
+    kg:locateIn wd:Q20678374 ;
+    kg:locateIn wd:Q2564123 ;
+    kg:locateIn wd:Q48 .
+
+wd:Q11708 rdfs:label ""Southeast Asia""@en .
+wd:Q11790733 rdfs:label ""North""@en .
+wd:Q1428 rdfs:label ""Georgia""@en .
+wd:Q20678374 rdfs:label ""Anatolia""@en .
+wd:Q219 rdfs:label ""Bulgaria""@en .
+wd:Q227 rdfs:label ""Azerbaijan""@en .
+wd:Q2564123 rdfs:label ""West""@en .
+wd:Q263686 rdfs:label ""Southeastern Europe""@en .
+wd:Q2662465 rdfs:label ""Black""@en .
+wd:Q34575 rdfs:label ""Aegean Sea""@en .
+wd:Q380580 rdfs:label ""Aegean Airlines""@en .
+wd:Q399 rdfs:label ""Armenia""@en .
+wd:Q41 rdfs:label ""Greece""@en .
+wd:Q41741 rdfs:label ""Thrace""@en .
+wd:Q48 rdfs:label ""Asia""@en .
+wd:Q4918 rdfs:label ""Mediterranean Sea""@en .
+wd:Q5412157 rdfs:label ""Europe PubMed Central""@en .
+wd:Q6452640 rdfs:label ""southeast""@en .
+wd:Q667 rdfs:label ""south""@en .
+wd:Q684 rdfs:label ""east""@en .
+wd:Q794 rdfs:label ""Iran""@en .
+wd:Q796 rdfs:label ""Iraq""@en .
+wd:Q83440 rdfs:label ""country music""@en .
+wd:Q858 rdfs:label ""Syria""@en .
+wd:Q6760 rdfs:label ""UTC+03:00""@en ;
+    kg:be wd:Q25235 ;
+    kg:be wd:Q853614 ;
+    kg:beFor wd:Q43297 ;
+    kg:beOf wd:Q1536 ;
+    kg:beOf wd:Q38903 ;
+    kg:offsetFrom wd:Q971843 .
+
+wd:Q1536 rdfs:label ""UTC""@en .
+wd:Q25235 rdfs:label ""hour""@en .
+wd:Q38903 rdfs:label ""Universal Music Group""@en .
+wd:Q43297 rdfs:label ""Time""@en .
+wd:Q853614 rdfs:label ""identifier""@en .
+wd:Q971843 rdfs:label ""Cultural and Sports Club Technical University of Cajamarca""@en .
+","[[""Turkey"", ""be"", ""country music""], [""Turkey"", ""border"", ""Aegean Airlines""], [""Turkey"", ""border"", ""Aegean Sea""], [""Turkey"", ""border"", ""Armenia""], [""Turkey"", ""border"", ""Azerbaijan""], [""Turkey"", ""border"", ""Black""], [""Turkey"", ""border"", ""Bulgaria""], [""Turkey"", ""border"", ""Georgia""], [""Turkey"", ""border"", ""Greece""], [""Turkey"", ""border"", ""Iran""], [""Turkey"", ""border"", ""Iraq""], [""Turkey"", ""border"", ""Mediterranean Sea""], [""Turkey"", ""border"", ""south""], [""Turkey"", ""border"", ""Southeast Asia""], [""Turkey"", ""border"", ""Syria""], [""Turkey"", ""borderTo"", ""North""], [""Turkey"", ""call"", ""east""], [""Turkey"", ""call"", ""Thrace""], [""Turkey"", ""callIn"", ""Europe PubMed Central""], [""Turkey"", ""callIn"", ""southeast""], [""Turkey"", ""callIn"", ""Southeastern Europe""], [""Turkey"", ""locateIn"", ""Anatolia""], [""Turkey"", ""locateIn"", ""Asia""], [""Turkey"", ""locateIn"", ""West""], [""UTC+03:00"", ""be"", ""hour""], [""UTC+03:00"", ""be"", ""identifier""], [""UTC+03:00"", ""beFor"", ""Time""], [""UTC+03:00"", ""beOf"", ""Universal Music Group""], [""UTC+03:00"", ""beOf"", ""UTC""], [""UTC+03:00"", ""offsetFrom"", ""Cultural and Sports Club Technical University of Cajamarca""]]"
+Phoenix,"Phoenix is the capital and most populous city of the U.S. state of Arizona. Phoenix is a minor constellation in the southern sky. Named after the mythical phoenix, it was first depicted on a celestial atlas by Johann Bayer in his 1603 Uranometria.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q16556 rdfs:label ""Phoenix""@en ;
+    kg:be wd:Q1082849 ;
+    kg:be wd:Q515 .
+
+wd:Q1082849 rdfs:label ""Populous""@en .
+wd:Q515 rdfs:label ""city""@en .
+wd:Q10441 rdfs:label ""Phoenix""@en ;
+    kg:be wd:Q16877187 ;
+    kg:be wd:Q4637694 ;
+    kg:beIn wd:Q10542 ;
+    kg:beIn wd:Q527 ;
+    kg:beIn wd:Q5631174 ;
+    kg:depictBy wd:Q11122389 ;
+    kg:depictBy wd:Q152051 ;
+    kg:depictIn wd:Q12681523 ;
+    kg:depictIn wd:Q609895 ;
+    kg:depictOn wd:Q112786753 ;
+    kg:depictOn wd:Q299002 ;
+    kg:depictOn wd:Q523 ;
+    kg:nameAfter wd:Q4271324 .
+
+wd:Q10542 rdfs:label ""Crux""@en .
+wd:Q11122389 rdfs:label ""Johann""@en .
+wd:Q112786753 rdfs:label ""Celestial Atlas""@en .
+wd:Q12681523 rdfs:label ""1603""@en .
+wd:Q152051 rdfs:label ""Bayer""@en .
+wd:Q16877187 rdfs:label ""Minor""@en .
+wd:Q299002 rdfs:label ""ATLAS experiment""@en .
+wd:Q4271324 rdfs:label ""mythical character""@en .
+wd:Q4637694 rdfs:label ""ConStellation""@en .
+wd:Q523 rdfs:label ""star""@en .
+wd:Q527 rdfs:label ""sky""@en .
+wd:Q5631174 rdfs:label ""HMSAS Parktown""@en .
+wd:Q609895 rdfs:label ""Uranometria""@en .
+","[[""Phoenix"", ""be"", ""city""], [""Phoenix"", ""be"", ""ConStellation""], [""Phoenix"", ""be"", ""Minor""], [""Phoenix"", ""be"", ""Populous""], [""Phoenix"", ""beIn"", ""Crux""], [""Phoenix"", ""beIn"", ""HMSAS Parktown""], [""Phoenix"", ""beIn"", ""sky""], [""Phoenix"", ""depictBy"", ""Bayer""], [""Phoenix"", ""depictBy"", ""Johann""], [""Phoenix"", ""depictIn"", ""1603""], [""Phoenix"", ""depictIn"", ""Uranometria""], [""Phoenix"", ""depictOn"", ""ATLAS experiment""], [""Phoenix"", ""depictOn"", ""Celestial Atlas""], [""Phoenix"", ""depictOn"", ""star""], [""Phoenix"", ""nameAfter"", ""mythical character""]]"
+Delta,"Delta is a state in the South-South geopolitical zone of Nigeria. Named after the Niger Delta—a large part of which is in the state—the state was formed from the former Bendel State, on 27 August 1991. Delta is an Old World genus of potter wasps with species predominantly distributed through tropical Africa and Asia. Some species are present in the Palearctic region, and a few have been introduced in the Nearctic and Neotropical regions.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q503910 rdfs:label ""Delta State""@en ;
+    kg:beIn wd:Q1292279 ;
+    kg:beIn wd:Q30599787 ;
+    kg:beIn wd:Q37440729 ;
+    kg:beOf wd:Q1033 ;
+    kg:form wd:Q2062 ;
+    kg:form wd:Q370731 ;
+    kg:form wd:Q433353 ;
+    kg:formFrom wd:Q16479640 ;
+    kg:nameAfter wd:Q1032 .
+
+wd:Q1032 rdfs:label ""Niger""@en .
+wd:Q1033 rdfs:label ""Nigeria""@en .
+wd:Q1292279 rdfs:label ""political border""@en .
+wd:Q16479640 rdfs:label ""Bendel""@en .
+wd:Q2062 rdfs:label ""1991""@en .
+wd:Q30599787 rdfs:label ""South South""@en .
+wd:Q370731 rdfs:label ""August""@en .
+wd:Q37440729 rdfs:label ""Zone""@en .
+wd:Q433353 rdfs:label ""27""@en .
+wd:Q2082751 rdfs:label ""Delta""@en ;
+    kg:be wd:Q34740 ;
+    kg:be wd:Q811652 ;
+    kg:beIn wd:Q106447 ;
+    kg:beIn wd:Q82794 ;
+    kg:beOf wd:Q2106585 ;
+    kg:beOf wd:Q9458574 ;
+    kg:beWith wd:Q7432 ;
+    kg:distributeThrough wd:Q15 ;
+    kg:distributeThrough wd:Q22909492 ;
+    kg:distributeThrough wd:Q48 ;
+    kg:introduceIn wd:Q217151 ;
+    kg:introduceIn wd:Q429976 ;
+    kg:introduceIn wd:Q737742 .
+
+wd:Q106447 rdfs:label ""Palearctic realm""@en .
+wd:Q15 rdfs:label ""Africa""@en .
+wd:Q2106585 rdfs:label ""Potter""@en .
+wd:Q217151 rdfs:label ""Neotropical realm""@en .
+wd:Q22909492 rdfs:label ""Tropical""@en .
+wd:Q34740 rdfs:label ""genus""@en .
+wd:Q429976 rdfs:label ""phytochorion""@en .
+wd:Q48 rdfs:label ""Asia""@en .
+wd:Q737742 rdfs:label ""Nearctic realm""@en .
+wd:Q7432 rdfs:label ""species""@en .
+wd:Q811652 rdfs:label ""Helicoverpa armigera""@en .
+wd:Q82794 rdfs:label ""region""@en .
+wd:Q9458574 rdfs:label ""wasps""@en .
+","[[""Delta"", ""be"", ""genus""], [""Delta"", ""be"", ""Helicoverpa armigera""], [""Delta"", ""beIn"", ""Palearctic realm""], [""Delta"", ""beIn"", ""region""], [""Delta"", ""beOf"", ""Potter""], [""Delta"", ""beOf"", ""wasps""], [""Delta"", ""beWith"", ""species""], [""Delta"", ""distributeThrough"", ""Africa""], [""Delta"", ""distributeThrough"", ""Asia""], [""Delta"", ""distributeThrough"", ""Tropical""], [""Delta"", ""introduceIn"", ""Nearctic realm""], [""Delta"", ""introduceIn"", ""Neotropical realm""], [""Delta"", ""introduceIn"", ""phytochorion""], [""Delta State"", ""beIn"", ""political border""], [""Delta State"", ""beIn"", ""South South""], [""Delta State"", ""beIn"", ""Zone""], [""Delta State"", ""beOf"", ""Nigeria""], [""Delta State"", ""form"", ""1991""], [""Delta State"", ""form"", ""27""], [""Delta State"", ""form"", ""August""], [""Delta State"", ""formFrom"", ""Bendel""], [""Delta State"", ""nameAfter"", ""Niger""]]"
+Mustang,"The North American Aviation P-51 Mustang is an American long-range, single-seat fighter and fighter-bomber used during World War II and the Korean War, among other conflicts. The Mustang was designed in 1940 by a team headed by James H. The Ford Mustang is an American automobile manufactured and marketed by Ford since 1964, as Ford's longest nameplate in continuous production. Currently in its seventh generation, it is the fifth-best selling Ford car nameplate.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q192075 rdfs:label ""North American P-51 Mustang""@en ;
+    kg:be wd:Q1199515 ;
+    kg:be wd:Q1250916 ;
+    kg:be wd:Q135214932 ;
+    kg:be wd:Q5447839 ;
+    kg:be wd:Q80183430 ;
+    kg:designBy wd:Q528227 ;
+    kg:designIn wd:Q18633 ;
+    kg:headBy wd:Q677191 ;
+    kg:use wd:Q180684 ;
+    kg:useDuring wd:Q270 ;
+    kg:useDuring wd:Q9176 .
+
+wd:Q1199515 rdfs:label ""formula racing""@en .
+wd:Q1250916 rdfs:label ""warrior""@en .
+wd:Q135214932 rdfs:label ""single-seat fighter""@en .
+wd:Q180684 rdfs:label ""conflict""@en .
+wd:Q18633 rdfs:label ""1940""@en .
+wd:Q270 rdfs:label ""Warsaw""@en .
+wd:Q528227 rdfs:label ""TEAM""@en .
+wd:Q5447839 rdfs:label ""Fighter Bomber""@en .
+wd:Q677191 rdfs:label ""James""@en .
+wd:Q80183430 rdfs:label ""Long Range""@en .
+wd:Q9176 rdfs:label ""Korean""@en .
+wd:Q183476 kg:be wd:Q10470 ;
+    kg:be wd:Q125448453 ;
+    kg:be wd:Q1420 ;
+    kg:be wd:Q2495374 ;
+    kg:be wd:Q463436 ;
+    kg:be wd:Q7976 ;
+    kg:marketSince wd:Q2652 ;
+    kg:s wd:Q200974 ;
+    kg:sIn wd:Q11398090 ;
+    kg:sIn wd:Q215768 ;
+    kg:sIn wd:Q2195 .
+
+wd:Q10470 rdfs:label ""Carina""@en .
+wd:Q11398090 rdfs:label ""creation""@en .
+wd:Q125448453 rdfs:label ""Ford Carr""@en .
+wd:Q1420 rdfs:label ""car""@en .
+wd:Q200974 rdfs:label ""nameplate capacity""@en .
+wd:Q215768 rdfs:label ""mass production""@en .
+wd:Q2195 rdfs:label ""JPEG""@en .
+wd:Q2495374 rdfs:label ""Selling""@en .
+wd:Q2652 rdfs:label ""1964""@en .
+wd:Q463436 rdfs:label ""American Automobile Association""@en .
+wd:Q7976 rdfs:label ""American English""@en .
+","[[""North American P-51 Mustang"", ""be"", ""Fighter Bomber""], [""North American P-51 Mustang"", ""be"", ""formula racing""], [""North American P-51 Mustang"", ""be"", ""Long Range""], [""North American P-51 Mustang"", ""be"", ""single-seat fighter""], [""North American P-51 Mustang"", ""be"", ""warrior""], [""North American P-51 Mustang"", ""designBy"", ""TEAM""], [""North American P-51 Mustang"", ""designIn"", ""1940""], [""North American P-51 Mustang"", ""headBy"", ""James""], [""North American P-51 Mustang"", ""use"", ""conflict""], [""North American P-51 Mustang"", ""useDuring"", ""Korean""], [""North American P-51 Mustang"", ""useDuring"", ""Warsaw""], [""Q183476"", ""be"", ""American Automobile Association""], [""Q183476"", ""be"", ""American English""], [""Q183476"", ""be"", ""car""], [""Q183476"", ""be"", ""Carina""], [""Q183476"", ""be"", ""Ford Carr""], [""Q183476"", ""be"", ""Selling""], [""Q183476"", ""marketSince"", ""1964""], [""Q183476"", ""s"", ""nameplate capacity""], [""Q183476"", ""sIn"", ""creation""], [""Q183476"", ""sIn"", ""JPEG""], [""Q183476"", ""sIn"", ""mass production""]]"
+Shell,"Shell plc is a British multinational oil and gas company, headquartered in London, England. Shell is a public limited company with a primary listing on the London Stock Exchange and secondary listings on Euronext Amsterdam and the New York Stock Exchange. A seashell, also known simply as a shell, is a hard, protective outer layer usually created by an animal or organism that lives in the sea. Most seashells are made by mollusks, such as snails, clams, and oysters to protect their soft insides.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q154950 rdfs:label ""Shell""@en ;
+    kg:be wd:Q11813450 ;
+    kg:be wd:Q128300083 ;
+    kg:be wd:Q161726 ;
+    kg:be wd:Q174705 ;
+    kg:be wd:Q180686 ;
+    kg:be wd:Q33685 ;
+    kg:be wd:Q4039279 ;
+    kg:be wd:Q66439598 ;
+    kg:be wd:Q6881511 ;
+    kg:be wd:Q9309 ;
+    kg:beOn wd:Q15759989 ;
+    kg:beOn wd:Q159334 ;
+    kg:beOn wd:Q1754 ;
+    kg:beOn wd:Q42462 ;
+    kg:beOn wd:Q577487 ;
+    kg:beOn wd:Q727 ;
+    kg:beOn wd:Q842108 ;
+    kg:beWith wd:Q478088 ;
+    kg:beWith wd:Q582207 ;
+    kg:headquarter wd:Q21 ;
+    kg:headquarterIn wd:Q84 .
+
+wd:Q11813450 rdfs:label ""gas supplier""@en .
+wd:Q128300083 rdfs:label ""Multinational oil companies in Nigeria and corporate social responsibility in the HIV/AIDS response in host communities""@en .
+wd:Q15759989 rdfs:label ""Exchange""@en .
+wd:Q159334 rdfs:label ""secondary school""@en .
+wd:Q161726 rdfs:label ""multinational corporation""@en .
+wd:Q174705 rdfs:label ""oil painting""@en .
+wd:Q1754 rdfs:label ""Stockholm""@en .
+wd:Q21 rdfs:label ""England""@en .
+wd:Q33685 rdfs:label ""limited company""@en .
+wd:Q4039279 rdfs:label ""Gastroenterology""@en .
+wd:Q42462 rdfs:label ""York""@en .
+wd:Q478088 rdfs:label ""listing""@en .
+wd:Q577487 rdfs:label ""listings magazine""@en .
+wd:Q582207 rdfs:label ""antiphospholipid syndrome""@en .
+wd:Q66439598 rdfs:label ""partial open access""@en .
+wd:Q6881511 rdfs:label ""enterprise""@en .
+wd:Q727 rdfs:label ""Amsterdam""@en .
+wd:Q84 rdfs:label ""London""@en .
+wd:Q842108 rdfs:label ""Euronext""@en .
+wd:Q9309 rdfs:label ""Welsh""@en .
+wd:Q213096 rdfs:label ""seashell""@en ;
+    kg:be wd:Q1333024 ;
+    kg:be wd:Q140579125 ;
+    kg:be wd:Q37557616 ;
+    kg:be wd:Q61976836 ;
+    kg:be wd:Q699612 ;
+    kg:be wd:Q80967 ;
+    kg:createBy wd:Q7239 ;
+    kg:createBy wd:Q729 ;
+    kg:know wd:Q6296982 ;
+    kg:liveIn wd:Q11708 ;
+    kg:make wd:Q107411 ;
+    kg:make wd:Q5034898 ;
+    kg:make wd:Q7546947 ;
+    kg:makeBy wd:Q25326 ;
+    kg:protect wd:Q6038037 ;
+    kg:protect wd:Q7397 .
+
+wd:Q107411 rdfs:label ""oyster""@en .
+wd:Q11708 rdfs:label ""Southeast Asia""@en .
+wd:Q1333024 rdfs:label ""personal protective equipment""@en .
+wd:Q140579125 rdfs:label ""Protective outer case, especially for portable audio device systems""@en .
+wd:Q25326 rdfs:label ""Mollusca""@en .
+wd:Q37557616 rdfs:label ""Layer""@en .
+wd:Q5034898 rdfs:label ""Cape Libraries Automated Materials Sharing""@en .
+wd:Q6038037 rdfs:label ""Insides""@en .
+wd:Q61976836 rdfs:label ""outer shell""@en .
+wd:Q6296982 rdfs:label ""Simply""@en .
+wd:Q699612 rdfs:label ""Hard""@en .
+wd:Q7239 rdfs:label ""organism""@en .
+wd:Q729 rdfs:label ""animal""@en .
+wd:Q7397 rdfs:label ""software""@en .
+wd:Q7546947 rdfs:label ""Snails""@en .
+wd:Q80967 rdfs:label ""Outer Hebrides""@en .
+","[[""seashell"", ""be"", ""Hard""], [""seashell"", ""be"", ""Layer""], [""seashell"", ""be"", ""Outer Hebrides""], [""seashell"", ""be"", ""outer shell""], [""seashell"", ""be"", ""personal protective equipment""], [""seashell"", ""be"", ""Protective outer case, especially for portable audio device systems""], [""seashell"", ""createBy"", ""animal""], [""seashell"", ""createBy"", ""organism""], [""seashell"", ""know"", ""Simply""], [""seashell"", ""liveIn"", ""Southeast Asia""], [""seashell"", ""make"", ""Cape Libraries Automated Materials Sharing""], [""seashell"", ""make"", ""oyster""], [""seashell"", ""make"", ""Snails""], [""seashell"", ""makeBy"", ""Mollusca""], [""seashell"", ""protect"", ""Insides""], [""seashell"", ""protect"", ""software""], [""Shell"", ""be"", ""enterprise""], [""Shell"", ""be"", ""gas supplier""], [""Shell"", ""be"", ""Gastroenterology""], [""Shell"", ""be"", ""limited company""], [""Shell"", ""be"", ""multinational corporation""], [""Shell"", ""be"", ""Multinational oil companies in Nigeria and corporate social responsibility in the HIV/AIDS response in host communities""], [""Shell"", ""be"", ""oil painting""], [""Shell"", ""be"", ""partial open access""], [""Shell"", ""be"", ""Q180686""], [""Shell"", ""be"", ""Welsh""], [""Shell"", ""beOn"", ""Amsterdam""], [""Shell"", ""beOn"", ""Euronext""], [""Shell"", ""beOn"", ""Exchange""], [""Shell"", ""beOn"", ""listings magazine""], [""Shell"", ""beOn"", ""secondary school""], [""Shell"", ""beOn"", ""Stockholm""], [""Shell"", ""beOn"", ""York""], [""Shell"", ""beWith"", ""antiphospholipid syndrome""], [""Shell"", ""beWith"", ""listing""], [""Shell"", ""headquarter"", ""England""], [""Shell"", ""headquarterIn"", ""London""]]"
+Car-Automobile,"Carina is a constellation in the southern sky. Its name is Latin for the keel of a ship, and it was the southern foundation of the larger constellation of Argo Navis until it was divided into three pieces, the other two being Puppis, and Vela. A car, or an automobile, is a motor vehicle with wheels. Most definitions of cars state that they run primarily on roads, seat 1-8 people, have four wheels, and mainly transport people rather than cargo.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q10470 rdfs:label ""Carina""@en ;
+    kg:be wd:Q10521 ;
+    kg:be wd:Q157031 ;
+    kg:be wd:Q397 ;
+    kg:be wd:Q4637694 ;
+    kg:be wd:Q9251 ;
+    kg:beFor wd:Q37430033 ;
+    kg:beIn wd:Q10542 ;
+    kg:beIn wd:Q527 ;
+    kg:beIn wd:Q5631174 ;
+    kg:beOf wd:Q11446 ;
+    kg:beOf wd:Q3622446 ;
+    kg:beOf wd:Q37553349 ;
+    kg:beOf wd:Q8918 ;
+    kg:divideInto wd:Q7366 .
+
+wd:Q10521 rdfs:label ""Vela""@en .
+wd:Q10542 rdfs:label ""Crux""@en .
+wd:Q11446 rdfs:label ""ship""@en .
+wd:Q157031 rdfs:label ""foundation""@en .
+wd:Q3622446 rdfs:label ""Argo""@en .
+wd:Q37430033 rdfs:label ""Keel""@en .
+wd:Q37553349 rdfs:label ""Navis""@en .
+wd:Q397 rdfs:label ""Latin""@en .
+wd:Q4637694 rdfs:label ""ConStellation""@en .
+wd:Q527 rdfs:label ""sky""@en .
+wd:Q5631174 rdfs:label ""HMSAS Parktown""@en .
+wd:Q7366 rdfs:label ""song""@en .
+wd:Q8918 rdfs:label ""Ursa Major""@en .
+wd:Q9251 rdfs:label ""Puppis""@en .
+wd:Q1420 rdfs:label ""car""@en ;
+    kg:be wd:Q42889 ;
+    kg:beWith wd:Q17018313 ;
+    kg:run wd:Q5 ;
+    kg:run wd:Q5083 ;
+    kg:run wd:Q54399841 ;
+    kg:runOn wd:Q2309609 .
+
+wd:Q17018313 rdfs:label ""Wheels""@en .
+wd:Q2309609 rdfs:label ""wayside cross""@en .
+wd:Q42889 rdfs:label ""vehicle""@en .
+wd:Q5 rdfs:label ""human""@en .
+wd:Q5083 rdfs:label ""Seattle""@en .
+wd:Q54399841 rdfs:label ""1-8""@en .
+","[[""car"", ""be"", ""vehicle""], [""car"", ""beWith"", ""Wheels""], [""car"", ""run"", ""1-8""], [""car"", ""run"", ""human""], [""car"", ""run"", ""Seattle""], [""car"", ""runOn"", ""wayside cross""], [""Carina"", ""be"", ""ConStellation""], [""Carina"", ""be"", ""foundation""], [""Carina"", ""be"", ""Latin""], [""Carina"", ""be"", ""Puppis""], [""Carina"", ""be"", ""Vela""], [""Carina"", ""beFor"", ""Keel""], [""Carina"", ""beIn"", ""Crux""], [""Carina"", ""beIn"", ""HMSAS Parktown""], [""Carina"", ""beIn"", ""sky""], [""Carina"", ""beOf"", ""Argo""], [""Carina"", ""beOf"", ""Navis""], [""Carina"", ""beOf"", ""ship""], [""Carina"", ""beOf"", ""Ursa Major""], [""Carina"", ""divideInto"", ""song""]]"
+Boat-Vessel,"A boat is a watercraft of a large range of types and sizes, but generally smaller than a ship, which is distinguished by its larger size or capacity, its shape, or its ability to carry boats. Small boats are typically used on inland waterways such as rivers and lakes, or in protected coastal areas. A ship is a large watercraft designed for travel across the surface of a body of water, carrying cargo or passengers, or in support of specialized tasks such as warfare, oceanography and fishing. Ships are generally distinguished from boats, based on size, shape, load capacity and purpose.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q35872 rdfs:label ""boat""@en ;
+    kg:be wd:Q11446 ;
+    kg:be wd:Q1229765 ;
+    kg:be wd:Q28962312 ;
+    kg:beOf wd:Q46831 ;
+    kg:beOf wd:Q51398581 ;
+    kg:beOf wd:Q978185 ;
+    kg:distinguish wd:Q1347367 ;
+    kg:distinguish wd:Q327416 ;
+    kg:distinguishBy wd:Q1347367 ;
+    kg:distinguishBy wd:Q322481 ;
+    kg:distinguishBy wd:Q8918 ;
+    kg:use wd:Q1104405 ;
+    kg:use wd:Q1681293 ;
+    kg:useAs wd:Q23397 ;
+    kg:useAs wd:Q4022 ;
+    kg:useOn wd:Q122376320 ;
+    kg:useOn wd:Q1267889 .
+
+wd:Q1104405 rdfs:label ""Coastal Carolina University""@en .
+wd:Q11446 rdfs:label ""ship""@en .
+wd:Q122376320 rdfs:label ""Inland""@en .
+wd:Q1229765 rdfs:label ""watercraft""@en .
+wd:Q1267889 rdfs:label ""waterway""@en .
+wd:Q1347367 rdfs:label ""aptitude""@en .
+wd:Q1681293 rdfs:label ""World Database on Protected Areas""@en .
+wd:Q23397 rdfs:label ""lake""@en .
+wd:Q28962312 rdfs:label ""often""@en .
+wd:Q322481 rdfs:label ""size""@en .
+wd:Q327416 rdfs:label ""Shape Magazine""@en .
+wd:Q4022 rdfs:label ""river""@en .
+wd:Q46831 rdfs:label ""mountain range""@en .
+wd:Q51398581 rdfs:label ""Sizes and prices of foliage, decorative, Xmas and Easter flowering plants""@en .
+wd:Q8918 rdfs:label ""Ursa Major""@en .
+wd:Q978185 rdfs:label ""TypeScript""@en .
+wd:Q11446 rdfs:label ""ship""@en ;
+    kg:base wd:Q1347367 ;
+    kg:base wd:Q276546 ;
+    kg:base wd:Q327416 ;
+    kg:baseOn wd:Q322481 ;
+    kg:be wd:Q1229765 ;
+    kg:carry wd:Q107338546 ;
+    kg:carry wd:Q1200510 ;
+    kg:carry wd:Q14373 ;
+    kg:carry wd:Q18615464 ;
+    kg:carry wd:Q4052945 ;
+    kg:carry wd:Q43518 ;
+    kg:carry wd:Q75152245 ;
+    kg:carry wd:Q861259 ;
+    kg:designAcross wd:Q37497814 ;
+    kg:designFor wd:Q61509 ;
+    kg:designOf wd:Q223557 ;
+    kg:designOf wd:Q283 ;
+    kg:distinguishFrom wd:Q35872 .
+
+wd:Q107338546 rdfs:label ""Passengers""@en .
+wd:Q1200510 rdfs:label ""Specialized Bicycle Components""@en .
+wd:Q1229765 rdfs:label ""watercraft""@en .
+wd:Q1347367 rdfs:label ""aptitude""@en .
+wd:Q14373 rdfs:label ""fishing""@en .
+wd:Q18615464 rdfs:label ""Tasks""@en .
+wd:Q223557 rdfs:label ""physical object""@en .
+wd:Q276546 rdfs:label ""Load""@en .
+wd:Q283 rdfs:label ""water""@en .
+wd:Q322481 rdfs:label ""size""@en .
+wd:Q327416 rdfs:label ""Shape Magazine""@en .
+wd:Q35872 rdfs:label ""boat""@en .
+wd:Q37497814 rdfs:label ""Surface""@en .
+wd:Q4052945 rdfs:label ""Warfare""@en .
+wd:Q43518 rdfs:label ""oceanography""@en .
+wd:Q61509 rdfs:label ""travel""@en .
+wd:Q75152245 rdfs:label ""cargo""@en .
+wd:Q861259 rdfs:label ""painting support""@en .
+","[[""boat"", ""be"", ""often""], [""boat"", ""be"", ""ship""], [""boat"", ""be"", ""watercraft""], [""boat"", ""beOf"", ""mountain range""], [""boat"", ""beOf"", ""Sizes and prices of foliage, decorative, Xmas and Easter flowering plants""], [""boat"", ""beOf"", ""TypeScript""], [""boat"", ""distinguish"", ""aptitude""], [""boat"", ""distinguish"", ""Shape Magazine""], [""boat"", ""distinguishBy"", ""aptitude""], [""boat"", ""distinguishBy"", ""size""], [""boat"", ""distinguishBy"", ""Ursa Major""], [""boat"", ""use"", ""Coastal Carolina University""], [""boat"", ""use"", ""World Database on Protected Areas""], [""boat"", ""useAs"", ""lake""], [""boat"", ""useAs"", ""river""], [""boat"", ""useOn"", ""Inland""], [""boat"", ""useOn"", ""waterway""], [""ship"", ""base"", ""aptitude""], [""ship"", ""base"", ""Load""], [""ship"", ""base"", ""Shape Magazine""], [""ship"", ""baseOn"", ""size""], [""ship"", ""be"", ""watercraft""], [""ship"", ""carry"", ""cargo""], [""ship"", ""carry"", ""fishing""], [""ship"", ""carry"", ""oceanography""], [""ship"", ""carry"", ""painting support""], [""ship"", ""carry"", ""Passengers""], [""ship"", ""carry"", ""Specialized Bicycle Components""], [""ship"", ""carry"", ""Tasks""], [""ship"", ""carry"", ""Warfare""], [""ship"", ""designAcross"", ""Surface""], [""ship"", ""designFor"", ""travel""], [""ship"", ""designOf"", ""physical object""], [""ship"", ""designOf"", ""water""], [""ship"", ""distinguishFrom"", ""boat""]]"
+Singer-Vocalist,"Singer is a surname. Notable people with the surname include:. Singing is the art of creating music with the voice. It is the oldest form of musical expression, and the human voice can be considered the first musical instrument by some.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q1260201 rdfs:label ""Singer""@en ;
+    kg:be wd:Q101352 .
+
+wd:Q101352 rdfs:label ""family name""@en .
+wd:Q177220 rdfs:label ""singer""@en ;
+    kg:be wd:Q279749 ;
+    kg:be wd:Q5 ;
+    kg:be wd:Q8227356 ;
+    kg:beOf wd:Q2743 ;
+    kg:beOf wd:Q3331189 ;
+    kg:beOf wd:Q6942545 ;
+    kg:consider wd:Q34379 ;
+    kg:consider wd:Q39546 ;
+    kg:create wd:Q638 ;
+    kg:createWith wd:Q17172850 .
+
+wd:Q17172850 rdfs:label ""voice""@en .
+wd:Q2743 rdfs:label ""musical play""@en .
+wd:Q279749 rdfs:label ""form""@en .
+wd:Q3331189 rdfs:label ""version, edition or translation""@en .
+wd:Q34379 rdfs:label ""musical instrument""@en .
+wd:Q39546 rdfs:label ""physical tool""@en .
+wd:Q5 rdfs:label ""human""@en .
+wd:Q638 rdfs:label ""music""@en .
+wd:Q6942545 rdfs:label ""musical expression""@en .
+wd:Q8227356 rdfs:label ""Art""@en .
+","[[""singer"", ""be"", ""Art""], [""Singer"", ""be"", ""family name""], [""singer"", ""be"", ""form""], [""singer"", ""be"", ""human""], [""singer"", ""beOf"", ""musical expression""], [""singer"", ""beOf"", ""musical play""], [""singer"", ""beOf"", ""version, edition or translation""], [""singer"", ""consider"", ""musical instrument""], [""singer"", ""consider"", ""physical tool""], [""singer"", ""create"", ""music""], [""singer"", ""createWith"", ""voice""]]"
+Musician-Instrumentalist,"A musician is someone who composes, conducts, or performs music. According to the United States Employment Service, is a general term used to designate a person who follows music as a profession. A musical instrument is a device created or adapted to make musical sounds. In principle, any object that produces sound can be considered a musical instrument—it is through purpose that the object becomes a musical instrument.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q639669 rdfs:label ""musician""@en ;
+    kg:accordTo wd:Q1339409 ;
+    kg:accordTo wd:Q30 ;
+    kg:accordTo wd:Q7406919 ;
+    kg:be wd:Q747019 ;
+    kg:compose wd:Q5489614 ;
+    kg:compose wd:Q638 ;
+    kg:compose wd:Q65990882 ;
+    kg:designate wd:Q5 ;
+    kg:followAs wd:Q28640 .
+
+wd:Q1339409 rdfs:label ""Employment""@en .
+wd:Q28640 rdfs:label ""profession""@en .
+wd:Q30 rdfs:label ""United States""@en .
+wd:Q5 rdfs:label ""human""@en .
+wd:Q5489614 rdfs:label ""Tone Poems of Color""@en .
+wd:Q638 rdfs:label ""music""@en .
+wd:Q65990882 rdfs:label ""performer of""@en .
+wd:Q7406919 rdfs:label ""service""@en .
+wd:Q747019 rdfs:label ""terminative case""@en .
+wd:Q1278335 rdfs:label ""instrumentalist""@en ;
+    kg:be wd:Q3966 ;
+    kg:beThrough wd:Q21136445 ;
+    kg:make wd:Q2343915 ;
+    kg:make wd:Q30385191 ;
+    kg:produce wd:Q2339793 .
+
+wd:Q21136445 rdfs:label ""Purpose""@en .
+wd:Q2339793 rdfs:label ""Sound""@en .
+wd:Q2343915 rdfs:label ""Nashville Sounds""@en .
+wd:Q30385191 rdfs:label ""Musical Sounds, Motor Resonance, and Detectable Agency.""@en .
+wd:Q3966 rdfs:label ""computer hardware""@en .
+","[[""instrumentalist"", ""be"", ""computer hardware""], [""instrumentalist"", ""beThrough"", ""Purpose""], [""instrumentalist"", ""make"", ""Musical Sounds, Motor Resonance, and Detectable Agency.""], [""instrumentalist"", ""make"", ""Nashville Sounds""], [""instrumentalist"", ""produce"", ""Sound""], [""musician"", ""accordTo"", ""Employment""], [""musician"", ""accordTo"", ""service""], [""musician"", ""accordTo"", ""United States""], [""musician"", ""be"", ""terminative case""], [""musician"", ""compose"", ""music""], [""musician"", ""compose"", ""performer of""], [""musician"", ""compose"", ""Tone Poems of Color""], [""musician"", ""designate"", ""human""], [""musician"", ""followAs"", ""profession""]]"
+Fruit-Produce,"In botany, a fruit is the seed-bearing structure in flowering plants that is formed from the ovary after flowering. Fruits are the means by which angiosperms disseminate their seeds. Production is the process of combining various inputs, both material and immaterial in order to create output. Ideally, this output will be a good or service which has value and contributes to the utility of individuals.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q3314483 rdfs:label ""fruit""@en ;
+    kg:be wd:Q25814 ;
+    kg:be wd:Q811979 ;
+    kg:beBy wd:Q25314 ;
+    kg:disseminate wd:Q40763 ;
+    kg:flower wd:Q756 ;
+    kg:formFrom wd:Q9631 .
+
+wd:Q40763 rdfs:label ""seed""@en .
+wd:Q756 rdfs:label ""plant""@en .
+wd:Q811979 rdfs:label ""architectural structure""@en .
+wd:Q9631 rdfs:label ""ovary""@en .
+wd:Q739302 rdfs:label ""economic production""@en ;
+    kg:be wd:Q3249551 ;
+    kg:be wd:Q7406919 ;
+    kg:combine wd:Q214609 ;
+    kg:combine wd:Q59544 ;
+    kg:combine wd:Q94697788 ;
+    kg:create wd:Q1150771 ;
+    kg:have wd:Q67089887 ;
+    kg:haveOf wd:Q795052 ;
+    kg:haveTo wd:Q312466 .
+
+wd:Q1150771 rdfs:label ""output""@en .
+wd:Q214609 rdfs:label ""material""@en .
+wd:Q312466 rdfs:label ""utility software""@en .
+wd:Q3249551 rdfs:label ""process""@en .
+wd:Q59544 rdfs:label ""intangible cultural heritage""@en .
+wd:Q67089887 rdfs:label ""contributed to work""@en .
+wd:Q7406919 rdfs:label ""service""@en .
+wd:Q795052 rdfs:label ""individual""@en .
+wd:Q94697788 rdfs:label ""Inputs Youth Association""@en .
+","[[""economic production"", ""be"", ""process""], [""economic production"", ""be"", ""service""], [""economic production"", ""combine"", ""Inputs Youth Association""], [""economic production"", ""combine"", ""intangible cultural heritage""], [""economic production"", ""combine"", ""material""], [""economic production"", ""create"", ""output""], [""economic production"", ""have"", ""contributed to work""], [""economic production"", ""haveOf"", ""individual""], [""economic production"", ""haveTo"", ""utility software""], [""fruit"", ""be"", ""architectural structure""], [""fruit"", ""be"", ""Q25814""], [""fruit"", ""beBy"", ""Q25314""], [""fruit"", ""disseminate"", ""seed""], [""fruit"", ""flower"", ""plant""], [""fruit"", ""formFrom"", ""ovary""]]"
+House-Building,"A house is a single-unit residential building. It may range in complexity from a rudimentary hut to a complex structure of wood, masonry, concrete or other material, outfitted with plumbing, electrical, and heating, ventilation, and air conditioning systems. A building or edifice is an enclosed structure with a roof, walls and often windows, usually standing permanently in one place, such as a house or factory. Buildings come in a variety of sizes, shapes, and functions, and have been adapted throughout history for numerous factors, from building materials available, to weather conditions, land prices, ground conditions, specific uses, prestige, and aesthetic reasons.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q3947 rdfs:label ""house""@en ;
+    kg:be wd:Q41176 ;
+    kg:be wd:Q4392016 ;
+    kg:be wd:Q985488 ;
+    kg:condition wd:Q131179478 ;
+    kg:outfit wd:Q244404 ;
+    kg:outfit wd:Q318452 ;
+    kg:outfit wd:Q4311765 ;
+    kg:outfit wd:Q9530 ;
+    kg:outfitWith wd:Q182612 ;
+    kg:range wd:Q214609 ;
+    kg:range wd:Q22657 ;
+    kg:range wd:Q41726 ;
+    kg:rangeFrom wd:Q29718088 ;
+    kg:rangeFrom wd:Q37093879 ;
+    kg:rangeIn wd:Q5156624 ;
+    kg:rangeOf wd:Q1158452 ;
+    kg:rangeTo wd:Q1497375 ;
+    kg:rangeTo wd:Q5156608 ;
+    kg:rangeTo wd:Q811979 .
+
+wd:Q1158452 rdfs:label ""Wood""@en .
+wd:Q131179478 rdfs:label ""systems""@en .
+wd:Q1497375 rdfs:label ""architectural ensemble""@en .
+wd:Q182612 rdfs:label ""plumbing""@en .
+wd:Q214609 rdfs:label ""material""@en .
+wd:Q22657 rdfs:label ""concrete""@en .
+wd:Q244404 rdfs:label ""electrical injury""@en .
+wd:Q29718088 rdfs:label ""r""@en .
+wd:Q318452 rdfs:label ""Air""@en .
+wd:Q37093879 rdfs:label ""Hut""@en .
+wd:Q41176 rdfs:label ""building""@en .
+wd:Q41726 rdfs:label ""freemasonry""@en .
+wd:Q4311765 rdfs:label ""heating""@en .
+wd:Q4392016 rdfs:label ""single-unit recording""@en .
+wd:Q5156608 rdfs:label ""Complex structure theory in English law""@en .
+wd:Q5156624 rdfs:label ""Complexity""@en .
+wd:Q811979 rdfs:label ""architectural structure""@en .
+wd:Q9530 rdfs:label ""breathing""@en .
+wd:Q985488 rdfs:label ""residential community""@en .
+wd:Q41176 rdfs:label ""building""@en ;
+    kg:adapt wd:Q6786584 ;
+    kg:adaptFor wd:Q136709489 ;
+    kg:adaptFor wd:Q50349184 ;
+    kg:adaptFor wd:Q56964495 ;
+    kg:adaptThroughout wd:Q309 ;
+    kg:be wd:Q113015169 ;
+    kg:be wd:Q42948 ;
+    kg:be wd:Q811979 ;
+    kg:beWith wd:Q83180 ;
+    kg:come wd:Q126186951 ;
+    kg:come wd:Q190686 ;
+    kg:comeIn wd:Q471728 ;
+    kg:comeOf wd:Q51398581 ;
+    kg:land wd:Q100397828 ;
+    kg:land wd:Q26328163 ;
+    kg:land wd:Q36133 ;
+    kg:land wd:Q37467962 ;
+    kg:land wd:Q4688579 ;
+    kg:land wd:Q71536040 ;
+    kg:land wd:Q97751506 ;
+    kg:stand wd:Q1193907 ;
+    kg:stand wd:Q3947 ;
+    kg:stand wd:Q83405 ;
+    kg:weather wd:Q139875957 .
+
+wd:Q100397828 rdfs:label ""Prices Act, 1958""@en .
+wd:Q113015169 rdfs:label ""papal enclosed""@en .
+wd:Q1193907 rdfs:label ""link rot""@en .
+wd:Q126186951 rdfs:label ""Shapes""@en .
+wd:Q136709489 rdfs:label ""Numerous sailing ships at sea""@en .
+wd:Q139875957 rdfs:label ""Conditions""@en .
+wd:Q190686 rdfs:label ""subroutine""@en .
+wd:Q26328163 rdfs:label ""Ground conditions and the May 13, 1994, rock burst: Coeur d'Alene mining district, Northern Idaho""@en .
+wd:Q309 rdfs:label ""history""@en .
+wd:Q36133 rdfs:label ""soil""@en .
+wd:Q37467962 rdfs:label ""Reasons""@en .
+wd:Q3947 rdfs:label ""house""@en .
+wd:Q42948 rdfs:label ""wall""@en .
+wd:Q4688579 rdfs:label ""Aesthetic Plastic Surgery""@en .
+wd:Q471728 rdfs:label ""Variety""@en .
+wd:Q50349184 rdfs:label ""immunologic factor""@en .
+wd:Q51398581 rdfs:label ""Sizes and prices of foliage, decorative, Xmas and Easter flowering plants""@en .
+wd:Q56964495 rdfs:label ""Numerous factors and incorrect measurements can lead to misinterpretations. Be critical when dealing with hormone levels""@en .
+wd:Q6786584 rdfs:label ""Materials""@en .
+wd:Q71536040 rdfs:label ""most precise value""@en .
+wd:Q811979 rdfs:label ""architectural structure""@en .
+wd:Q83180 rdfs:label ""roof""@en .
+wd:Q83405 rdfs:label ""factory""@en .
+wd:Q97751506 rdfs:label ""Prestige""@en .
+","[[""building"", ""adapt"", ""Materials""], [""building"", ""adaptFor"", ""immunologic factor""], [""building"", ""adaptFor"", ""Numerous factors and incorrect measurements can lead to misinterpretations. Be critical when dealing with hormone levels""], [""building"", ""adaptFor"", ""Numerous sailing ships at sea""], [""building"", ""adaptThroughout"", ""history""], [""building"", ""be"", ""architectural structure""], [""building"", ""be"", ""papal enclosed""], [""building"", ""be"", ""wall""], [""building"", ""beWith"", ""roof""], [""building"", ""come"", ""Shapes""], [""building"", ""come"", ""subroutine""], [""building"", ""comeIn"", ""Variety""], [""building"", ""comeOf"", ""Sizes and prices of foliage, decorative, Xmas and Easter flowering plants""], [""building"", ""land"", ""Aesthetic Plastic Surgery""], [""building"", ""land"", ""Ground conditions and the May 13, 1994, rock burst: Coeur d'Alene mining district, Northern Idaho""], [""building"", ""land"", ""most precise value""], [""building"", ""land"", ""Prestige""], [""building"", ""land"", ""Prices Act, 1958""], [""building"", ""land"", ""Reasons""], [""building"", ""land"", ""soil""], [""building"", ""stand"", ""factory""], [""building"", ""stand"", ""house""], [""building"", ""stand"", ""link rot""], [""building"", ""weather"", ""Conditions""], [""house"", ""be"", ""building""], [""house"", ""be"", ""residential community""], [""house"", ""be"", ""single-unit recording""], [""house"", ""condition"", ""systems""], [""house"", ""outfit"", ""Air""], [""house"", ""outfit"", ""breathing""], [""house"", ""outfit"", ""electrical injury""], [""house"", ""outfit"", ""heating""], [""house"", ""outfitWith"", ""plumbing""], [""house"", ""range"", ""concrete""], [""house"", ""range"", ""freemasonry""], [""house"", ""range"", ""material""], [""house"", ""rangeFrom"", ""Hut""], [""house"", ""rangeFrom"", ""r""], [""house"", ""rangeIn"", ""Complexity""], [""house"", ""rangeOf"", ""Wood""], [""house"", ""rangeTo"", ""architectural ensemble""], [""house"", ""rangeTo"", ""architectural structure""], [""house"", ""rangeTo"", ""Complex structure theory in English law""]]"
+River-Stream,"A river is a natural stream of fresh water that flows on land or inside caves towards another body of water at a lower elevation, such as an ocean, lake, or another river. A river may run dry before reaching the end of its course if it runs out of water, or only flow during certain seasons. A stream is a continuous body of surface water flowing within the bed and banks of a channel. Depending on its location or certain characteristics, a stream may be referred to by a variety of local or regional names.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q4022 rdfs:label ""river""@en ;
+    kg:be wd:Q21199 ;
+    kg:be wd:Q47521 ;
+    kg:beOf wd:Q124714 ;
+    kg:beOf wd:Q283 ;
+    kg:flowOn wd:Q11081619 ;
+    kg:inside wd:Q200886 ;
+    kg:inside wd:Q223557 ;
+    kg:inside wd:Q23397 ;
+    kg:inside wd:Q71267306 ;
+    kg:insideAt wd:Q54050 ;
+    kg:run wd:Q1470363 ;
+    kg:run wd:Q1539532 ;
+    kg:run wd:Q284928 .
+
+wd:Q11081619 rdfs:label ""land""@en .
+wd:Q124714 rdfs:label ""spring""@en .
+wd:Q1470363 rdfs:label ""Dry""@en .
+wd:Q1539532 rdfs:label ""sports season of a sports club""@en .
+wd:Q200886 rdfs:label ""Caves""@en .
+wd:Q21199 rdfs:label ""natural number""@en .
+wd:Q223557 rdfs:label ""physical object""@en .
+wd:Q23397 rdfs:label ""lake""@en .
+wd:Q283 rdfs:label ""water""@en .
+wd:Q284928 rdfs:label ""flOw""@en .
+wd:Q47521 rdfs:label ""stream""@en .
+wd:Q54050 rdfs:label ""hill""@en .
+wd:Q71267306 rdfs:label ""Ocean""@en .
+wd:Q47521 rdfs:label ""stream""@en ;
+    kg:be wd:Q1704572 ;
+    kg:be wd:Q2195 ;
+    kg:be wd:Q223557 ;
+    kg:beOf wd:Q283 ;
+    kg:beOf wd:Q37497814 ;
+    kg:dependOn wd:Q21127557 ;
+    kg:dependOn wd:Q2221906 ;
+    kg:flowOf wd:Q1210950 ;
+    kg:flowWithin wd:Q42177 ;
+    kg:flowWithin wd:Q806825 ;
+    kg:referBy wd:Q471728 ;
+    kg:referOf wd:Q1472 ;
+    kg:referOf wd:Q15767091 ;
+    kg:referOf wd:Q253019 .
+
+wd:Q1210950 rdfs:label ""channel""@en .
+wd:Q1472 rdfs:label ""Crohn's disease""@en .
+wd:Q15767091 rdfs:label ""Names: A Journal of Onomastics""@en .
+wd:Q1704572 rdfs:label ""continuum""@en .
+wd:Q21127557 rdfs:label ""Characteristics""@en .
+wd:Q2195 rdfs:label ""JPEG""@en .
+wd:Q2221906 rdfs:label ""geographic location""@en .
+wd:Q223557 rdfs:label ""physical object""@en .
+wd:Q253019 rdfs:label ""Ortsteil""@en .
+wd:Q283 rdfs:label ""water""@en .
+wd:Q37497814 rdfs:label ""Surface""@en .
+wd:Q42177 rdfs:label ""bed""@en .
+wd:Q471728 rdfs:label ""Variety""@en .
+wd:Q806825 rdfs:label ""Banks""@en .
+","[[""river"", ""be"", ""natural number""], [""river"", ""be"", ""stream""], [""river"", ""beOf"", ""spring""], [""river"", ""beOf"", ""water""], [""river"", ""flowOn"", ""land""], [""river"", ""inside"", ""Caves""], [""river"", ""inside"", ""lake""], [""river"", ""inside"", ""Ocean""], [""river"", ""inside"", ""physical object""], [""river"", ""insideAt"", ""hill""], [""river"", ""run"", ""Dry""], [""river"", ""run"", ""flOw""], [""river"", ""run"", ""sports season of a sports club""], [""stream"", ""be"", ""continuum""], [""stream"", ""be"", ""JPEG""], [""stream"", ""be"", ""physical object""], [""stream"", ""beOf"", ""Surface""], [""stream"", ""beOf"", ""water""], [""stream"", ""dependOn"", ""Characteristics""], [""stream"", ""dependOn"", ""geographic location""], [""stream"", ""flowOf"", ""channel""], [""stream"", ""flowWithin"", ""Banks""], [""stream"", ""flowWithin"", ""bed""], [""stream"", ""referBy"", ""Variety""], [""stream"", ""referOf"", ""Crohn's disease""], [""stream"", ""referOf"", ""Names: A Journal of Onomastics""], [""stream"", ""referOf"", ""Ortsteil""]]"
+Mountain-Hill,"A mountain is an elevated portion of the surface of a planet, generally with steep sides that show significant exposed bedrock. Although there are no universally accepted definitions, a mountain is usually considered higher than a hill. Hill is a surname of English and Scottish origin, meaning. It is the 36th most common surname in England, the 18th common surname in Scotland, and the 37th most common surname in the United States.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q8502 rdfs:label ""mountain""@en ;
+    kg:accept wd:Q5251610 ;
+    kg:be wd:Q122825156 ;
+    kg:be wd:Q195284 ;
+    kg:be wd:Q2105114 ;
+    kg:be wd:Q9344831 ;
+    kg:beOf wd:Q37497814 ;
+    kg:beOf wd:Q3863 ;
+    kg:considerThan wd:Q973239 ;
+    kg:expose wd:Q570309 .
+
+wd:Q122825156 rdfs:label ""ELEVATED""@en .
+wd:Q195284 rdfs:label ""universally unique identifier""@en .
+wd:Q2105114 rdfs:label ""portion""@en .
+wd:Q37497814 rdfs:label ""Surface""@en .
+wd:Q3863 rdfs:label ""asteroid""@en .
+wd:Q5251610 rdfs:label ""Definitions""@en .
+wd:Q570309 rdfs:label ""bedrock""@en .
+wd:Q9344831 rdfs:label ""Steep""@en .
+wd:Q973239 rdfs:label ""Hill""@en .
+wd:Q973239 rdfs:label ""Hill""@en ;
+    kg:be wd:Q101352 ;
+    kg:be wd:Q12470363 ;
+    kg:be wd:Q1588 ;
+    kg:be wd:Q22 ;
+    kg:be wd:Q25376990 ;
+    kg:be wd:Q30 ;
+    kg:be wd:Q402434 ;
+    kg:be wd:Q565 ;
+    kg:be wd:Q659207 ;
+    kg:beIn wd:Q21 ;
+    kg:beOf wd:Q1860 ;
+    kg:beOf wd:Q7437854 .
+
+wd:Q101352 rdfs:label ""family name""@en .
+wd:Q12470363 rdfs:label ""36th""@en .
+wd:Q1588 rdfs:label ""Louisiana""@en .
+wd:Q1860 rdfs:label ""English""@en .
+wd:Q21 rdfs:label ""England""@en .
+wd:Q22 rdfs:label ""Scotland""@en .
+wd:Q25376990 rdfs:label ""nom d'usage""@en .
+wd:Q30 rdfs:label ""United States""@en .
+wd:Q402434 rdfs:label ""37th Chess Olympiad""@en .
+wd:Q565 rdfs:label ""Wikimedia Commons""@en .
+wd:Q659207 rdfs:label ""2006 Commonwealth Games""@en .
+wd:Q7437854 rdfs:label ""Scottish Medical Journal""@en .
+","[[""Hill"", ""be"", ""2006 Commonwealth Games""], [""Hill"", ""be"", ""36th""], [""Hill"", ""be"", ""37th Chess Olympiad""], [""Hill"", ""be"", ""family name""], [""Hill"", ""be"", ""Louisiana""], [""Hill"", ""be"", ""nom d'usage""], [""Hill"", ""be"", ""Scotland""], [""Hill"", ""be"", ""United States""], [""Hill"", ""be"", ""Wikimedia Commons""], [""Hill"", ""beIn"", ""England""], [""Hill"", ""beOf"", ""English""], [""Hill"", ""beOf"", ""Scottish Medical Journal""], [""mountain"", ""accept"", ""Definitions""], [""mountain"", ""be"", ""ELEVATED""], [""mountain"", ""be"", ""portion""], [""mountain"", ""be"", ""Steep""], [""mountain"", ""be"", ""universally unique identifier""], [""mountain"", ""beOf"", ""asteroid""], [""mountain"", ""beOf"", ""Surface""], [""mountain"", ""considerThan"", ""Hill""], [""mountain"", ""expose"", ""bedrock""]]"
+Lake-Pond,"A lake is often a naturally occurring, relatively large and fixed body of water on or near the Earth's surface. It is localized in a basin or interconnected basins surrounded by dry land. A pond is a small, still, land-based body of water formed by pooling inside a depression, either naturally or artificially. A pond is smaller than a lake and there are no official criteria distinguishing the two, although defining a pond to be less than 5 hectares in area, less than 5 metres in depth and with less than 30% of its area covered by emergent vegetation helps in distinguishing the ecology of ponds from those of lakes and wetlands.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q23397 rdfs:label ""lake""@en ;
+    kg:be wd:Q12581627 ;
+    kg:fix wd:Q223557 ;
+    kg:localizeIn wd:Q116213324 ;
+    kg:localizeIn wd:Q37463995 ;
+    kg:localizeIn wd:Q813672 ;
+    kg:occur wd:Q2 ;
+    kg:occur wd:Q22667 ;
+    kg:occur wd:Q283 ;
+    kg:s wd:Q37497814 ;
+    kg:surroundBy wd:Q11081619 ;
+    kg:surroundBy wd:Q1470363 .
+
+wd:Q11081619 rdfs:label ""land""@en .
+wd:Q116213324 rdfs:label ""Interconnected""@en .
+wd:Q12581627 rdfs:label ""Naturally""@en .
+wd:Q1470363 rdfs:label ""Dry""@en .
+wd:Q2 rdfs:label ""Earth""@en .
+wd:Q223557 rdfs:label ""physical object""@en .
+wd:Q22667 rdfs:label ""railway""@en .
+wd:Q283 rdfs:label ""water""@en .
+wd:Q37463995 rdfs:label ""Basinski""@en .
+wd:Q37497814 rdfs:label ""Surface""@en .
+wd:Q813672 rdfs:label ""basin""@en .
+wd:Q3253281 rdfs:label ""artificial pond""@en ;
+    kg:be wd:Q11573 ;
+    kg:be wd:Q1789452 ;
+    kg:be wd:Q19580008 ;
+    kg:be wd:Q223557 ;
+    kg:be wd:Q283 ;
+    kg:be wd:Q42817 ;
+    kg:be wd:Q599151 ;
+    kg:be wd:Q69129709 ;
+    kg:be wd:Q74770817 ;
+    kg:beThan wd:Q123735551 ;
+    kg:beThan wd:Q167934 ;
+    kg:beThan wd:Q23397 ;
+    kg:beThan wd:Q35852 ;
+    kg:coverBy wd:Q187997 ;
+    kg:coverBy wd:Q5370757 ;
+    kg:distinguish wd:Q7150 ;
+    kg:distinguishOf wd:Q170321 ;
+    kg:distinguishOf wd:Q23397 ;
+    kg:distinguishOf wd:Q37499848 ;
+    kg:pool wd:Q11660 ;
+    kg:pool wd:Q12581627 ;
+    kg:poolInside wd:Q42844 .
+
+wd:Q11573 rdfs:label ""metre""@en .
+wd:Q11660 rdfs:label ""artificial intelligence""@en .
+wd:Q12581627 rdfs:label ""Naturally""@en .
+wd:Q167934 rdfs:label ""serotonin""@en .
+wd:Q170321 rdfs:label ""wetland""@en .
+wd:Q1789452 rdfs:label ""criterion""@en .
+wd:Q187997 rdfs:label ""vegetation""@en .
+wd:Q19580008 rdfs:label ""Depth""@en .
+wd:Q223557 rdfs:label ""physical object""@en .
+wd:Q23397 rdfs:label ""lake""@en .
+wd:Q283 rdfs:label ""water""@en .
+wd:Q35852 rdfs:label ""hectare""@en .
+wd:Q37499848 rdfs:label ""Ponds""@en .
+wd:Q42817 rdfs:label ""30""@en .
+wd:Q42844 rdfs:label ""major depressive disorder""@en .
+wd:Q5370757 rdfs:label ""Emergent BioSolutions""@en .
+wd:Q599151 rdfs:label ""official""@en .
+wd:Q69129709 rdfs:label ""land-based fighter monoplane""@en .
+wd:Q7150 rdfs:label ""ecology""@en .
+wd:Q74770817 rdfs:label ""Criteria distinguishing parents of schizophrenic and normal children; an initial study with the interpersonal diagnostic system""@en .
+","[[""artificial pond"", ""be"", ""30""], [""artificial pond"", ""be"", ""Criteria distinguishing parents of schizophrenic and normal children; an initial study with the interpersonal diagnostic system""], [""artificial pond"", ""be"", ""criterion""], [""artificial pond"", ""be"", ""Depth""], [""artificial pond"", ""be"", ""land-based fighter monoplane""], [""artificial pond"", ""be"", ""metre""], [""artificial pond"", ""be"", ""official""], [""artificial pond"", ""be"", ""physical object""], [""artificial pond"", ""be"", ""water""], [""artificial pond"", ""beThan"", ""hectare""], [""artificial pond"", ""beThan"", ""lake""], [""artificial pond"", ""beThan"", ""Q123735551""], [""artificial pond"", ""beThan"", ""serotonin""], [""artificial pond"", ""coverBy"", ""Emergent BioSolutions""], [""artificial pond"", ""coverBy"", ""vegetation""], [""artificial pond"", ""distinguish"", ""ecology""], [""artificial pond"", ""distinguishOf"", ""lake""], [""artificial pond"", ""distinguishOf"", ""Ponds""], [""artificial pond"", ""distinguishOf"", ""wetland""], [""artificial pond"", ""pool"", ""artificial intelligence""], [""artificial pond"", ""pool"", ""Naturally""], [""artificial pond"", ""poolInside"", ""major depressive disorder""], [""lake"", ""be"", ""Naturally""], [""lake"", ""fix"", ""physical object""], [""lake"", ""localizeIn"", ""basin""], [""lake"", ""localizeIn"", ""Basinski""], [""lake"", ""localizeIn"", ""Interconnected""], [""lake"", ""occur"", ""Earth""], [""lake"", ""occur"", ""railway""], [""lake"", ""occur"", ""water""], [""lake"", ""s"", ""Surface""], [""lake"", ""surroundBy"", ""Dry""], [""lake"", ""surroundBy"", ""land""]]"
+Forest-Woodland,"Forest or Vorst, is one of the 19 municipalities of the Brussels-Capital Region, Belgium. Located in the southern part of the region, it is bordered by Anderlecht, Ixelles, Uccle, and Saint-Gilles, as well as the Flemish municipality of Drogenbos. Woodland is a small hamlet and civil parish in Teignbridge, Devon, England. The parish lies just east of the town of Ashburton; the hamlet is about 2.25 miles from the town.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q72946 rdfs:label ""Forest""@en ;
+    kg:be wd:Q31 ;
+    kg:beOf wd:Q15284 ;
+    kg:beOf wd:Q39850 ;
+    kg:beOf wd:Q82794 ;
+    kg:border wd:Q15284 ;
+    kg:border wd:Q203312 ;
+    kg:border wd:Q208713 ;
+    kg:border wd:Q237674 ;
+    kg:border wd:Q34147 ;
+    kg:border wd:Q688377 ;
+    kg:borderBy wd:Q12886 ;
+    kg:locateIn wd:Q10542 .
+
+wd:Q10542 rdfs:label ""Crux""@en .
+wd:Q12886 rdfs:label ""Anderlecht""@en .
+wd:Q15284 rdfs:label ""municipality""@en .
+wd:Q203312 rdfs:label ""Uccle""@en .
+wd:Q208713 rdfs:label ""Ixelles""@en .
+wd:Q237674 rdfs:label ""Saint-Gilles""@en .
+wd:Q31 rdfs:label ""Belgium""@en .
+wd:Q34147 rdfs:label ""Flemish Dutch""@en .
+wd:Q39850 rdfs:label ""19""@en .
+wd:Q688377 rdfs:label ""Drogenbos""@en .
+wd:Q82794 rdfs:label ""region""@en .
+wd:Q2615722 rdfs:label ""Woodland""@en ;
+    kg:be wd:Q102496 ;
+    kg:be wd:Q21 ;
+    kg:be wd:Q37552616 ;
+    kg:be wd:Q5084 ;
+    kg:be wd:Q67393660 ;
+    kg:beAbout wd:Q200 ;
+    kg:beIn wd:Q739432 ;
+    kg:lie wd:Q684 ;
+    kg:lieOf wd:Q3957 ;
+    kg:lieOf wd:Q724915 .
+
+wd:Q102496 rdfs:label ""parish""@en .
+wd:Q200 rdfs:label ""2""@en .
+wd:Q21 rdfs:label ""England""@en .
+wd:Q37552616 rdfs:label ""Civil""@en .
+wd:Q3957 rdfs:label ""town""@en .
+wd:Q5084 rdfs:label ""hamlet""@en .
+wd:Q67393660 rdfs:label ""Devon""@en .
+wd:Q684 rdfs:label ""east""@en .
+wd:Q724915 rdfs:label ""Ashburton""@en .
+wd:Q739432 rdfs:label ""Teignbridge""@en .
+","[[""Forest"", ""be"", ""Belgium""], [""Forest"", ""beOf"", ""19""], [""Forest"", ""beOf"", ""municipality""], [""Forest"", ""beOf"", ""region""], [""Forest"", ""border"", ""Drogenbos""], [""Forest"", ""border"", ""Flemish Dutch""], [""Forest"", ""border"", ""Ixelles""], [""Forest"", ""border"", ""municipality""], [""Forest"", ""border"", ""Saint-Gilles""], [""Forest"", ""border"", ""Uccle""], [""Forest"", ""borderBy"", ""Anderlecht""], [""Forest"", ""locateIn"", ""Crux""], [""Woodland"", ""be"", ""Civil""], [""Woodland"", ""be"", ""Devon""], [""Woodland"", ""be"", ""England""], [""Woodland"", ""be"", ""hamlet""], [""Woodland"", ""be"", ""parish""], [""Woodland"", ""beAbout"", ""2""], [""Woodland"", ""beIn"", ""Teignbridge""], [""Woodland"", ""lie"", ""east""], [""Woodland"", ""lieOf"", ""Ashburton""], [""Woodland"", ""lieOf"", ""town""]]"
+Author-Novelist,"A writer is a person who uses written words in different writing styles, genres, and techniques to communicate ideas, to inspire feelings and emotions, or to entertain. Writers may develop different forms of writing such as novels, short stories, monographs, travelogues, plays, screenplays, teleplays, songs, and essays as well as reports, educational material, and news articles that may be of interest to the general public. A novelist is an author or writer of novels. Novelists can also write in other genres of both fiction and non-fiction.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q36180 rdfs:label ""writer""@en ;
+    kg:be wd:Q5 ;
+    kg:beTo wd:Q180686 ;
+    kg:communicate wd:Q206316 ;
+    kg:develop wd:Q140208944 ;
+    kg:inspire wd:Q116875385 ;
+    kg:inspire wd:Q9415 ;
+    kg:monographs wd:Q112121501 ;
+    kg:monographs wd:Q25379 ;
+    kg:screenplays wd:Q101072102 ;
+    kg:screenplays wd:Q10870555 ;
+    kg:screenplays wd:Q1231865 ;
+    kg:screenplays wd:Q1348645 ;
+    kg:screenplays wd:Q214609 ;
+    kg:screenplays wd:Q38926 ;
+    kg:screenplays wd:Q624852 ;
+    kg:screenplays wd:Q7366 ;
+    kg:write wd:Q140006412 ;
+    kg:write wd:Q23907496 ;
+    kg:write wd:Q24862 ;
+    kg:write wd:Q7620024 ;
+    kg:writeAs wd:Q8261 ;
+    kg:writeIn wd:Q111072692 ;
+    kg:writeIn wd:Q37260 .
+
+wd:Q101072102 rdfs:label ""Article covered by WikiProject Wikify""@en .
+wd:Q10870555 rdfs:label ""report""@en .
+wd:Q111072692 rdfs:label ""Styles""@en .
+wd:Q112121501 rdfs:label ""Travelogues""@en .
+wd:Q116875385 rdfs:label ""Feelings""@en .
+wd:Q1231865 rdfs:label ""pedagogue""@en .
+wd:Q1348645 rdfs:label ""instructional materials""@en .
+wd:Q140006412 rdfs:label ""Genres, Registers, Text Types, Domains and Styles: Clarifying the Concepts and Navigating a Path through the BNC Jungle""@en .
+wd:Q140208944 rdfs:label ""Forms""@en .
+wd:Q206316 rdfs:label ""Research Papers in Economics""@en .
+wd:Q214609 rdfs:label ""material""@en .
+wd:Q23907496 rdfs:label ""Techniques""@en .
+wd:Q24862 rdfs:label ""short film""@en .
+wd:Q25379 rdfs:label ""play""@en .
+wd:Q37260 rdfs:label ""writing""@en .
+wd:Q38926 rdfs:label ""news""@en .
+wd:Q5 rdfs:label ""human""@en .
+wd:Q624852 rdfs:label ""Essays""@en .
+wd:Q7366 rdfs:label ""song""@en .
+wd:Q7620024 rdfs:label ""Stories""@en .
+wd:Q8261 rdfs:label ""novel""@en .
+wd:Q9415 rdfs:label ""emotion""@en .
+wd:Q6625963 rdfs:label ""novelist""@en ;
+    kg:be wd:Q36180 ;
+    kg:beOf wd:Q8261 ;
+    kg:writeIn wd:Q140006412 ;
+    kg:writeOf wd:Q5 ;
+    kg:writeOf wd:Q8253 .
+
+wd:Q140006412 rdfs:label ""Genres, Registers, Text Types, Domains and Styles: Clarifying the Concepts and Navigating a Path through the BNC Jungle""@en .
+wd:Q36180 rdfs:label ""writer""@en .
+wd:Q5 rdfs:label ""human""@en .
+wd:Q8253 rdfs:label ""fiction""@en .
+wd:Q8261 rdfs:label ""novel""@en .
+","[[""novelist"", ""be"", ""writer""], [""novelist"", ""beOf"", ""novel""], [""novelist"", ""writeIn"", ""Genres, Registers, Text Types, Domains and Styles: Clarifying the Concepts and Navigating a Path through the BNC Jungle""], [""novelist"", ""writeOf"", ""fiction""], [""novelist"", ""writeOf"", ""human""], [""writer"", ""be"", ""human""], [""writer"", ""beTo"", ""Q180686""], [""writer"", ""communicate"", ""Research Papers in Economics""], [""writer"", ""develop"", ""Forms""], [""writer"", ""inspire"", ""emotion""], [""writer"", ""inspire"", ""Feelings""], [""writer"", ""monographs"", ""play""], [""writer"", ""monographs"", ""Travelogues""], [""writer"", ""screenplays"", ""Article covered by WikiProject Wikify""], [""writer"", ""screenplays"", ""Essays""], [""writer"", ""screenplays"", ""instructional materials""], [""writer"", ""screenplays"", ""material""], [""writer"", ""screenplays"", ""news""], [""writer"", ""screenplays"", ""pedagogue""], [""writer"", ""screenplays"", ""report""], [""writer"", ""screenplays"", ""song""], [""writer"", ""write"", ""Genres, Registers, Text Types, Domains and Styles: Clarifying the Concepts and Navigating a Path through the BNC Jungle""], [""writer"", ""write"", ""short film""], [""writer"", ""write"", ""Stories""], [""writer"", ""write"", ""Techniques""], [""writer"", ""writeAs"", ""novel""], [""writer"", ""writeIn"", ""Styles""], [""writer"", ""writeIn"", ""writing""]]"
+Computer-Machine,"A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations. Modern digital electronic computers can perform generic sets of operations known as programs, which enable computers to perform a wide range of tasks. Machine is the second studio album by American industrial metal band Static-X, released on May 22, 2001, and recorded at Studio 508. When compared to the band's other albums, Machine features more electronics and industrial effects, and more screamed vocals from Wayne Static.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q68 rdfs:label ""computer""@en ;
+    kg:be wd:Q1760034 ;
+    kg:carryOf wd:Q12479 ;
+    kg:carryOf wd:Q16592405 ;
+    kg:carryOf wd:Q3884033 ;
+    kg:carryOut wd:Q1147354 ;
+    kg:knowAs wd:Q170584 ;
+    kg:perform wd:Q236129 ;
+    kg:perform wd:Q29469 ;
+    kg:perform wd:Q46831 ;
+    kg:perform wd:Q50374761 ;
+    kg:performOf wd:Q18615464 ;
+    kg:programTo wd:Q135671046 .
+
+wd:Q1147354 rdfs:label ""sequence""@en .
+wd:Q12479 rdfs:label ""number theory""@en .
+wd:Q135671046 rdfs:label ""ex officio""@en .
+wd:Q16592405 rdfs:label ""Logical""@en .
+wd:Q170584 rdfs:label ""project""@en .
+wd:Q1760034 rdfs:label ""Machine""@en .
+wd:Q18615464 rdfs:label ""Tasks""@en .
+wd:Q236129 rdfs:label ""Setsuko Hara""@en .
+wd:Q29469 rdfs:label ""generic top-level domain""@en .
+wd:Q3884033 rdfs:label ""mathematical operation""@en .
+wd:Q46831 rdfs:label ""mountain range""@en .
+wd:Q50374761 rdfs:label ""Wide""@en .
+wd:Q1760034 rdfs:label ""Machine""@en ;
+    kg:be wd:Q482994 ;
+    kg:be wd:Q746628 ;
+    kg:beBy wd:Q11426 ;
+    kg:beBy wd:Q15121683 ;
+    kg:beBy wd:Q215380 ;
+    kg:beBy wd:Q23928734 ;
+    kg:beBy wd:Q6606110 ;
+    kg:beBy wd:Q7976 ;
+    kg:feature wd:Q11650 ;
+    kg:feature wd:Q1423817 ;
+    kg:feature wd:Q17172850 ;
+    kg:feature wd:Q926230 ;
+    kg:recordAt wd:Q857374 ;
+    kg:release wd:Q1988 ;
+    kg:releaseOn wd:Q712488 ;
+    kg:s wd:Q62032401 .
+
+wd:Q11426 rdfs:label ""metal""@en .
+wd:Q11650 rdfs:label ""electronics""@en .
+wd:Q1423817 rdfs:label ""Wayne""@en .
+wd:Q15121683 rdfs:label ""Static""@en .
+wd:Q17172850 rdfs:label ""voice""@en .
+wd:Q1988 rdfs:label ""2001""@en .
+wd:Q215380 rdfs:label ""musical group""@en .
+wd:Q23928734 rdfs:label ""AIHA Journal""@en .
+wd:Q482994 rdfs:label ""album""@en .
+wd:Q62032401 rdfs:label ""album chart""@en .
+wd:Q6606110 rdfs:label ""industrialist""@en .
+wd:Q712488 rdfs:label ""22""@en .
+wd:Q746628 rdfs:label ""studio""@en .
+wd:Q7976 rdfs:label ""American English""@en .
+wd:Q857374 rdfs:label ""508""@en .
+wd:Q926230 rdfs:label ""effect""@en .
+","[[""computer"", ""be"", ""Machine""], [""computer"", ""carryOf"", ""Logical""], [""computer"", ""carryOf"", ""mathematical operation""], [""computer"", ""carryOf"", ""number theory""], [""computer"", ""carryOut"", ""sequence""], [""computer"", ""knowAs"", ""project""], [""computer"", ""perform"", ""generic top-level domain""], [""computer"", ""perform"", ""mountain range""], [""computer"", ""perform"", ""Setsuko Hara""], [""computer"", ""perform"", ""Wide""], [""computer"", ""performOf"", ""Tasks""], [""computer"", ""programTo"", ""ex officio""], [""Machine"", ""be"", ""album""], [""Machine"", ""be"", ""studio""], [""Machine"", ""beBy"", ""AIHA Journal""], [""Machine"", ""beBy"", ""American English""], [""Machine"", ""beBy"", ""industrialist""], [""Machine"", ""beBy"", ""metal""], [""Machine"", ""beBy"", ""musical group""], [""Machine"", ""beBy"", ""Static""], [""Machine"", ""feature"", ""effect""], [""Machine"", ""feature"", ""electronics""], [""Machine"", ""feature"", ""voice""], [""Machine"", ""feature"", ""Wayne""], [""Machine"", ""recordAt"", ""508""], [""Machine"", ""release"", ""2001""], [""Machine"", ""releaseOn"", ""22""], [""Machine"", ""s"", ""album chart""]]"
+Picture-Image,"A photograph is an image created by light falling on a photosensitive surface, usually photographic film or an electronic image sensor. The process and practice of creating such images is called photography. An image or picture is a visual representation. An image can be two-dimensional, such as a drawing, painting, or photograph, or three-dimensional, such as a carving or sculpture.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q125191 rdfs:label ""photograph""@en ;
+    kg:be wd:Q478798 ;
+    kg:call wd:Q11633 ;
+    kg:create wd:Q478798 ;
+    kg:createBy wd:Q76299 ;
+    kg:fall wd:Q11424 ;
+    kg:fall wd:Q37453697 ;
+    kg:fall wd:Q595597 ;
+    kg:fall wd:Q624661 ;
+    kg:fallOn wd:Q37497814 ;
+    kg:fallOn wd:Q6293 .
+
+wd:Q11424 rdfs:label ""film""@en .
+wd:Q11633 rdfs:label ""photography""@en .
+wd:Q37453697 rdfs:label ""Sensor""@en .
+wd:Q37497814 rdfs:label ""Surface""@en .
+wd:Q478798 rdfs:label ""image""@en .
+wd:Q595597 rdfs:label ""negative""@en .
+wd:Q624661 rdfs:label ""Electronic""@en .
+wd:Q6293 rdfs:label ""photographic film""@en .
+wd:Q76299 rdfs:label ""visible spectrum""@en .
+wd:Q478798 rdfs:label ""image""@en ;
+    kg:be wd:Q107162205 ;
+    kg:be wd:Q162668 ;
+    kg:be wd:Q222032 ;
+    kg:be wd:Q853614 ;
+    kg:draw wd:Q125191 ;
+    kg:draw wd:Q1640824 ;
+    kg:draw wd:Q229367 ;
+    kg:draw wd:Q3305213 ;
+    kg:draw wd:Q860861 .
+
+wd:Q107162205 rdfs:label ""Visual Representations of the Arctic""@en .
+wd:Q125191 rdfs:label ""photograph""@en .
+wd:Q162668 rdfs:label ""visual perception""@en .
+wd:Q1640824 rdfs:label ""inscription""@en .
+wd:Q222032 rdfs:label ""two-dimensional space""@en .
+wd:Q229367 rdfs:label ""3D printing""@en .
+wd:Q3305213 rdfs:label ""painting""@en .
+wd:Q853614 rdfs:label ""identifier""@en .
+wd:Q860861 rdfs:label ""sculpture""@en .
+","[[""image"", ""be"", ""identifier""], [""image"", ""be"", ""two-dimensional space""], [""image"", ""be"", ""visual perception""], [""image"", ""be"", ""Visual Representations of the Arctic""], [""image"", ""draw"", ""3D printing""], [""image"", ""draw"", ""inscription""], [""image"", ""draw"", ""painting""], [""image"", ""draw"", ""photograph""], [""image"", ""draw"", ""sculpture""], [""photograph"", ""be"", ""image""], [""photograph"", ""call"", ""photography""], [""photograph"", ""create"", ""image""], [""photograph"", ""createBy"", ""visible spectrum""], [""photograph"", ""fall"", ""Electronic""], [""photograph"", ""fall"", ""film""], [""photograph"", ""fall"", ""negative""], [""photograph"", ""fall"", ""Sensor""], [""photograph"", ""fallOn"", ""photographic film""], [""photograph"", ""fallOn"", ""Surface""]]"
+Book-Publication,"A book is a written work of substantial length created by one or more authors. They can be distributed in various forms such as printed books, audiobooks, and electronic books. To publish is to make content available to the general public. While specific use of the term may vary among countries, it is usually applied to text, images, or other audio-visual content, including paper.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q571 rdfs:label ""book""@en ;
+    kg:createBy wd:Q36180 ;
+    kg:distribute wd:Q106833 ;
+    kg:distribute wd:Q624661 ;
+    kg:distributeAs wd:Q106476310 ;
+    kg:distributeAs wd:Q732577 ;
+    kg:distributeIn wd:Q140208944 ;
+    kg:writeOf wd:Q16218846 .
+
+wd:Q106476310 rdfs:label ""Printed Books""@en .
+wd:Q106833 rdfs:label ""audiobook""@en .
+wd:Q140208944 rdfs:label ""Forms""@en .
+wd:Q16218846 rdfs:label ""Substantial""@en .
+wd:Q36180 rdfs:label ""writer""@en .
+wd:Q624661 rdfs:label ""Electronic""@en .
+wd:Q732577 rdfs:label ""publication""@en .
+wd:Q732577 rdfs:label ""publication""@en ;
+    kg:include wd:Q11472 ;
+    kg:make wd:Q37454002 ;
+    kg:makeTo wd:Q180686 ;
+    kg:text wd:Q118271914 ;
+    kg:text wd:Q2431196 ;
+    kg:text wd:Q478798 ;
+    kg:varyAmong wd:Q6256 .
+
+wd:Q11472 rdfs:label ""paper""@en .
+wd:Q118271914 rdfs:label ""Audio-visual content construction and optimizing strategy of WeChat official platform for scientific journals""@en .
+wd:Q2431196 rdfs:label ""audiovisual work""@en .
+wd:Q37454002 rdfs:label ""Content""@en .
+wd:Q478798 rdfs:label ""image""@en .
+wd:Q6256 rdfs:label ""country""@en .
+","[[""book"", ""createBy"", ""writer""], [""book"", ""distribute"", ""audiobook""], [""book"", ""distribute"", ""Electronic""], [""book"", ""distributeAs"", ""Printed Books""], [""book"", ""distributeAs"", ""publication""], [""book"", ""distributeIn"", ""Forms""], [""book"", ""writeOf"", ""Substantial""], [""publication"", ""include"", ""paper""], [""publication"", ""make"", ""Content""], [""publication"", ""makeTo"", ""Q180686""], [""publication"", ""text"", ""Audio-visual content construction and optimizing strategy of WeChat official platform for scientific journals""], [""publication"", ""text"", ""audiovisual work""], [""publication"", ""text"", ""image""], [""publication"", ""varyAmong"", ""country""]]"
+Actor-Performer,"An actor, or actress, is a person who portrays a character in a production. The actor performs in the traditional medium of the theatre or in modern media such as film, radio, and television. The performing arts are arts such as music, dance, and drama which are performed for an audience. They are different from the visual arts, which produce physical or static objects.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q33999 rdfs:label ""actor""@en ;
+    kg:be wd:Q5 ;
+    kg:portray wd:Q95074 ;
+    kg:portrayIn wd:Q11398090 .
+
+wd:Q11398090 rdfs:label ""creation""@en .
+wd:Q5 rdfs:label ""human""@en .
+wd:Q95074 rdfs:label ""character""@en .
+wd:Q713200 rdfs:label ""performing artist""@en ;
+    kg:be wd:Q11639 ;
+    kg:be wd:Q130232 ;
+    kg:beAs wd:Q638 ;
+    kg:beFrom wd:Q162668 ;
+    kg:beFrom wd:Q36649 ;
+    kg:performFor wd:Q211198 ;
+    kg:produce wd:Q15121683 ;
+    kg:produce wd:Q413 ;
+    kg:produce wd:Q488383 .
+
+wd:Q11639 rdfs:label ""dance""@en .
+wd:Q130232 rdfs:label ""drama film""@en .
+wd:Q15121683 rdfs:label ""Static""@en .
+wd:Q162668 rdfs:label ""visual perception""@en .
+wd:Q211198 rdfs:label ""audience""@en .
+wd:Q36649 rdfs:label ""visual arts""@en .
+wd:Q413 rdfs:label ""physics""@en .
+wd:Q488383 rdfs:label ""object""@en .
+wd:Q638 rdfs:label ""music""@en .
+","[[""actor"", ""be"", ""human""], [""actor"", ""portray"", ""character""], [""actor"", ""portrayIn"", ""creation""], [""performing artist"", ""be"", ""dance""], [""performing artist"", ""be"", ""drama film""], [""performing artist"", ""beAs"", ""music""], [""performing artist"", ""beFrom"", ""visual arts""], [""performing artist"", ""beFrom"", ""visual perception""], [""performing artist"", ""performFor"", ""audience""], [""performing artist"", ""produce"", ""object""], [""performing artist"", ""produce"", ""physics""], [""performing artist"", ""produce"", ""Static""]]"
+Cat-Feline,"Catalan is a Western Romance language that is native to, and the official language of, three autonomous communities in eastern Spain: Catalonia, the Balearic Islands, and the Valencian Community, where it is called Valencian. Catalan is also the sole official language of Andorra, has semi-official status in the Italian municipality of Alghero, and is spoken in the Pyrénées-Orientales department of France and in two further areas in eastern Spain: the eastern strip of Aragon and the Carche area in the Region of Murcia. Feline is the seventh studio album by the Stranglers and was released on 14 January 1983 on the Epic record label, their first for the label. The first edition came with a free one-sided 7Aural Sculpture Manifesto"".","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q7026 rdfs:label ""Catalan""@en ;
+    kg:be wd:Q1322263 ;
+    kg:be wd:Q172980 ;
+    kg:be wd:Q177634 ;
+    kg:be wd:Q19814 ;
+    kg:be wd:Q23442 ;
+    kg:be wd:Q29 ;
+    kg:be wd:Q34770 ;
+    kg:be wd:Q3964261 ;
+    kg:be wd:Q5705 ;
+    kg:be wd:Q599151 ;
+    kg:be wd:Q6723 ;
+    kg:be wd:Q728553 ;
+    kg:be wd:Q804899 ;
+    kg:beOf wd:Q228 ;
+    kg:have wd:Q170174 ;
+    kg:have wd:Q64290559 ;
+    kg:haveIn wd:Q15284 ;
+    kg:haveIn wd:Q652 ;
+    kg:haveIn wd:Q747074 ;
+    kg:haveOf wd:Q166282 ;
+    kg:speakIn wd:Q12709 ;
+    kg:speakIn wd:Q3006584 ;
+    kg:speakIn wd:Q6465 ;
+    kg:speakIn wd:Q82794 ;
+    kg:speakIn wd:Q838795 ;
+    kg:speakOf wd:Q10590393 ;
+    kg:speakOf wd:Q142 ;
+    kg:speakOf wd:Q2736 ;
+    kg:speakOf wd:Q625115 .
+
+wd:Q10590393 rdfs:label ""Murcia""@en .
+wd:Q12709 rdfs:label ""Pyrénées-Orientales""@en .
+wd:Q1322263 rdfs:label ""place of birth""@en .
+wd:Q142 rdfs:label ""France""@en .
+wd:Q15284 rdfs:label ""municipality""@en .
+wd:Q166282 rdfs:label ""Alghero""@en .
+wd:Q170174 rdfs:label ""Papal States""@en .
+wd:Q172980 rdfs:label ""Western film""@en .
+wd:Q177634 rdfs:label ""community""@en .
+wd:Q19814 rdfs:label ""Romance""@en .
+wd:Q228 rdfs:label ""Andorra""@en .
+wd:Q23442 rdfs:label ""island""@en .
+wd:Q2736 rdfs:label ""association football""@en .
+wd:Q29 rdfs:label ""Spain""@en .
+wd:Q3006584 rdfs:label ""Eastern striped skink""@en .
+wd:Q34770 rdfs:label ""language""@en .
+wd:Q3964261 rdfs:label ""Sole""@en .
+wd:Q5705 rdfs:label ""Catalonia""@en .
+wd:Q599151 rdfs:label ""official""@en .
+wd:Q625115 rdfs:label ""Aragon""@en .
+wd:Q64290559 rdfs:label ""Semi-Official Aerological Correspondence of Lieutenant F. W. Reichelderfer (NAID 25466137)""@en .
+wd:Q6465 rdfs:label ""department of France""@en .
+wd:Q652 rdfs:label ""Italian""@en .
+wd:Q6723 rdfs:label ""UTC+02:00""@en .
+wd:Q728553 rdfs:label ""Community""@en .
+wd:Q747074 rdfs:label ""comune of Italy""@en .
+wd:Q804899 rdfs:label ""Balearic""@en .
+wd:Q82794 rdfs:label ""region""@en .
+wd:Q838795 rdfs:label ""comic strip""@en .
+wd:Q3068114 rdfs:label ""Feline""@en ;
+    kg:be wd:Q135080472 ;
+    kg:be wd:Q482994 ;
+    kg:be wd:Q746628 ;
+    kg:beBy wd:Q110574015 ;
+    kg:comeWith wd:Q109419060 ;
+    kg:comeWith wd:Q18614263 ;
+    kg:comeWith wd:Q860861 ;
+    kg:releaseOn wd:Q108 ;
+    kg:releaseOn wd:Q1458581 ;
+    kg:releaseOn wd:Q216364 ;
+    kg:releaseOn wd:Q2434 ;
+    kg:releaseOn wd:Q25377854 ;
+    kg:releaseOn wd:Q55811610 ;
+    kg:releaseOn wd:Q82799 .
+
+wd:Q108 rdfs:label ""January""@en .
+wd:Q109419060 rdfs:label ""Manifesto""@en .
+wd:Q110574015 rdfs:label ""Stranglers""@en .
+wd:Q135080472 rdfs:label ""Seventh""@en .
+wd:Q1458581 rdfs:label ""Record""@en .
+wd:Q18614263 rdfs:label ""One-Sided""@en .
+wd:Q216364 rdfs:label ""Epic Records""@en .
+wd:Q2434 rdfs:label ""1983""@en .
+wd:Q25377854 rdfs:label ""Ecliptic Plane Input Catalog""@en .
+wd:Q482994 rdfs:label ""album""@en .
+wd:Q55811610 rdfs:label ""14:00""@en .
+wd:Q746628 rdfs:label ""studio""@en .
+wd:Q82799 rdfs:label ""name""@en .
+wd:Q860861 rdfs:label ""sculpture""@en .
+","[[""Catalan"", ""be"", ""Balearic""], [""Catalan"", ""be"", ""Catalonia""], [""Catalan"", ""be"", ""community""], [""Catalan"", ""be"", ""island""], [""Catalan"", ""be"", ""language""], [""Catalan"", ""be"", ""official""], [""Catalan"", ""be"", ""place of birth""], [""Catalan"", ""be"", ""Romance""], [""Catalan"", ""be"", ""Sole""], [""Catalan"", ""be"", ""Spain""], [""Catalan"", ""be"", ""UTC+02:00""], [""Catalan"", ""be"", ""Western film""], [""Catalan"", ""beOf"", ""Andorra""], [""Catalan"", ""have"", ""Papal States""], [""Catalan"", ""have"", ""Semi-Official Aerological Correspondence of Lieutenant F. W. Reichelderfer (NAID 25466137)""], [""Catalan"", ""haveIn"", ""comune of Italy""], [""Catalan"", ""haveIn"", ""Italian""], [""Catalan"", ""haveIn"", ""municipality""], [""Catalan"", ""haveOf"", ""Alghero""], [""Catalan"", ""speakIn"", ""comic strip""], [""Catalan"", ""speakIn"", ""department of France""], [""Catalan"", ""speakIn"", ""Eastern striped skink""], [""Catalan"", ""speakIn"", ""Pyrénées-Orientales""], [""Catalan"", ""speakIn"", ""region""], [""Catalan"", ""speakOf"", ""Aragon""], [""Catalan"", ""speakOf"", ""association football""], [""Catalan"", ""speakOf"", ""France""], [""Catalan"", ""speakOf"", ""Murcia""], [""Feline"", ""be"", ""album""], [""Feline"", ""be"", ""Seventh""], [""Feline"", ""be"", ""studio""], [""Feline"", ""beBy"", ""Stranglers""], [""Feline"", ""comeWith"", ""Manifesto""], [""Feline"", ""comeWith"", ""One-Sided""], [""Feline"", ""comeWith"", ""sculpture""], [""Feline"", ""releaseOn"", ""14:00""], [""Feline"", ""releaseOn"", ""1983""], [""Feline"", ""releaseOn"", ""Ecliptic Plane Input Catalog""], [""Feline"", ""releaseOn"", ""Epic Records""], [""Feline"", ""releaseOn"", ""January""], [""Feline"", ""releaseOn"", ""name""], [""Feline"", ""releaseOn"", ""Record""]]"
+City-Municipality,A city is a human settlement of a substantial size. The term has different meanings around the world and in some places the settlement can be very small. A municipality is usually a single administrative division having corporate status and powers of self-government or jurisdiction as granted by national and regional laws to which it is subordinate. The term municipality may also mean the governing body of a given municipality.,"@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q515 rdfs:label ""city""@en ;
+    kg:be wd:Q5 ;
+    kg:beOf wd:Q16218846 ;
+    kg:beOf wd:Q322481 ;
+    kg:have wd:Q57305204 .
+
+wd:Q16218846 rdfs:label ""Substantial""@en .
+wd:Q322481 rdfs:label ""size""@en .
+wd:Q5 rdfs:label ""human""@en .
+wd:Q57305204 rdfs:label ""Meanings and origins of botanical names of New Zealand plants""@en .
+wd:Q15284 rdfs:label ""municipality""@en ;
+    kg:be wd:Q134556 ;
+    kg:be wd:Q169534 ;
+    kg:be wd:Q56061 ;
+    kg:be wd:Q694045 ;
+    kg:grantBy wd:Q1472 ;
+    kg:grantBy wd:Q16871935 ;
+    kg:grantBy wd:Q518155 ;
+    kg:have wd:Q155076 ;
+    kg:have wd:Q170174 ;
+    kg:have wd:Q28800766 ;
+    kg:haveOf wd:Q417633 ;
+    kg:haveOf wd:Q471855 ;
+    kg:mean wd:Q223557 .
+
+wd:Q134556 rdfs:label ""single""@en .
+wd:Q1472 rdfs:label ""Crohn's disease""@en .
+wd:Q155076 rdfs:label ""juridical person""@en .
+wd:Q16871935 rdfs:label ""Laws""@en .
+wd:Q169534 rdfs:label ""military division""@en .
+wd:Q170174 rdfs:label ""Papal States""@en .
+wd:Q223557 rdfs:label ""physical object""@en .
+wd:Q28800766 rdfs:label ""Powers""@en .
+wd:Q417633 rdfs:label ""self-governance""@en .
+wd:Q471855 rdfs:label ""jurisdiction""@en .
+wd:Q518155 rdfs:label ""National Archives and Records Administration""@en .
+wd:Q56061 rdfs:label ""administrative territorial entity""@en .
+wd:Q694045 rdfs:label ""delegated legislation""@en .
+","[[""city"", ""be"", ""human""], [""city"", ""beOf"", ""size""], [""city"", ""beOf"", ""Substantial""], [""city"", ""have"", ""Meanings and origins of botanical names of New Zealand plants""], [""municipality"", ""be"", ""administrative territorial entity""], [""municipality"", ""be"", ""delegated legislation""], [""municipality"", ""be"", ""military division""], [""municipality"", ""be"", ""single""], [""municipality"", ""grantBy"", ""Crohn's disease""], [""municipality"", ""grantBy"", ""Laws""], [""municipality"", ""grantBy"", ""National Archives and Records Administration""], [""municipality"", ""have"", ""juridical person""], [""municipality"", ""have"", ""Papal States""], [""municipality"", ""have"", ""Powers""], [""municipality"", ""haveOf"", ""jurisdiction""], [""municipality"", ""haveOf"", ""self-governance""], [""municipality"", ""mean"", ""physical object""]]"
+Country-Nation,"Country music, also known as country and western or simply country, is a music genre originating from the United States. It is known for its ballads and dance tunes, identifiable by both traditional lyrics and harmonies accompanied by banjos, mandolins, fiddles, harmonicas, and many types of guitar; either acoustic, electric, steel, or resonator guitars. The National Archives and Records Administration is an independent agency of the United States federal government within the executive branch, charged with the preservation and documentation of government and historical records. It is also tasked with increasing public access to those documents that make up the National Archives.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q83440 rdfs:label ""country music""@en ;
+    kg:accompany wd:Q1028638 ;
+    kg:accompany wd:Q11427 ;
+    kg:accompany wd:Q1148098 ;
+    kg:accompany wd:Q117382671 ;
+    kg:accompany wd:Q16991689 ;
+    kg:accompany wd:Q23940010 ;
+    kg:accompany wd:Q4674611 ;
+    kg:accompany wd:Q510487 ;
+    kg:accompany wd:Q6607 ;
+    kg:accompany wd:Q978185 ;
+    kg:accompanyBy wd:Q13217609 ;
+    kg:be wd:Q188451 ;
+    kg:know wd:Q178528 ;
+    kg:know wd:Q36153 ;
+    kg:know wd:Q5988207 ;
+    kg:know wd:Q602446 ;
+    kg:knowAs wd:Q172980 ;
+    kg:knowAs wd:Q6296982 ;
+    kg:knowFor wd:Q11639 ;
+    kg:knowFor wd:Q119167927 ;
+    kg:knowFor wd:Q4851370 ;
+    kg:originateFrom wd:Q30 .
+
+wd:Q1028638 rdfs:label ""Guitars""@en .
+wd:Q11427 rdfs:label ""steel""@en .
+wd:Q1148098 rdfs:label ""overtone""@en .
+wd:Q11639 rdfs:label ""dance""@en .
+wd:Q117382671 rdfs:label ""Resonator""@en .
+wd:Q119167927 rdfs:label ""Tunes""@en .
+wd:Q13217609 rdfs:label ""Banjos""@en .
+wd:Q16991689 rdfs:label ""Electric""@en .
+wd:Q172980 rdfs:label ""Western film""@en .
+wd:Q178528 rdfs:label ""traditional Chinese characters""@en .
+wd:Q188451 rdfs:label ""music genre""@en .
+wd:Q23940010 rdfs:label ""Mandolins and Pineapples""@en .
+wd:Q30 rdfs:label ""United States""@en .
+wd:Q36153 rdfs:label ""Beyoncé""@en .
+wd:Q4674611 rdfs:label ""Acoustic""@en .
+wd:Q4851370 rdfs:label ""Ballads""@en .
+wd:Q510487 rdfs:label ""fiddle""@en .
+wd:Q5988207 rdfs:label ""identifiable victim effect""@en .
+wd:Q602446 rdfs:label ""lyrics""@en .
+wd:Q6296982 rdfs:label ""Simply""@en .
+wd:Q6607 rdfs:label ""guitar""@en .
+wd:Q978185 rdfs:label ""TypeScript""@en .
+wd:Q518155 rdfs:label ""National Archives and Records Administration""@en ;
+    kg:be wd:Q327591 ;
+    kg:be wd:Q430704 ;
+    kg:beOf wd:Q183 ;
+    kg:beOf wd:Q30 ;
+    kg:beOf wd:Q7188 ;
+    kg:beWithin wd:Q4956333 ;
+    kg:chargeOf wd:Q309 ;
+    kg:chargeOf wd:Q5773935 ;
+    kg:chargeWith wd:Q788790 ;
+    kg:chargeWith wd:Q830393 ;
+    kg:increase wd:Q1333727 ;
+    kg:increase wd:Q180686 ;
+    kg:increase wd:Q5014643 ;
+    kg:increaseTo wd:Q3033634 .
+
+wd:Q1333727 rdfs:label ""publicity""@en .
+wd:Q183 rdfs:label ""Germany""@en .
+wd:Q30 rdfs:label ""United States""@en .
+wd:Q3033634 rdfs:label ""Documents d'Archéologie Méridionale""@en .
+wd:Q309 rdfs:label ""history""@en .
+wd:Q327591 rdfs:label ""independent politician""@en .
+wd:Q430704 rdfs:label ""Agency""@en .
+wd:Q4956333 rdfs:label ""Branch""@en .
+wd:Q5014643 rdfs:label ""CTV 2 Alberta""@en .
+wd:Q5773935 rdfs:label ""Historical Records of Australian Science""@en .
+wd:Q7188 rdfs:label ""government""@en .
+wd:Q788790 rdfs:label ""documentation""@en .
+wd:Q830393 rdfs:label ""preservation""@en .
+","[[""country music"", ""accompany"", ""Acoustic""], [""country music"", ""accompany"", ""Electric""], [""country music"", ""accompany"", ""fiddle""], [""country music"", ""accompany"", ""guitar""], [""country music"", ""accompany"", ""Guitars""], [""country music"", ""accompany"", ""Mandolins and Pineapples""], [""country music"", ""accompany"", ""overtone""], [""country music"", ""accompany"", ""Resonator""], [""country music"", ""accompany"", ""steel""], [""country music"", ""accompany"", ""TypeScript""], [""country music"", ""accompanyBy"", ""Banjos""], [""country music"", ""be"", ""music genre""], [""country music"", ""know"", ""Beyoncé""], [""country music"", ""know"", ""identifiable victim effect""], [""country music"", ""know"", ""lyrics""], [""country music"", ""know"", ""traditional Chinese characters""], [""country music"", ""knowAs"", ""Simply""], [""country music"", ""knowAs"", ""Western film""], [""country music"", ""knowFor"", ""Ballads""], [""country music"", ""knowFor"", ""dance""], [""country music"", ""knowFor"", ""Tunes""], [""country music"", ""originateFrom"", ""United States""], [""National Archives and Records Administration"", ""be"", ""Agency""], [""National Archives and Records Administration"", ""be"", ""independent politician""], [""National Archives and Records Administration"", ""beOf"", ""Germany""], [""National Archives and Records Administration"", ""beOf"", ""government""], [""National Archives and Records Administration"", ""beOf"", ""United States""], [""National Archives and Records Administration"", ""beWithin"", ""Branch""], [""National Archives and Records Administration"", ""chargeOf"", ""Historical Records of Australian Science""], [""National Archives and Records Administration"", ""chargeOf"", ""history""], [""National Archives and Records Administration"", ""chargeWith"", ""documentation""], [""National Archives and Records Administration"", ""chargeWith"", ""preservation""], [""National Archives and Records Administration"", ""increase"", ""CTV 2 Alberta""], [""National Archives and Records Administration"", ""increase"", ""publicity""], [""National Archives and Records Administration"", ""increase"", ""Q180686""], [""National Archives and Records Administration"", ""increaseTo"", ""Documents d'Archéologie Méridionale""]]"
+University-College,"A university is an institution of tertiary education and research which awards academic degrees in several academic disciplines. University is derived from the Latin phrase universitas magistrorum et scholarium, which roughly means. A college is an educational institution. Within tertiary education, it may be a part of a collegiate university, an academic division within a university, or a standalone institution providing undergraduate education.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q3918 rdfs:label ""university""@en ;
+    kg:award wd:Q11579 ;
+    kg:award wd:Q3400985 ;
+    kg:awardIn wd:Q134706749 ;
+    kg:be wd:Q43229 ;
+    kg:beOf wd:Q188645 ;
+    kg:beOf wd:Q8434 ;
+    kg:derive wd:Q60070514 ;
+    kg:deriveFrom wd:Q187931 ;
+    kg:deriveFrom wd:Q2845896 ;
+    kg:deriveFrom wd:Q34433 ;
+    kg:deriveFrom wd:Q397 .
+
+wd:Q11579 rdfs:label ""kelvin""@en .
+wd:Q134706749 rdfs:label ""Disciplines""@en .
+wd:Q187931 rdfs:label ""phrase""@en .
+wd:Q188645 rdfs:label ""Tertiary""@en .
+wd:Q2845896 rdfs:label ""University of Paris""@en .
+wd:Q3400985 rdfs:label ""academic""@en .
+wd:Q34433 rdfs:label ""University of Oxford""@en .
+wd:Q397 rdfs:label ""Latin""@en .
+wd:Q43229 rdfs:label ""organization""@en .
+wd:Q60070514 rdfs:label ""approximately""@en .
+wd:Q8434 rdfs:label ""education""@en .
+wd:Q189004 rdfs:label ""college""@en ;
+    kg:be wd:Q1231865 ;
+    kg:be wd:Q169534 ;
+    kg:be wd:Q2385804 ;
+    kg:be wd:Q3400985 ;
+    kg:be wd:Q43229 ;
+    kg:be wd:Q91807513 ;
+    kg:beOf wd:Q3918 ;
+    kg:provide wd:Q1430192 .
+
+wd:Q1231865 rdfs:label ""pedagogue""@en .
+wd:Q1430192 rdfs:label ""undergraduate education""@en .
+wd:Q169534 rdfs:label ""military division""@en .
+wd:Q2385804 rdfs:label ""educational institution""@en .
+wd:Q3400985 rdfs:label ""academic""@en .
+wd:Q3918 rdfs:label ""university""@en .
+wd:Q43229 rdfs:label ""organization""@en .
+wd:Q91807513 rdfs:label ""custom role-playing game system""@en .
+","[[""college"", ""be"", ""academic""], [""college"", ""be"", ""custom role-playing game system""], [""college"", ""be"", ""educational institution""], [""college"", ""be"", ""military division""], [""college"", ""be"", ""organization""], [""college"", ""be"", ""pedagogue""], [""college"", ""beOf"", ""university""], [""college"", ""provide"", ""undergraduate education""], [""university"", ""award"", ""academic""], [""university"", ""award"", ""kelvin""], [""university"", ""awardIn"", ""Disciplines""], [""university"", ""be"", ""organization""], [""university"", ""beOf"", ""education""], [""university"", ""beOf"", ""Tertiary""], [""university"", ""derive"", ""approximately""], [""university"", ""deriveFrom"", ""Latin""], [""university"", ""deriveFrom"", ""phrase""], [""university"", ""deriveFrom"", ""University of Oxford""], [""university"", ""deriveFrom"", ""University of Paris""]]"
+Painting-Artwork,"Painting is a visual art, characterized by the practice of applying paint, pigment, color, or other medium to a solid surface. The medium is commonly applied to the base with a brush. A work of art, artwork, art piece, piece of art or art object is an artistic creation of aesthetic value. Except for, which may be used of any work regarded as art in its widest sense, including works from literature and music, these terms apply principally to tangible, physical forms of visual art: An example of fine art, such as a painting or sculpture.","@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix kg: <https://example.org/wikidata-description/> .
+
+wd:Q3305213 rdfs:label ""painting""@en ;
+    kg:apply wd:Q11438 ;
+    kg:apply wd:Q161179 ;
+    kg:apply wd:Q174219 ;
+    kg:apply wd:Q22006653 ;
+    kg:apply wd:Q37497814 ;
+    kg:apply wd:Q470111 ;
+    kg:applyTo wd:Q809830 ;
+    kg:applyWith wd:Q5546688 ;
+    kg:be wd:Q162668 ;
+    kg:be wd:Q28962312 ;
+    kg:be wd:Q36649 ;
+    kg:be wd:Q41825479 ;
+    kg:be wd:Q8227356 ;
+    kg:characterizeBy wd:Q251777 .
+
+wd:Q11438 rdfs:label ""solid""@en .
+wd:Q161179 rdfs:label ""pigment""@en .
+wd:Q162668 rdfs:label ""visual perception""@en .
+wd:Q174219 rdfs:label ""paint""@en .
+wd:Q22006653 rdfs:label ""color""@en .
+wd:Q251777 rdfs:label ""custom""@en .
+wd:Q28962312 rdfs:label ""often""@en .
+wd:Q36649 rdfs:label ""visual arts""@en .
+wd:Q37497814 rdfs:label ""Surface""@en .
+wd:Q41825479 rdfs:label ""Commonly applied positive end-expiratory pressures do not prevent functional residual capacity decline in the setting of intra-abdominal hypertension: a pig model""@en .
+wd:Q470111 rdfs:label ""Medium""@en .
+wd:Q5546688 rdfs:label ""George de Forest Brush""@en .
+wd:Q809830 rdfs:label ""Base Mérimée""@en .
+wd:Q8227356 rdfs:label ""Art""@en .
+wd:Q838948 rdfs:label ""work of art""@en ;
+    kg:apply wd:Q114013951 ;
+    kg:be wd:Q386724 ;
+    kg:be wd:Q47407603 ;
+    kg:beOf wd:Q4688579 ;
+    kg:include wd:Q110568202 ;
+    kg:includeFrom wd:Q638 ;
+    kg:includeFrom wd:Q8242 ;
+    kg:regardIn wd:Q109407999 ;
+    kg:regardIn wd:Q22809680 ;
+    kg:tangible wd:Q140208944 ;
+    kg:tangible wd:Q162668 ;
+    kg:tangible wd:Q3305213 ;
+    kg:tangible wd:Q36649 ;
+    kg:tangible wd:Q413 ;
+    kg:tangible wd:Q4480591 ;
+    kg:tangible wd:Q860861 .
+
+wd:Q109407999 rdfs:label ""Widestrand""@en .
+wd:Q110568202 rdfs:label ""Terms""@en .
+wd:Q114013951 rdfs:label ""Principally Small Injective Rings""@en .
+wd:Q140208944 rdfs:label ""Forms""@en .
+wd:Q162668 rdfs:label ""visual perception""@en .
+wd:Q22809680 rdfs:label ""forward strand""@en .
+wd:Q3305213 rdfs:label ""painting""@en .
+wd:Q36649 rdfs:label ""visual arts""@en .
+wd:Q386724 rdfs:label ""work""@en .
+wd:Q413 rdfs:label ""physics""@en .
+wd:Q4480591 rdfs:label ""Fine""@en .
+wd:Q4688579 rdfs:label ""Aesthetic Plastic Surgery""@en .
+wd:Q47407603 rdfs:label ""artistic creation""@en .
+wd:Q638 rdfs:label ""music""@en .
+wd:Q8242 rdfs:label ""literature""@en .
+wd:Q860861 rdfs:label ""sculpture""@en .
+","[[""painting"", ""apply"", ""color""], [""painting"", ""apply"", ""Medium""], [""painting"", ""apply"", ""paint""], [""painting"", ""apply"", ""pigment""], [""painting"", ""apply"", ""solid""], [""painting"", ""apply"", ""Surface""], [""painting"", ""applyTo"", ""Base Mérimée""], [""painting"", ""applyWith"", ""George de Forest Brush""], [""painting"", ""be"", ""Art""], [""painting"", ""be"", ""Commonly applied positive end-expiratory pressures do not prevent functional residual capacity decline in the setting of intra-abdominal hypertension: a pig model""], [""painting"", ""be"", ""often""], [""painting"", ""be"", ""visual arts""], [""painting"", ""be"", ""visual perception""], [""painting"", ""characterizeBy"", ""custom""], [""work of art"", ""apply"", ""Principally Small Injective Rings""], [""work of art"", ""be"", ""artistic creation""], [""work of art"", ""be"", ""work""], [""work of art"", ""beOf"", ""Aesthetic Plastic Surgery""], [""work of art"", ""include"", ""Terms""], [""work of art"", ""includeFrom"", ""literature""], [""work of art"", ""includeFrom"", ""music""], [""work of art"", ""regardIn"", ""forward strand""], [""work of art"", ""regardIn"", ""Widestrand""], [""work of art"", ""tangible"", ""Fine""], [""work of art"", ""tangible"", ""Forms""], [""work of art"", ""tangible"", ""painting""], [""work of art"", ""tangible"", ""physics""], [""work of art"", ""tangible"", ""sculpture""], [""work of art"", ""tangible"", ""visual arts""], [""work of art"", ""tangible"", ""visual perception""]]"
