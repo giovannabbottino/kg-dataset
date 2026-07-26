@@ -8,17 +8,22 @@ if (Header contains rdf?) then (yes)
   while (Rows remain?) is (yes)
     :Parse project Turtle subset;
     :Collect labels, roots, and triples;
-    :Build direct graph paths;
-    :Build two-hop graph paths when available;
-    :Generate SELECT SPARQL with label clauses;
-    :Execute query against source RDF;
-    if (Query returns answer?) then (yes)
-    :Create one row per question;
-    :Set identifier, description_identifier, question, sparql, answer;
+    :Select up to 2 different source entities;
+    :Generate label-based question and SELECT SPARQL;
+    :Generate directed ID question and SPARQL when available;
+    :Execute and validate label SPARQL with RDFLib;
+    :Execute and validate ID SPARQL with RDFLib when available;
+    if (All generated queries are valid?) then (yes)
+      :Create label-based question row;
+      :Create directed ID row when available;
+    else (no)
+      :Raise validation error;
+      stop
     endif
   endwhile (no)
 
-  :Write compact enrichment CSV;
+  :Write label SPARQL CSV;
+  :Write ID SPARQL CSV;
 else (no)
   :Raise validation error;
 endif

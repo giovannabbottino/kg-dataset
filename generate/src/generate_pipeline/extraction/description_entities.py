@@ -37,14 +37,11 @@ def _token_matches(text: str) -> list[re.Match]:
 
 
 def _stop_words(lang: str) -> set[str]:
-    """Load and cache stop words through the optional ``stopwordsiso`` library."""
+    """Load and cache stop words from ``stopwordsiso``."""
     if lang not in _STOP_WORD_CACHE:
-        if load_stopwords is None:
-            _STOP_WORD_CACHE[lang] = set()
-        else:
-            _STOP_WORD_CACHE[lang] = {
-                word.casefold() for word in load_stopwords(lang)
-            }
+        _STOP_WORD_CACHE[lang] = {
+            word.casefold() for word in load_stopwords(lang)
+        }
     return _STOP_WORD_CACHE[lang]
 
 
@@ -126,10 +123,10 @@ def _verb_lemma(token: str) -> str:
         return _LEMMATIZER.lemmatize(token.casefold(), pos="v")
 
 
-def _verb_matches(text: str) -> list[tuple[str, str, int, int]]:
+def _verb_matches(text: str) -> list[tuple[str, int, int]]:
     """Return POS-tagged verb tokens with their spans."""
     return [
-        (match.group(0), tag, match.start(), match.end())
+        (match.group(0), match.start(), match.end())
         for match, tag in _tag_text(text)
         if tag.startswith("VB")
     ]
@@ -142,7 +139,7 @@ def _verb_token_starts(text: str) -> set[int]:
     while sentence_start < len(text):
         sentence_end = _sentence_end(text, sentence_start)
         sentence = text[sentence_start:sentence_end]
-        for _token, _tag, start, _end in _verb_matches(sentence):
+        for _token, start, _end in _verb_matches(sentence):
             starts.add(sentence_start + start)
         sentence_start = sentence_end + 1
     return starts
@@ -171,18 +168,18 @@ def _relation_particle(text_between_verb_and_phrase: str) -> str:
     return ""
 
 
-def _best_verb_before_phrase(text: str, cutoff: int) -> tuple[str, int, int] | None:
+def _best_verb_before_phrase(text: str, cutoff: int) -> tuple[str, int] | None:
     """Choose the nearest useful verb before an entity phrase."""
     verbs = [
-        (token, tag, start, end)
-        for token, tag, start, end in _verb_matches(text)
+        (token, end)
+        for token, _start, end in _verb_matches(text)
         if end <= cutoff
     ]
     if not verbs:
         return None
 
-    token, _tag, start, end = verbs[-1]
-    return _verb_lemma(token), start, end
+    token, end = verbs[-1]
+    return _verb_lemma(token), end
 
 
 def _predicate_from_verb_context(verb: str, between_verb_and_phrase: str) -> str:
@@ -203,7 +200,7 @@ def _verb_relationship(text: str, phrase: str) -> str | None:
     if best_verb is None:
         return None
 
-    verb, _verb_start, verb_end = best_verb
+    verb, verb_end = best_verb
     predicate = _predicate_from_verb_context(verb, context[verb_end:phrase_start])
     return predicate or None
 
@@ -215,12 +212,12 @@ def _resolve_phrase(phrase: str, lang: str, source_id: str) -> str | None:
     return None
 
 
-def extract_entities_and_relations(
+def extract_relations(
     description: str, lang: str, source_id: str
-) -> tuple[set[str], list[tuple[str, str, str]]]:
-    """Resolve description phrases to Wikidata entity IDs."""
+) -> list[tuple[str, str, str]]:
+    """Resolve description phrases and return their verb-derived relations."""
     if not description.strip():
-        return set(), []
+        return []
 
     entity_ids = set()
     relations = []
@@ -239,4 +236,4 @@ def extract_entities_and_relations(
         if len(entity_ids) >= MAX_ENTITIES:
             break
 
-    return entity_ids, relations
+    return relations

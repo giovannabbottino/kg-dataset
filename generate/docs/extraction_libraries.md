@@ -24,13 +24,13 @@ word lists for verb and particle detection.
 
 | Library or function | Used in | Purpose |
 | --- | --- | --- |
-| `stopwordsiso.stopwords` | `_stop_words`, `_candidate_phrases` | Loads language-specific stop words so common words are not resolved as Wikidata entity phrases. The dependency is optional; extraction continues with an empty stop-word set if it is unavailable. |
+| `stopwordsiso.stopwords` | `_stop_words`, `_candidate_phrases` | Loads and caches language-specific stop words so common words are not resolved as Wikidata entity phrases. |
 
 ## Project Functions
 
 | Function | Purpose |
 | --- | --- |
-| `extract_entities_and_relations` | Public extraction entry point. It resolves candidate phrases to Wikidata IDs and emits `(subject, predicate, object)` relation tuples. |
+| `extract_relations` | Public extraction entry point. It resolves candidate phrases to Wikidata IDs and emits `(subject, predicate, object)` relation tuples. |
 | `_candidate_phrases` | Produces candidate entity phrases from capitalized text and stop-word-filtered one- or two-token phrases. |
 | `_verb_relationship` | Finds the nearest useful verb before a resolved entity phrase and converts it into a predicate. |
 | `_relation_particle` | Uses NLTK POS tags to add a nearby preposition or particle to the predicate, such as converting a tagged context into `knownFor` when the text supports it. |
