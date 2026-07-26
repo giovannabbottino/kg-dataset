@@ -14,17 +14,20 @@ classes.
 
 ## Requirements
 
-- Python 3.9 or newer
-- Internet access to the public Wikidata API
-- Python packages in `requirements.txt`
+- Python 3.10 or newer
+- Internet access to the public Wikidata and Wikipedia APIs
+- Python packages `nltk`, `stopwordsiso`, and `rdflib`
 
 ## Pipeline Usage
 
 Install dependencies:
 
 ```powershell
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
+
+On first use, NLTK may also download its English POS tagger and WordNet data. Set
+`WIKIDATA_USER_AGENT` before running generation to identify your API client.
 
 Run the generation step once per entity:
 
@@ -71,8 +74,10 @@ python enrich/src/main.py
 Default outputs:
 
 ```text
-data/wikidata_description_rdf.csv
-data/wikidata_description_rdf_enriched.csv
+data/wikidata_base.csv
+data/wikidata_graphs.csv
+data/wikidata_label_sparql.csv
+data/wikidata_id_sparql.csv
 ```
 
 The generation step is append-only. Delete or rename existing output files first
@@ -104,12 +109,13 @@ The generated base CSV contains these columns:
 identifier,description,rdf,triples
 ```
 
-`identifier` contains the requested entity name used to generate the row, such
-as `Jaguar`.
-`description` contains exactly 4 cleaned introductory Wikipedia phrases: 2
-phrases from each of 2 different matched Wikidata entities. Quoted and
-parenthesized text is removed. Wikidata descriptions are not used as fallback
-prose.
+`identifier` contains the requested entity name plus `_01` or `_02`, such as
+`Jaguar_01`. Each `description` contains exactly 2 cleaned introductory
+Wikipedia phrases from one matched Wikidata entity. The two matched entities
+are stored as independent rows. Quoted and parenthesized text is removed, and
+Wikidata descriptions are not used as fallback prose. The companion
+`wikidata_graphs.csv` combines each pair into one four-phrase
+record without the suffix.
 `triples` contains a JSON list of text-extracted triples, where each item is
 `[subject, predicate, object]` using readable entity labels when available.
 When a resolved description phrase has a nearby verb in the text, NLTK POS
@@ -127,20 +133,42 @@ The enriched CSV is a separate reference CSV. It does not duplicate the base
 `description`, `rdf`, or `triples` values. It contains:
 
 ```text
-identifier,description_identifier,question,sparql,answer,answer_id,id_sparql
+identifier,description_identifier,question,query_type,sparql,answer
 ```
 
-`identifier` uses the source entity plus a question number, such as
-`Jaguar_01`. `description_identifier` references the `identifier` from the
-generated base CSV. Each enriched row contains one `question`, one `sparql`
-query, and one `answer`. `answer_id` stores the expected Wikidata identifier
+The directed ID checks are stored in a companion CSV:
+
+```text
+identifier,description_identifier,question,answer_id,id_sparql
+```
+
+The generation step also merges each `_01`/`_02` pair into one complete source
+record with the base identifier, concatenated text, combined Turtle RDF, and
+merged readable triples:
+
+```text
+identifier,description,rdf,triples
+```
+
+`identifier` sanitizes the source identifier and appends a question number,
+such as `Jaguar_01_01` for source row `Jaguar_01`.
+`description_identifier` references the `identifier` from the generated base
+CSV. Each enriched row contains one `question`, its `query_type`, one `sparql`
+query, and an `answer` encoded as a JSON list. The first row for each source
+evaluates linked entities and the second evaluates relationship predicates.
+`answer_id`
+stores the expected Wikidata identifier
 when available, while `id_sparql` contains an additional ID-focused query. The
-The main `sparql` query matches the expected subject and answer labels and
-requires a direct or two-hop connection. The separate `id_sparql` query
-addresses every entity in the selected path directly through
-its Wikidata ID and does not infer IDs from labels or constrain predicate names.
-Each query is executed against the source row's Turtle RDF and must return the
-expected answer before it is written to the enriched CSV.
+main `sparql` query selects a source entity with a case-insensitive `REGEX` over
+its label, then returns every entity directly connected to it by an incoming or
+outgoing edge, without restricting the relationship predicate. The separate
+`id_sparql` query uses the original directed ID path: a fixed source IRI, a
+variable predicate, and a filter for the expected answer IRI.
+If the source label is absent from an evaluated KG, label queries fall back to
+graph-wide entity or predicate candidates so the external evaluator can apply
+its generic matching. The main `answer` is populated from the query's actual local result. The
+directed ID query must also return its expected Q-ID; a validation failure
+aborts enrichment instead of writing a partially validated output.
 
 ## RDF Example
 
@@ -161,23 +189,3 @@ wd:Q488205 rdfs:label "singer-songwriter"@en .
 The resolved IDs are Wikidata item IDs (`wd:Q...`).
 There is no `rdf:type`/`a` statement because the graph is derived only from the
 readable relationships extracted from the source text.
-
-## Project structure
-
-| File | Responsibility |
-| --- | --- |
-| `generate/src/generate_pipeline/` | Step 1 package: Wikidata lookup, description extraction, CSV/RDF generation. |
-| `generate/src/generate_pipeline/clients/` | Wikidata and Wikipedia API clients. |
-| `generate/src/generate_pipeline/extraction/` | Description phrase, entity, and relation extraction. |
-| `generate/src/generate_pipeline/io/` | CSV and Turtle RDF output helpers. |
-| `generate/tests/` | Offline unit tests for generation helpers. |
-| `generate/docs/` | Generation process docs and PlantUML flow. |
-| `enrich/src/enrich_pipeline/` | Step 2 package: RDF parsing and SPARQL enrichment. |
-| `enrich/src/enrich_pipeline/parsing/` | Turtle parsing for generated RDF. |
-| `enrich/src/enrich_pipeline/evaluation/` | Graph traversal question and SPARQL generation. |
-| `enrich/src/enrich_pipeline/io/` | Enrichment CSV writer. |
-| `enrich/src/enrich_pipeline/models/` | Shared dataclasses for enrichment. |
-| `enrich/tests/` | Offline unit tests for enrichment helpers. |
-| `enrich/docs/` | Enrichment process docs and PlantUML flow. |
-| `data/wikidata_description_rdf.csv` | Base generated CSV. |
-| `data/wikidata_description_rdf_enriched.csv` | Enriched CSV with SPARQL query columns. |
