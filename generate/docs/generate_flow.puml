@@ -1,28 +1,21 @@
 @startuml
-title Generate Wikidata Description RDF
+title Gerar descrições e RDF do Wikidata
 
 start
-:Read entity name and CLI options;
-:Search Wikidata for candidate item IDs;
+:Ler nome da entidade e opções da linha de comando;
+:Pesquisar identificadores candidatos no Wikidata;
 
-while (Need 2 entities with 2 clean phrases each?) is (yes)
-  :Fetch Wikidata entity details;
-  :Resolve Wikipedia sitelink title;
-  :Fetch introductory Wikipedia phrases;
-  :Clean quoted and parenthesized text;
+:Obter detalhes da entidade no Wikidata;
+:Limpar texto;
+:Extrair expressões candidatas a entidade;
+:Resolver expressões para identificadores do Wikidata;
+:Encontrar predicados verbais próximos;
+:Obter rótulos;
+:Construir triplas legíveis das relações extraídas;
+:Construir RDF Turtle apenas com essas triplas;
 
-  if (Entity has 2 unique phrases?) then (yes)
-    :Extract candidate entity phrases;
-    :Resolve phrases to Wikidata item IDs;
-    :Find nearby verb predicates;
-    :Fetch labels;
-    :Build readable triples from extracted relations;
-    :Build Turtle RDF only from those triples;
-  endif
-endwhile (no)
-
-:Combine each text's phrases into one description;
-:Append one identifier, description, rdf, triples row per text;
-:Merge _01 and _02 into one base-identifier graph row;
+:Combinar as frases de cada texto em uma descrição;
+:Acrescentar uma linha por texto ao arquivo-base;
+:Unir _01 e _02 em uma linha de grafo combinado;
 stop
 @enduml

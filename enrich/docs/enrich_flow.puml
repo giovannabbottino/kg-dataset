@@ -1,33 +1,34 @@
 @startuml
-title Enrich Description RDF CSV
+title Enriquecer o arquivo RDF de descrições
 
 start
-:Read input CSV;
+:Ler o arquivo CSV de entrada;
+:Analisar o subconjunto Turtle do projeto;
+:Coletar rótulos, raízes e triplas;
+:Selecionar uma entidade-fonte;
+:Resolver por identificador canônico ou centralidade;
 
-if (Header contains rdf?) then (yes)
-  while (Rows remain?) is (yes)
-    :Parse project Turtle subset;
-    :Collect labels, roots, and triples;
-    :Select one source entity;
-    :Resolve it by canonical ID or structural centrality;
-    :Generate entity and predicate questions with SELECT SPARQL;
-    :Generate directed ID question and SPARQL when available;
-    :Execute and validate label SPARQL with RDFLib;
-    :Execute and validate ID SPARQL with RDFLib when available;
-    if (All generated queries are valid?) then (yes)
-      :Create label-based question row;
-      :Create directed ID row when available;
-    else (no)
-      :Raise validation error;
-      stop
-    endif
-  endwhile (no)
+fork
+  :Gerar perguntas de entidade e predicado por rótulo;
+  :Gerar consultas SPARQL por rótulo;
+  :Executar e validar consultas por rótulo com RDFLib;
+  :Criar linhas de perguntas e respostas por rótulo;
+fork again
+  if (Há ligação direcionada disponível?) then (sim)
+    :Gerar pergunta direcionada por ID;
+    :Gerar consulta SPARQL por ID;
+    :Executar e validar consulta por ID com RDFLib;
+    :Criar linha de pergunta e resposta por ID;
+  else (não)
+    :Registrar ausência de consulta por ID;
+  endif
+end fork
 
-  :Write label SPARQL CSV;
-  :Write ID SPARQL CSV;
-else (no)
-  :Raise validation error;
-endif
+fork
+  :Gravar CSV das consultas por rótulo;
+fork again
+  :Gravar CSV das consultas por ID;
+end fork
 
 stop
 @enduml
