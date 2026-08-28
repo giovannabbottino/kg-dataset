@@ -12,19 +12,28 @@ as Turtle RDF. The RDF contains only relationships extracted from the Wikipedia
 text. The generation step does not query or add Wikidata `P31` (`instance of`)
 classes.
 
+Within the evaluation workspace, `data/wikidata_graphs.csv` is the shared input
+for the three construction pipelines. Each combined description is sent to the
+prompt, ontology, and hybrid APIs so their RDF output can be compared on the
+same source text. The enriched SPARQL CSVs provide task-oriented checks for the
+evaluation notebook.
+
 ## Requirements
 
 - Python 3.10 or newer
 - Internet access to the public Wikidata and Wikipedia APIs
 - Python packages `nltk`, `stopwordsiso`, and `rdflib`
 
-## Pipeline Usage
+## Quick start
 
 Install dependencies:
 
 ```powershell
 python -m pip install -r requirements.txt
 ```
+
+The commands below are run from the repository root. Generation requires live
+Wikipedia and Wikidata access; the unit tests are offline.
 
 On first use, NLTK may also download its English POS tagger and WordNet data. Set
 `WIKIDATA_USER_AGENT` before running generation to identify your API client.
@@ -85,14 +94,13 @@ if you want a fresh dataset. Before making any Wikipedia or Wikidata requests,
 the generator checks the output CSV. If its normalized `identifier` already
 exists, that input is skipped and the CSV is not changed.
 
-## Step Documentation
+## Step documentation
 
-Each step has its own docs folder with a README and PlantUML flow diagram:
+Supporting implementation notes and PlantUML flow sources:
 
-- [Generate docs](generate/README.md)
-- [Generate PlantUML flow](generate/docs/generate_flow.puml)
-- [Enrich docs](enrich/README.md)
-- [Enrich PlantUML flow](enrich/docs/enrich_flow.puml)
+- [Extraction libraries](generate/docs/extraction_libraries.md)
+- [Generation flow](generate/docs/generate_flow.puml)
+- [Enrichment flow](enrich/docs/enrich_flow.puml)
 
 Run the offline unit tests with:
 
