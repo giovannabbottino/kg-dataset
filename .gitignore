@@ -39,4 +39,6 @@ Thumbs.db
 *.bak
 *.log
 
+data/
+
 docs/
