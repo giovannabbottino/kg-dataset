@@ -89,6 +89,15 @@ data/wikidata_label_sparql.csv
 data/wikidata_id_sparql.csv
 ```
 
+Generated files under `data/` are local artifacts and are excluded from Git.
+A fresh clone therefore requires generation and enrichment before running the
+evaluation notebooks. Keep a copy of the exact CSVs used for an experiment if
+you need to reproduce its results; live source content can change between runs.
+
+The current `ambiguous_words.txt` starts with `bass` and `mouse` in place of
+`jaguar` and `mango`. These are generation inputs; changing the list does not
+remove rows from an existing append-only dataset.
+
 The generation step is append-only. Delete or rename existing output files first
 if you want a fresh dataset. Before making any Wikipedia or Wikidata requests,
 the generator checks the output CSV. If its normalized `identifier` already
