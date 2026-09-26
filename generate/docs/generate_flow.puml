@@ -1,0 +1,21 @@
+@startuml
+title Gerar descrições e RDF do Wikidata
+
+start
+:Ler nome da entidade e opções da linha de comando;
+:Pesquisar identificadores candidatos no Wikidata;
+
+:Obter detalhes da entidade no Wikidata;
+:Limpar texto;
+:Extrair expressões candidatas a entidade;
+:Resolver expressões para identificadores do Wikidata;
+:Encontrar predicados verbais próximos;
+:Obter rótulos;
+:Construir triplas legíveis das relações extraídas;
+:Construir RDF Turtle apenas com essas triplas;
+
+:Combinar as frases de cada texto em uma descrição;
+:Acrescentar uma linha por texto ao arquivo-base;
+:Unir _01 e _02 em uma linha de grafo combinado;
+stop
+@enduml

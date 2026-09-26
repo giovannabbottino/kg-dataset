@@ -1,0 +1,34 @@
+@startuml
+title Enriquecer o arquivo RDF de descrições
+
+start
+:Ler o arquivo CSV de entrada;
+:Analisar o subconjunto Turtle do projeto;
+:Coletar rótulos, raízes e triplas;
+:Selecionar uma entidade-fonte;
+:Resolver por identificador canônico ou centralidade;
+
+fork
+  :Gerar perguntas de entidade e predicado por rótulo;
+  :Gerar consultas SPARQL por rótulo;
+  :Executar e validar consultas por rótulo com RDFLib;
+  :Criar linhas de perguntas e respostas por rótulo;
+fork again
+  if (Há ligação direcionada disponível?) then (sim)
+    :Gerar pergunta direcionada por ID;
+    :Gerar consulta SPARQL por ID;
+    :Executar e validar consulta por ID com RDFLib;
+    :Criar linha de pergunta e resposta por ID;
+  else (não)
+    :Registrar ausência de consulta por ID;
+  endif
+end fork
+
+fork
+  :Gravar CSV das consultas por rótulo;
+fork again
+  :Gravar CSV das consultas por ID;
+end fork
+
+stop
+@enduml

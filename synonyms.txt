@@ -1,0 +1,15 @@
+house,building
+river,stream
+mountain,hill
+lake,pond
+forest,woodland
+author,novelist
+computer,machine
+picture,image
+book,publication
+actor,performer
+cat,feline
+city,municipality
+country,nation
+university,college
+painting,artwork
